@@ -159,5 +159,9 @@ namespace ASM_ManagementStudent
                 showData();
             }
         }
+
+        private void testFuncToPushCodeOnMac(string var) {
+            console.writeLine('Hello world  !string');
+        }
     }
 }
