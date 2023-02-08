@@ -7,6 +7,41 @@ namespace LearnADO.Netb01
 {
     public class Program
     {
+        static void ShowDataTable(DataTable table)
+        {
+            Console.WriteLine($"Ten Bang: {table.TableName}");
+            Console.Write($"{"Index",20}");
+
+            foreach (DataColumn item in table.Columns)
+            {
+                Console.Write($"{item.ColumnName, 20}");
+            }
+            Console.WriteLine();
+
+            int num_cols = table.Columns.Count;
+
+            int index = 0;
+            foreach (DataRow item in table.Rows)
+            {
+                /*var stt = item[0] + "\t";
+                var name = item["HoTen"] + "\t";
+                var age = item["Tuoi"];
+                Console.Write(stt);
+                Console.Write(name);
+                Console.Write(age);
+                Console.WriteLine();*/
+
+               
+                Console.Write($"{index,20}");
+                for (int i = 0; i < num_cols; i++)
+                {
+                    Console.Write($"{item[i], 20}");
+                }
+                Console.WriteLine();
+                index++;
+            }
+        }
+
         static void Main(string[] args)
         {
 
@@ -22,7 +57,7 @@ namespace LearnADO.Netb01
             sqlstringBuilder["Password"] = "12345678";
 
             var sqlStringConn = sqlstringBuilder.ToString();
-            Console.WriteLine(sqlStringConn);
+            /*Console.WriteLine(sqlStringConn);*/
 
 
             /*var sqlConnString = "Data Source=LAPTOP-7CKON28R\\SQLEXPRESS;Initial Catalog=xtlab;User ID=sa;Password=12345678;Encrypt=false";*/
@@ -167,7 +202,7 @@ namespace LearnADO.Netb01
             #endregion
 
             #region StoreProcudure
-            using var command = new SqlCommand();
+            /*using var command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "USP_GetProductInfo";
             command.CommandType = CommandType.StoredProcedure;
@@ -184,10 +219,100 @@ namespace LearnADO.Netb01
                 var productName = render["TenSanPham"];
                 var cateName = render["TenDanhMuc"];
                 Console.WriteLine($"{productName} - {cateName}");
-            }
+            }*/
 
             #endregion
 
+            #region dataset
+            /*var dataset = new DataSet();
+
+            //dataset.Tables
+            var table = new DataTable("MyTable");
+
+            dataset.Tables.Add(table);
+
+            table.Columns.Add("STT");
+            table.Columns.Add("HoTen");
+            table.Columns.Add("Tuoi");
+
+            table.Rows.Add(1, "PhucDn", 25);
+            table.Rows.Add(2, "Nguyen Van A", 34);
+            table.Rows.Add(1, "Nguyen Van B", 23);*/
+
+            /*Console.WriteLine($"Ten Bang: {table.TableName}");
+
+            foreach (DataColumn item in table.Columns)
+            {
+                Console.WriteLine($"{item.ColumnName}");
+            }
+
+            foreach (DataRow item in table.Rows)
+            {
+                var stt = item[0] + "\t";
+                var name = item["HoTen"] + "\t";
+                var age = item["Tuoi"];
+                Console.Write(stt);
+                Console.Write(name);
+                Console.Write(age);
+                Console.WriteLine();
+            }*/
+
+            /*ShowDataTable(table);*/
+
+
+
+            #endregion
+
+            #region
+            // Thiết lập bảng trong DataSet ánh xạ tương ứng có tên là Nhanvien
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.TableMappings.Add("Table", "NhanvienDto");
+
+            // SelectCommand - Thực thi khi gọi Fill lấy dữ liệu về DataSet
+            adapter.SelectCommand = new SqlCommand(@"SELECT NhanviennID,Ten,Ho FROM Nhanvien", connection);
+
+            // InsertCommand - Thực khi khi gọi Update, nếu DataSet có chèn dòng mới (vào DataTable)
+            // Dữ liệu lấy từ DataTable, như cột Ten tương  ứng với tham số @Ten
+            adapter.InsertCommand = new SqlCommand("insert into Nhanvien(Ho, Ten) values (@Ho, @Ten)", connection);
+            adapter.InsertCommand.Parameters.Add("@Ho", SqlDbType.NVarChar, 255, "Ho");
+            adapter.InsertCommand.Parameters.Add("@Ten", SqlDbType.NVarChar, 255, "Ten");
+
+            // DeleteCommand  - Thực thi khi gọi Update, nếu có remove dòng nào đó của DataTable
+            adapter.DeleteCommand = new SqlCommand(@"DELETE FROM Nhanvien WHERE NhanviennID = @NhanviennID", connection);
+            var pr1 = adapter.DeleteCommand.Parameters.Add(new SqlParameter("@NhanviennID", SqlDbType.Int));
+            pr1.SourceColumn = "NhanviennID";
+            pr1.SourceVersion = DataRowVersion.Original;
+
+            //UpdateCommand
+            adapter.UpdateCommand = new SqlCommand(@"update Nhanvien set Ho = @Ho, Ten = @Ten where NhanviennID = @NhanviennID", connection);
+            var pr2 = adapter.UpdateCommand.Parameters.Add(new SqlParameter("@NhanviennID", SqlDbType.Int));
+            pr2.SourceColumn = "NhanviennID";
+            pr2.SourceVersion = DataRowVersion.Original;
+            adapter.UpdateCommand.Parameters.Add("@Ho", SqlDbType.NVarChar, 255, "Ho");
+            adapter.UpdateCommand.Parameters.Add("@Ten", SqlDbType.NVarChar, 255, "Ten");
+
+            var dataSet = new DataSet();
+            adapter.Fill(dataSet);
+
+            DataTable table = dataSet.Tables["NhanvienDto"];
+            ShowDataTable(table);
+
+            /*var row = table.Rows.Add();
+            row["Ten"] = "Abc";
+            row["Ho"] = "Tran Van";*/
+
+            //delete row trong db
+            /*var row10 = table.Rows[10];
+            row10.Delete();*/
+
+            //update - chinh sua cac dong du lieu
+            /*var r = table.Rows[9];
+            r["Ten"] = "Tuong";*/
+            //cap nhat tu dataAdapter vao db
+            adapter.Update(dataSet);
+            
+
+            #endregion
 
             #endregion
 
