@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les30LinqInCSharp", "Les30L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnADO.Netb01", "LearnADO.Netb01\LearnADO.Netb01.csproj", "{82DFD589-F97D-4D43-9FD9-A54337125B95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les20Delegate", "Les20Delegate\Les20Delegate.csproj", "{071E6B21-1BA8-4714-9C66-87D759CDAB7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les20Delegate", "Les20Delegate\Les20Delegate.csproj", "{071E6B21-1BA8-4714-9C66-87D759CDAB7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les21LamdaExpression", "Les21LamdaExpression\Les21LamdaExpression.csproj", "{252E6770-37A9-4428-B70F-4E3C39B40D3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les21LamdaExpression", "Les21LamdaExpression\Les21LamdaExpression.csproj", "{252E6770-37A9-4428-B70F-4E3C39B40D3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les40-LearnEntityFrameworkCore", "Les40-LearnEntityFrameworkCore\Les40-LearnEntityFrameworkCore.csproj", "{2943930E-ACE8-426D-A53B-2F22C1B12B78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{252E6770-37A9-4428-B70F-4E3C39B40D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{252E6770-37A9-4428-B70F-4E3C39B40D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{252E6770-37A9-4428-B70F-4E3C39B40D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2943930E-ACE8-426D-A53B-2F22C1B12B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2943930E-ACE8-426D-A53B-2F22C1B12B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2943930E-ACE8-426D-A53B-2F22C1B12B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2943930E-ACE8-426D-A53B-2F22C1B12B78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
