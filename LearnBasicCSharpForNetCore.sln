@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les40-LearnEntityFrameworkC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les10ClassAndOOP", "Les10ClassAndOOP\Les10ClassAndOOP.csproj", "{647E762D-97F5-412E-8703-BB8117347853}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les12StructAndEnum", "Les12StructAndEnum\Les12StructAndEnum.csproj", "{DDA13E8C-82AC-4E08-A106-46B66EFA16C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{647E762D-97F5-412E-8703-BB8117347853}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{647E762D-97F5-412E-8703-BB8117347853}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{647E762D-97F5-412E-8703-BB8117347853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDA13E8C-82AC-4E08-A106-46B66EFA16C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDA13E8C-82AC-4E08-A106-46B66EFA16C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDA13E8C-82AC-4E08-A106-46B66EFA16C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDA13E8C-82AC-4E08-A106-46B66EFA16C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
