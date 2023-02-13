@@ -34,12 +34,13 @@ namespace Les40_LearnEntityFrameworkCore.Models
 
             optionsBuilder.UseLoggerFactory(loggerFactory);
             optionsBuilder.UseSqlServer(connString);
-
+          /*  optionsBuilder.UseLazyLoadingProxies();*/
 
         }
 
         #region set dbset for import or export data on sql - bieu dien bang trong csdl
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         #endregion
     }

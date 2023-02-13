@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Les40_LearnEntityFrameworkCore
 {
@@ -52,19 +54,15 @@ namespace Les40_LearnEntityFrameworkCore
         #endregion
 
         #region Insert data on table
-        static void InsertProduct()
+        /*static void InsertProduct()
         {
             using var dbContext = new DatabaseContext();
-            /**
-             * Model (Product)
-             * Add, AddSync
-             * SaveChanges
-             */
+            
             /*var p1 = new Product();
             p1.ProductName= "Test-SP02";
             p1.Provider= "Nha cung cap 02";
 
-            dbContext.Add(p1);*/
+            dbContext.Add(p1);*//*
 
             var products = new object[]
             {
@@ -80,7 +78,7 @@ namespace Les40_LearnEntityFrameworkCore
             Console.WriteLine($"Da chen {num_rows} dong du lieu");
 
 
-        }
+        }*/
 
         #endregion
 
@@ -126,7 +124,7 @@ namespace Les40_LearnEntityFrameworkCore
         }
 
         #endregion
-         
+
         #region update data on db
         static void UpdateProduct(int id, string newProName)
         {
@@ -135,10 +133,11 @@ namespace Les40_LearnEntityFrameworkCore
                        where pr.ProductId == id
                        select pr).FirstOrDefault();
 
-            if (res != null) { 
+            if (res != null)
+            {
                 //doi tuong theo su thay doi cua object ma moi lay
-               /* EntityEntry<Product> entry = dbContext.Entry(res);
-                entry.State= EntityState.Detached;*/
+                /* EntityEntry<Product> entry = dbContext.Entry(res);
+                 entry.State= EntityState.Detached;*/
 
                 res.ProductName = newProName;
 
@@ -160,7 +159,7 @@ namespace Les40_LearnEntityFrameworkCore
 
             if (res != null)
             {
-               
+
                 dbContext.Products.Remove(res);
 
 
@@ -172,11 +171,116 @@ namespace Les40_LearnEntityFrameworkCore
         }
         #endregion
 
+        // Chèn dữ liệu mẫu
+        public static void InsertSampleData()
+        {
+            using var dbContext = new DatabaseContext();
+            // Thêm 2 danh mục vào Category
+            /*var cate1 = new Category() { Name = "Cate1", Description = "Description1" };
+            var cate2 = new Category() { Name = "Cate2", Description = "Description2" };
+            dbContext.Categories.Add(cate1);
+            dbContext.Categories.Add(cate2);*/
+
+            var cate1 = (from c in dbContext.Categories
+                         where c.CategoryId == 1
+                         select c).FirstOrDefault();
+
+            var cate2 = (from c in dbContext.Categories
+                         where c.CategoryId == 2
+                         select c).FirstOrDefault();
+
+            dbContext.Add(
+                new Product()
+                {
+                    ProductName = "Iphone 8",
+                    Price = 1200,
+                    CateId = 1,
+                }
+                );
+
+            dbContext.Add(
+                new Product()
+                {
+                    ProductName = "Iphone XS Max",
+                    Price = 1200,
+                    Category = cate1,
+                }
+                );
+
+            dbContext.Add(
+                new Product()
+                {
+                    ProductName = "test-pro-03",
+                    Price = 1200,
+                    Category = cate2,
+                }
+                );
+
+            dbContext.Add(
+                new Product()
+                {
+                    ProductName = "Ruou vang Abc",
+                    Price = 1200,
+                    CateId = 2,
+                }
+                );
+
+            dbContext.Add(
+                new Product()
+                {
+                    ProductName = "Ipad Gen 9",
+                    Price = 4535,
+                    CateId = 1,
+                }
+                );
+
+            dbContext.Add(
+               new Product()
+               {
+                   ProductName = "Ipad Gen 9",
+                   Price = 4535,
+                   CateId = 1,
+               }
+               );
+
+            dbContext.Add(
+               new Product()
+               {
+                   ProductName = "Ipad Gen 10",
+                   Price = 3453,
+                   CateId = 2,
+               }
+               );
+
+            dbContext.Add(
+               new Product()
+               {
+                   ProductName = "Ipad Gen 11",
+                   Price = 4535,
+                   CateId = 2,
+               }
+               );
+
+            dbContext.Add(
+               new Product()
+               {
+                   ProductName = "Ipad Gen 4",
+                   Price = 4535,
+                   CateId = 1,
+               }
+               );
+
+
+
+            dbContext.SaveChanges();
+
+        }
+
 
         static void Main(string[] args)
         {
-
-            /*CreateDatabase();*/
+            //DropDatabase();
+            //CreateDatabase();
 
             /*DropDatabase();*/
 
@@ -184,6 +288,7 @@ namespace Les40_LearnEntityFrameworkCore
 
             #region Insert Data on Table
             /*InsertProduct();*/
+            /*InsertSampleData();*/
 
             #endregion
 
@@ -205,6 +310,56 @@ namespace Les40_LearnEntityFrameworkCore
 
             #endregion
 
+            using var dbContext = new DatabaseContext();
+            /* var product = (from p in dbContext.Products
+                           where p.ProductId == 1
+                           select p).FirstOrDefault();
+
+             var e = dbContext.Entry(product);
+             e.Reference(e => e.Category).Load();
+
+            product.PrintInfo();
+
+             if (product.Category !=null)
+             {
+                 Console.WriteLine($"{product.Category.Name} - {product.Category.Description}");
+             } else
+             {
+                 Console.WriteLine("Category == null");
+             }*/
+
+
+            /*var category = (from c in dbContext.Categories
+                          where c.CategoryId == 1
+                          select c).FirstOrDefault();
+
+            Console.WriteLine($"{category.Name} - {category.Description}");
+            var e = dbContext.Entry(category);
+            e.Collection(c => c.Products).Load();
+
+            if (category.Products != null)
+            {
+                Console.WriteLine($"So san pham la: {category.Products.Count}");
+                category.Products.ForEach(p => p.PrintInfo());
+               
+            }
+            else
+            {
+                Console.WriteLine("Products == null");
+            }*/
+
+            /*var resPro = from p in dbContext.Products
+                         join c in dbContext.Categories on p.CateId equals c.CategoryId
+                         select new
+                         {
+                             p.ProductName,
+                             c.Name,
+                             p.Price
+                         };*/
+
+            var resPro = dbContext.Products.Include(c => c.Category).ToList();
+
+            resPro.ToList().ForEach(p => Console.WriteLine(p));
         }
     }
 }
