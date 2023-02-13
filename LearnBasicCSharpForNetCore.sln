@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les14-Inheritance", "Les14-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les16GenericExmaple", "Les16GenericExmaple\Les16GenericExmaple.csproj", "{C723D09A-9DD5-42BF-B452-726091FA54FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les19-VirtualMethodAndAbstractClass", "Les19-VirtualMethodAndAbstractClass\Les19-VirtualMethodAndAbstractClass.csproj", "{3D201F5D-F231-493F-AABD-B84FB3F381C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{C723D09A-9DD5-42BF-B452-726091FA54FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C723D09A-9DD5-42BF-B452-726091FA54FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C723D09A-9DD5-42BF-B452-726091FA54FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D201F5D-F231-493F-AABD-B84FB3F381C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D201F5D-F231-493F-AABD-B84FB3F381C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D201F5D-F231-493F-AABD-B84FB3F381C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D201F5D-F231-493F-AABD-B84FB3F381C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
