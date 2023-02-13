@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les10ClassAndOOP", "Les10Cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les12StructAndEnum", "Les12StructAndEnum\Les12StructAndEnum.csproj", "{DDA13E8C-82AC-4E08-A106-46B66EFA16C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les14-Inheritance", "Les14-Inheritance\Les14-Inheritance.csproj", "{02A2A867-63C9-4420-89EB-AE6EBA16066F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{DDA13E8C-82AC-4E08-A106-46B66EFA16C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDA13E8C-82AC-4E08-A106-46B66EFA16C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDA13E8C-82AC-4E08-A106-46B66EFA16C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A2A867-63C9-4420-89EB-AE6EBA16066F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A2A867-63C9-4420-89EB-AE6EBA16066F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A2A867-63C9-4420-89EB-AE6EBA16066F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A2A867-63C9-4420-89EB-AE6EBA16066F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
