@@ -13,17 +13,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les21LamdaExpression", "Les
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les40-LearnEntityFrameworkCore", "Les40-LearnEntityFrameworkCore\Les40-LearnEntityFrameworkCore.csproj", "{2943930E-ACE8-426D-A53B-2F22C1B12B78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les10ClassAndOOP", "Les10ClassAndOOP\Les10ClassAndOOP.csproj", "{647E762D-97F5-412E-8703-BB8117347853}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les10ClassAndOOP", "Les10ClassAndOOP\Les10ClassAndOOP.csproj", "{647E762D-97F5-412E-8703-BB8117347853}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les12StructAndEnum", "Les12StructAndEnum\Les12StructAndEnum.csproj", "{DDA13E8C-82AC-4E08-A106-46B66EFA16C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les12StructAndEnum", "Les12StructAndEnum\Les12StructAndEnum.csproj", "{DDA13E8C-82AC-4E08-A106-46B66EFA16C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les14-Inheritance", "Les14-Inheritance\Les14-Inheritance.csproj", "{02A2A867-63C9-4420-89EB-AE6EBA16066F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les14-Inheritance", "Les14-Inheritance\Les14-Inheritance.csproj", "{02A2A867-63C9-4420-89EB-AE6EBA16066F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les16GenericExmaple", "Les16GenericExmaple\Les16GenericExmaple.csproj", "{C723D09A-9DD5-42BF-B452-726091FA54FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les16GenericExmaple", "Les16GenericExmaple\Les16GenericExmaple.csproj", "{C723D09A-9DD5-42BF-B452-726091FA54FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les19-VirtualMethodAndAbstractClass", "Les19-VirtualMethodAndAbstractClass\Les19-VirtualMethodAndAbstractClass.csproj", "{3D201F5D-F231-493F-AABD-B84FB3F381C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les19-VirtualMethodAndAbstractClass", "Les19-VirtualMethodAndAbstractClass\Les19-VirtualMethodAndAbstractClass.csproj", "{3D201F5D-F231-493F-AABD-B84FB3F381C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les18NullAndNullable", "Les18NullAndNullable\Les18NullAndNullable.csproj", "{88D1D221-A9AF-4A91-9AA9-8A0B9EA97009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les18NullAndNullable", "Les18NullAndNullable\Les18NullAndNullable.csproj", "{88D1D221-A9AF-4A91-9AA9-8A0B9EA97009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les26Collection", "Les26Collection\Les26Collection.csproj", "{C793B4DF-C1F9-44FB-8B20-95AAD713A4BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{88D1D221-A9AF-4A91-9AA9-8A0B9EA97009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88D1D221-A9AF-4A91-9AA9-8A0B9EA97009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88D1D221-A9AF-4A91-9AA9-8A0B9EA97009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C793B4DF-C1F9-44FB-8B20-95AAD713A4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C793B4DF-C1F9-44FB-8B20-95AAD713A4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C793B4DF-C1F9-44FB-8B20-95AAD713A4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C793B4DF-C1F9-44FB-8B20-95AAD713A4BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
