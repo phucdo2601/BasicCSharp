@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les18NullAndNullable", "Les
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les26Collection", "Les26Collection\Les26Collection.csproj", "{C793B4DF-C1F9-44FB-8B20-95AAD713A4BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les50RazorPage01", "Les50RazorPage01\Les50RazorPage01.csproj", "{38AC2B83-0D04-4645-B903-D67B6957048E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{C793B4DF-C1F9-44FB-8B20-95AAD713A4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C793B4DF-C1F9-44FB-8B20-95AAD713A4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C793B4DF-C1F9-44FB-8B20-95AAD713A4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38AC2B83-0D04-4645-B903-D67B6957048E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38AC2B83-0D04-4645-B903-D67B6957048E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38AC2B83-0D04-4645-B903-D67B6957048E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38AC2B83-0D04-4645-B903-D67B6957048E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
