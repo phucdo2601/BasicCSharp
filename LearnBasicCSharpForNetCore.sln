@@ -25,9 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les19-VirtualMethodAndAbstr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les18NullAndNullable", "Les18NullAndNullable\Les18NullAndNullable.csproj", "{88D1D221-A9AF-4A91-9AA9-8A0B9EA97009}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les26Collection", "Les26Collection\Les26Collection.csproj", "{C793B4DF-C1F9-44FB-8B20-95AAD713A4BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les26Collection", "Les26Collection\Les26Collection.csproj", "{C793B4DF-C1F9-44FB-8B20-95AAD713A4BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les50RazorPage01", "Les50RazorPage01\Les50RazorPage01.csproj", "{38AC2B83-0D04-4645-B903-D67B6957048E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les50RazorPage01", "Les50RazorPage01\Les50RazorPage01.csproj", "{38AC2B83-0D04-4645-B903-D67B6957048E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les33-DependencyInjection", "Les33-DependencyInjection\Les33-DependencyInjection.csproj", "{C0831626-A95D-411C-974A-467339B02A56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les33-DI-in-MvcWeb", "Les33-DI-in-MvcWeb\Les33-DI-in-MvcWeb.csproj", "{BE9D5EA2-66D9-45C2-97B9-5A879F66C3D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,14 @@ Global
 		{38AC2B83-0D04-4645-B903-D67B6957048E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38AC2B83-0D04-4645-B903-D67B6957048E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38AC2B83-0D04-4645-B903-D67B6957048E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0831626-A95D-411C-974A-467339B02A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0831626-A95D-411C-974A-467339B02A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0831626-A95D-411C-974A-467339B02A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0831626-A95D-411C-974A-467339B02A56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE9D5EA2-66D9-45C2-97B9-5A879F66C3D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9D5EA2-66D9-45C2-97B9-5A879F66C3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9D5EA2-66D9-45C2-97B9-5A879F66C3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE9D5EA2-66D9-45C2-97B9-5A879F66C3D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
