@@ -41,9 +41,17 @@ namespace Les02LabelTextBoxButton
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            lblResult.Text = "";
-            txtNumA.Text = "";
-            txtNumB.Text = "";
+            DialogResult result = MessageBox.Show("Do you want to reset this form?", "Confirm", 
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                lblResult.Text = "";
+                txtNumA.Text = "";
+                txtNumB.Text = "";
+            }
+
+            
         }
     }
 }

@@ -1,0 +1,11 @@
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les03MessageBox\bin\Debug\Les03MessageBox.exe.config
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les03MessageBox\bin\Debug\Les03MessageBox.exe
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les03MessageBox\bin\Debug\Les03MessageBox.pdb
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les03MessageBox\obj\Debug\Les03MessageBox.csproj.AssemblyReference.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les03MessageBox\obj\Debug\Les03MessageBox.csproj.SuggestedBindingRedirects.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les03MessageBox\obj\Debug\Les03MessageBox.Form1.resources
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les03MessageBox\obj\Debug\Les03MessageBox.Properties.Resources.resources
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les03MessageBox\obj\Debug\Les03MessageBox.csproj.GenerateResource.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les03MessageBox\obj\Debug\Les03MessageBox.csproj.CoreCompileInputs.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les03MessageBox\obj\Debug\Les03MessageBox.exe
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les03MessageBox\obj\Debug\Les03MessageBox.pdb
