@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les02LabelTextBoxButton", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les03MessageBox", "Les03MessageBox\Les03MessageBox.csproj", "{672B7F7E-9FD6-4730-BA3E-D3E14DD5EC97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les03SplitContainer", "Les03SplitContainer\Les03SplitContainer.csproj", "{D2BD08F7-D335-4071-A2A3-1A936F774176}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{672B7F7E-9FD6-4730-BA3E-D3E14DD5EC97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{672B7F7E-9FD6-4730-BA3E-D3E14DD5EC97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{672B7F7E-9FD6-4730-BA3E-D3E14DD5EC97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BD08F7-D335-4071-A2A3-1A936F774176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BD08F7-D335-4071-A2A3-1A936F774176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BD08F7-D335-4071-A2A3-1A936F774176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BD08F7-D335-4071-A2A3-1A936F774176}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
