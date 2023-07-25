@@ -1,0 +1,11 @@
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les02LabelTextBoxButton\bin\Debug\Les02LabelTextBoxButton.exe.config
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les02LabelTextBoxButton\bin\Debug\Les02LabelTextBoxButton.exe
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les02LabelTextBoxButton\bin\Debug\Les02LabelTextBoxButton.pdb
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les02LabelTextBoxButton\obj\Debug\Les02LabelTextBoxButton.csproj.AssemblyReference.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les02LabelTextBoxButton\obj\Debug\Les02LabelTextBoxButton.csproj.SuggestedBindingRedirects.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les02LabelTextBoxButton\obj\Debug\Les02LabelTextBoxButton.frmRegister.resources
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les02LabelTextBoxButton\obj\Debug\Les02LabelTextBoxButton.Properties.Resources.resources
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les02LabelTextBoxButton\obj\Debug\Les02LabelTextBoxButton.csproj.GenerateResource.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les02LabelTextBoxButton\obj\Debug\Les02LabelTextBoxButton.csproj.CoreCompileInputs.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les02LabelTextBoxButton\obj\Debug\Les02LabelTextBoxButton.exe
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les02LabelTextBoxButton\obj\Debug\Les02LabelTextBoxButton.pdb
