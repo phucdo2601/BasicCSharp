@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les03MessageBox", "Les03Mes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les03SplitContainer", "Les03SplitContainer\Les03SplitContainer.csproj", "{D2BD08F7-D335-4071-A2A3-1A936F774176}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les04GroupBox", "Les04GroupBox\Les04GroupBox.csproj", "{A937B772-9137-4C31-B31C-84141020D61A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D2BD08F7-D335-4071-A2A3-1A936F774176}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2BD08F7-D335-4071-A2A3-1A936F774176}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2BD08F7-D335-4071-A2A3-1A936F774176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A937B772-9137-4C31-B31C-84141020D61A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A937B772-9137-4C31-B31C-84141020D61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A937B772-9137-4C31-B31C-84141020D61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A937B772-9137-4C31-B31C-84141020D61A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

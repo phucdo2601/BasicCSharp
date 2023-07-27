@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D2BD08F7-D335-4071-A2A3-1A936F774176}</ProjectGuid>
+    <ProjectGuid>{A937B772-9137-4C31-B31C-84141020D61A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Les03SplitContainer</RootNamespace>
-    <AssemblyName>Les03SplitContainer</AssemblyName>
+    <RootNamespace>Les04GroupBox</RootNamespace>
+    <AssemblyName>Les04GroupBox</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

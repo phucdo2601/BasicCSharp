@@ -1,0 +1,11 @@
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les04GroupBox\bin\Debug\Les04GroupBox.exe.config
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les04GroupBox\bin\Debug\Les04GroupBox.exe
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les04GroupBox\bin\Debug\Les04GroupBox.pdb
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les04GroupBox\obj\Debug\Les04GroupBox.csproj.AssemblyReference.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les04GroupBox\obj\Debug\Les04GroupBox.csproj.SuggestedBindingRedirects.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les04GroupBox\obj\Debug\Les04GroupBox.Form1.resources
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les04GroupBox\obj\Debug\Les04GroupBox.Properties.Resources.resources
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les04GroupBox\obj\Debug\Les04GroupBox.csproj.GenerateResource.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les04GroupBox\obj\Debug\Les04GroupBox.csproj.CoreCompileInputs.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les04GroupBox\obj\Debug\Les04GroupBox.exe
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listLearnWinformFunb01\Les02LabelTextBoxButton\Les04GroupBox\obj\Debug\Les04GroupBox.pdb
