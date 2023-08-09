@@ -1,0 +1,13 @@
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\bin\Debug\QuanLyQuanCafeb01.exe.config
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\bin\Debug\QuanLyQuanCafeb01.exe
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\bin\Debug\QuanLyQuanCafeb01.pdb
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.csproj.AssemblyReference.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.csproj.SuggestedBindingRedirects.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.fLogin.resources
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.Properties.Resources.resources
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.csproj.GenerateResource.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.csproj.CoreCompileInputs.cache
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.exe
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.pdb
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.fTableManager.resources
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.fAccountProfile.resources
