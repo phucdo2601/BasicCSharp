@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyQuanCafeb01.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,12 +31,28 @@ namespace QuanLyQuanCafeb01
             }
         }
 
+        private bool CheckLogin(string userName, string passWord)
+        {
+            return AccountDAO.Instance.Login(userName, passWord);
+        }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+
             fTableManager f = new fTableManager();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            if (CheckLogin(username, password))
+            {
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Invalid credentials!");
+            }
+            
         }
     }
 }

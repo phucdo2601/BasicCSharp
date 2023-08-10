@@ -16,21 +16,6 @@ namespace QuanLyQuanCafeb01
         public fAdmin()
         {
             InitializeComponent();
-            LoadAccountList();
-        }
-
-        private void LoadFoodList()
-        {
-            string query = @"select * from Food";
-            dtgvFood.DataSource = DataProvider.Instance.ExecuteQuery(query);
-        } 
-
-        private void LoadAccountList()
-        {
-            string query = @"exec USP_GetAccountByUserName @username";
-
-            dtgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] { "testStaff01" });
-
         }
     }
 }

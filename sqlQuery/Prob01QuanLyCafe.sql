@@ -66,6 +66,7 @@ go
 
 
 DROP PROCEDURE IF EXISTS USP_GetAccountByUserName
+go
 Create PROC USP_GetAccountByUserName
 @username nvarchar(100)
 as
@@ -73,3 +74,9 @@ begin
 	select * from Account where UserName = @username
 
 end
+
+exec USP_GetAccountByUserName @username = 'testStaff01'
+
+go
+
+select * from Account where UserName = N'testStaff01' AND PassWord = N'' OR 1=1

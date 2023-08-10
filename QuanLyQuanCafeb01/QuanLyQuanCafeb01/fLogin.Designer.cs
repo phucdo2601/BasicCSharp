@@ -34,9 +34,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -89,7 +89,6 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(314, 22);
             this.txtPassword.TabIndex = 1;
-            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -101,6 +100,22 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Password:";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.txtUsername);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(14, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(720, 70);
+            this.panel2.TabIndex = 0;
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(154, 22);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(314, 22);
+            this.txtUsername.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -110,22 +125,6 @@
             this.label1.Size = new System.Drawing.Size(112, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username:";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(154, 22);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(314, 22);
-            this.txtUsername.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.txtUsername);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(14, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(720, 70);
-            this.panel2.TabIndex = 0;
             // 
             // fLogin
             // 
