@@ -11,3 +11,4 @@ D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\
 D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.pdb
 D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.fTableManager.resources
 D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.fAccountProfile.resources
+D:\TuHocLapTrinh\c#\Winform\Fundamentals\listFunWinfornProb01\QuanLyQuanCafeb01\QuanLyQuanCafeb01\obj\Debug\QuanLyQuanCafeb01.fAdmin.resources
