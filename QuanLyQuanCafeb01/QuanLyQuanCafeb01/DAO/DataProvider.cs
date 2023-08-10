@@ -106,7 +106,7 @@ namespace QuanLyQuanCafeb01.DAO
                         }
                     }
                 }
-                data = command.ExecuteNonQuery();
+                data = command.ExecuteScalar();
                 connection.Close();
             }
             return data;
