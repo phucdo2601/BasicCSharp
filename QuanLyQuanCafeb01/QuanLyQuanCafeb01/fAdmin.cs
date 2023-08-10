@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyQuanCafeb01.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,19 @@ namespace QuanLyQuanCafeb01
         public fAdmin()
         {
             InitializeComponent();
+            LoadAccountList();
+        }
+
+        private void LoadAccountList()
+        {
+            string query = @"exec USP_GetAccountByUserName @username";
+
+
+            DataProvider dtProvider = new DataProvider();
+            DataTable listRes = dtProvider.ExecuteQuery(query, new object[] { "testStaff01"});
+
+            dtgvAccount.DataSource = listRes;
+
         }
     }
 }

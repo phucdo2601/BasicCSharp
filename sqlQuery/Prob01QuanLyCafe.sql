@@ -47,3 +47,29 @@ create table BillInfo (
 	count int not null default 0,
 
 )
+go
+
+insert into Account(
+	UserName,
+	DisplayName,
+	PassWord,
+	Type
+) values (
+	N'testStaff01',
+	N'testDisName01',
+	N'1',
+	0
+)
+
+select * from Account
+go
+
+
+DROP PROCEDURE IF EXISTS USP_GetAccountByUserName
+Create PROC USP_GetAccountByUserName
+@username nvarchar(100)
+as
+begin
+	select * from Account where UserName = @username
+
+end
