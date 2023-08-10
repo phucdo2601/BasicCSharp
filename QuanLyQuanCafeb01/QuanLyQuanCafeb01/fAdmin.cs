@@ -19,15 +19,17 @@ namespace QuanLyQuanCafeb01
             LoadAccountList();
         }
 
+        private void LoadFoodList()
+        {
+            string query = @"select * from Food";
+            dtgvFood.DataSource = DataProvider.Instance.ExecuteQuery(query);
+        } 
+
         private void LoadAccountList()
         {
             string query = @"exec USP_GetAccountByUserName @username";
 
-
-            DataProvider dtProvider = new DataProvider();
-            DataTable listRes = dtProvider.ExecuteQuery(query, new object[] { "testStaff01"});
-
-            dtgvAccount.DataSource = listRes;
+            dtgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] { "testStaff01" });
 
         }
     }

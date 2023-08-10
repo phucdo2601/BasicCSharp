@@ -10,12 +10,18 @@ namespace QuanLyQuanCafeb01.DAO
 {
     public class DataProvider
     {
+        private static DataProvider instance;
+
         private string connectionStr = "Data Source=DESKTOP-DBEKR3C\\SQLEXPRESS;Initial Catalog=QuanLyCafe;User ID=sa;Password=12345678";
 
-        public DataProvider()
-        {
-
-        }
+        public static DataProvider Instance {
+            get
+            {
+                if (instance == null) instance = new DataProvider(); return DataProvider.instance;
+            
+            } private set => instance = value; }
+       
+        private DataProvider() { }
         
 
         public DataTable ExecuteQuery(string query, object[] parameters = null)
