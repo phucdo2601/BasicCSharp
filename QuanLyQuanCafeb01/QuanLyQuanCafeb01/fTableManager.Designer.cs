@@ -46,7 +46,7 @@
             this.btnAddDish = new System.Windows.Forms.Button();
             this.cbxFood = new System.Windows.Forms.ComboBox();
             this.cbxCategory = new System.Windows.Forms.ComboBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -221,19 +221,19 @@
             this.cbxCategory.Size = new System.Drawing.Size(121, 24);
             this.cbxCategory.TabIndex = 0;
             // 
-            // flowLayoutPanel1
+            // flpTable
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 32);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(452, 519);
-            this.flowLayoutPanel1.TabIndex = 4;
+            this.flpTable.Location = new System.Drawing.Point(13, 32);
+            this.flpTable.Name = "flpTable";
+            this.flpTable.Size = new System.Drawing.Size(452, 519);
+            this.flpTable.TabIndex = 4;
             // 
             // fTableManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1026, 560);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flpTable);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -268,7 +268,7 @@
         private System.Windows.Forms.NumericUpDown nmFoodCount;
         private System.Windows.Forms.Button btnAddDish;
         private System.Windows.Forms.Button btnCheckout;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flpTable;
         private System.Windows.Forms.NumericUpDown nmDiscount;
         private System.Windows.Forms.Button btnDiscount;
         private System.Windows.Forms.Button btnChangeTable;

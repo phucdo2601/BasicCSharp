@@ -94,3 +94,17 @@ begin
 	where UserName = @username and PassWord = @password
 end
 go
+
+declare @i int = 0
+while @i <= 10
+Begin 
+	INSERT INTO TableFood(name) values (N'Bàn ' + CAST(@i as  nvarchar(100)))
+	set @i = @i +1
+end
+
+insert TableFood
+(name, status) 
+values (N'Bàn 1')
+
+DBCC CHECKIDENT ('[TableFood]', RESEED, 0);
+GO
