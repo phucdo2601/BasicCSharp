@@ -26,9 +26,9 @@ namespace QuanLyQuanCafeb01.DAO
 
         public bool Login(string username, string password)
         {
-            string query = @"select * from Account where UserName = N'"+username+"' AND PassWord = N'"+password+"'";
+            string query = @"USP_Login @username , @password";
 
-            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] {username, password});
 
 
             return result.Rows.Count > 0;

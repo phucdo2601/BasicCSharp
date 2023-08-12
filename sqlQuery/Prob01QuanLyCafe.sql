@@ -75,8 +75,22 @@ begin
 
 end
 
-exec USP_GetAccountByUserName @username = 'testStaff01'
+exec USP_GetAccountByUserName @username = ' '
 
 go
 
 select * from Account where UserName = N'testStaff01' AND PassWord = N'' OR 1=1
+
+go
+
+DROP PROCEDURE IF EXISTS dbo.USP_Login
+go
+create Proc dbo.USP_Login 
+@username nvarchar(100), @password nvarchar(100)
+as
+begin
+	select * 
+	from Account
+	where UserName = @username and PassWord = @password
+end
+go
