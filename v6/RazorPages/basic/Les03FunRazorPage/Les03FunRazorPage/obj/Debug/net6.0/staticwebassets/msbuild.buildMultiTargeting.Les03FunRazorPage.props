@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Les03FunRazorPage.props" />
+</Project>

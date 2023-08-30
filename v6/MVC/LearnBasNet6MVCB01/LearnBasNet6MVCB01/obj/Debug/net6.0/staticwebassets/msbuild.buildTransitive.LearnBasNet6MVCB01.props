@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\LearnBasNet6MVCB01.props" />
+</Project>

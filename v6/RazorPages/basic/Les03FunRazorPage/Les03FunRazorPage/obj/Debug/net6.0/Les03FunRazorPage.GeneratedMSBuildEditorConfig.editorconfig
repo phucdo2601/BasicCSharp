@@ -1,0 +1,61 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Les03FunRazorPage
+build_property.RootNamespace = Les03FunRazorPage
+build_property.ProjectDir = D:\TuHocLapTrinh\c#\DotNet\Core\v6\RazorPages\basic\Les03FunRazorPage\Les03FunRazorPage\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\TuHocLapTrinh\c#\DotNet\Core\v6\RazorPages\basic\Les03FunRazorPage\Les03FunRazorPage
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/TuHocLapTrinh/c\#/DotNet/Core/v6/RazorPages/basic/Les03FunRazorPage/Les03FunRazorPage/Pages/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TuHocLapTrinh/c\#/DotNet/Core/v6/RazorPages/basic/Les03FunRazorPage/Les03FunRazorPage/Pages/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TuHocLapTrinh/c\#/DotNet/Core/v6/RazorPages/basic/Les03FunRazorPage/Les03FunRazorPage/Pages/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TuHocLapTrinh/c\#/DotNet/Core/v6/RazorPages/basic/Les03FunRazorPage/Les03FunRazorPage/Pages/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TuHocLapTrinh/c\#/DotNet/Core/v6/RazorPages/basic/Les03FunRazorPage/Les03FunRazorPage/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TuHocLapTrinh/c\#/DotNet/Core/v6/RazorPages/basic/Les03FunRazorPage/Les03FunRazorPage/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TuHocLapTrinh/c\#/DotNet/Core/v6/RazorPages/basic/Les03FunRazorPage/Les03FunRazorPage/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TuHocLapTrinh/c\#/DotNet/Core/v6/RazorPages/basic/Les03FunRazorPage/Les03FunRazorPage/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TuHocLapTrinh/c\#/DotNet/Core/v6/RazorPages/basic/Les03FunRazorPage/Les03FunRazorPage/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TuHocLapTrinh/c\#/DotNet/Core/v6/RazorPages/basic/Les03FunRazorPage/Les03FunRazorPage/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TuHocLapTrinh/c\#/DotNet/Core/v6/RazorPages/basic/Les03FunRazorPage/Les03FunRazorPage/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-mdb6u16r18

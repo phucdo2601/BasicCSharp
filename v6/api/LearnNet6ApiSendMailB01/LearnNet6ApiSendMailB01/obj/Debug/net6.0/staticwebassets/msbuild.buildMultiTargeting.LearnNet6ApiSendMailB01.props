@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LearnNet6ApiSendMailB01.props" />
+</Project>

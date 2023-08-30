@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Les03FunRazorPage", "Les03FunRazorPage\Les03FunRazorPage.csproj", "{CAE7D31D-6078-489E-A334-7CFFFB950B00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAE7D31D-6078-489E-A334-7CFFFB950B00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE7D31D-6078-489E-A334-7CFFFB950B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE7D31D-6078-489E-A334-7CFFFB950B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE7D31D-6078-489E-A334-7CFFFB950B00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEE81123-ED40-445A-B8AD-8009CA3245EB}
+	EndGlobalSection
+EndGlobal
