@@ -1,0 +1,19 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace PracticeBackendCRUDApib01.Entities
+{
+    [Table(name: "Product")]
+    public class Product
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public float Price { get; set; }
+        public string Description { get; set; }
+        public int Quantity { get; set; }
+        public string status { get; set; }
+        public int ProductCateId { get; set; }
+
+        [ForeignKey("ProductCateId")]
+        public ProductCategory ProductCategory { get; set; }
+    }
+}
