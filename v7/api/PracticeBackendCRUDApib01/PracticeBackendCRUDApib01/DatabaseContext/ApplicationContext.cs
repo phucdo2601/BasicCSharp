@@ -13,6 +13,11 @@ namespace PracticeBackendCRUDApib01.DatabaseContext
         #region set dbset for import or export data on sql - bieu dien bang trong csdl
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<Service> Services { get; set; }
+        public DbSet<ServiceType> ServiceTypes { get; set; }
+        public DbSet<Status> Statuses { get; set; }
 
         #endregion
     }
