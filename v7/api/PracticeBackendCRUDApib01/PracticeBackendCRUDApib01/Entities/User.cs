@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PracticeBackendCRUDApib01.Entities
 {
     public class User
     {
+        [Key]
         public Guid UserId { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
@@ -23,5 +25,9 @@ namespace PracticeBackendCRUDApib01.Entities
 
         [ForeignKey("UserRoleId")]
         public UserRole UserRole { get; set; }
+
+        public List<Shop> Shops { get; set; }
+
+        public List<Cart> Carts { get; set; }
     }
 }

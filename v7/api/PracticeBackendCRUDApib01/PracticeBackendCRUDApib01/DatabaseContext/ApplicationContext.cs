@@ -18,6 +18,14 @@ namespace PracticeBackendCRUDApib01.DatabaseContext
         public DbSet<Service> Services { get; set; }
         public DbSet<ServiceType> ServiceTypes { get; set; }
         public DbSet<Status> Statuses { get; set; }
+        public DbSet<Shop> Shops { get; set; }
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<ReviewType> ReviewTypes { get; set; }
+        public DbSet<Review> Reviews { get; set; }
+
 
         #endregion
     }

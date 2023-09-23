@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PracticeBackendCRUDApib01.DatabaseContext;
 
@@ -11,9 +12,11 @@ using PracticeBackendCRUDApib01.DatabaseContext;
 namespace PracticeBackendCRUDApib01.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20230923112951_DbInitial01")]
+    partial class DbInitial01
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,8 +56,7 @@ namespace PracticeBackendCRUDApib01.Migrations
                     b.Property<DateTime>("AddedTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid?>("CartId")
-                        .IsRequired()
+                    b.Property<Guid>("CartId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<float>("CartItemPrice")
@@ -66,8 +68,7 @@ namespace PracticeBackendCRUDApib01.Migrations
                     b.Property<bool?>("IsDiscount")
                         .HasColumnType("bit");
 
-                    b.Property<Guid?>("ProductId")
-                        .IsRequired()
+                    b.Property<Guid>("ProductId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Quantity")
@@ -195,39 +196,6 @@ namespace PracticeBackendCRUDApib01.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ProductCategory");
-                });
-
-            modelBuilder.Entity("PracticeBackendCRUDApib01.Entities.ProductService", b =>
-                {
-                    b.Property<Guid>("ProductServiceId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("ExpiryDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("ServiceId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("StatusId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("UpdateDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("ProductServiceId");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("ServiceId");
-
-                    b.ToTable("ProductService");
                 });
 
             modelBuilder.Entity("PracticeBackendCRUDApib01.Entities.Review", b =>
@@ -554,25 +522,6 @@ namespace PracticeBackendCRUDApib01.Migrations
                     b.Navigation("Shop");
                 });
 
-            modelBuilder.Entity("PracticeBackendCRUDApib01.Entities.ProductService", b =>
-                {
-                    b.HasOne("PracticeBackendCRUDApib01.Entities.Product", "Product")
-                        .WithMany("ProductServices")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("PracticeBackendCRUDApib01.Entities.Service", "Service")
-                        .WithMany("ProductServices")
-                        .HasForeignKey("ServiceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-
-                    b.Navigation("Service");
-                });
-
             modelBuilder.Entity("PracticeBackendCRUDApib01.Entities.Review", b =>
                 {
                     b.HasOne("PracticeBackendCRUDApib01.Entities.ReviewType", "ReviewType")
@@ -632,8 +581,6 @@ namespace PracticeBackendCRUDApib01.Migrations
             modelBuilder.Entity("PracticeBackendCRUDApib01.Entities.Product", b =>
                 {
                     b.Navigation("CartItems");
-
-                    b.Navigation("ProductServices");
                 });
 
             modelBuilder.Entity("PracticeBackendCRUDApib01.Entities.ProductCategory", b =>
@@ -644,11 +591,6 @@ namespace PracticeBackendCRUDApib01.Migrations
             modelBuilder.Entity("PracticeBackendCRUDApib01.Entities.ReviewType", b =>
                 {
                     b.Navigation("Reviews");
-                });
-
-            modelBuilder.Entity("PracticeBackendCRUDApib01.Entities.Service", b =>
-                {
-                    b.Navigation("ProductServices");
                 });
 
             modelBuilder.Entity("PracticeBackendCRUDApib01.Entities.ServiceType", b =>
