@@ -47,8 +47,8 @@ namespace LNet7ApiPaginingB01.Services.EmployeeServices
                 }
 
                 var employees = new Object();
-                double pageCount = 0;
-                var totalsRecords = 0;
+                double pageCount = 0f;
+                var totalsRecords = 0f;
 
 
                 if (searchQuery.IsNullOrEmpty())
@@ -69,8 +69,9 @@ namespace LNet7ApiPaginingB01.Services.EmployeeServices
                     .Take((int)pageSize)
                     .ToList();
 
-                    pageCount = Math.Ceiling((double)(_context.Employees.Where(x => x.JobTitle.Contains(searchQuery)).Count() / pageSize));
                     totalsRecords = _context.Employees.Where(x => x.JobTitle.Contains(searchQuery)).Count();
+                    pageCount = Math.Ceiling((double)(totalsRecords / pageSize));
+                    
                 }
 
                 
@@ -78,7 +79,8 @@ namespace LNet7ApiPaginingB01.Services.EmployeeServices
                 {
                     Employees = employees,
                     CurrentPage = pageNum,
-                    Pages = (int)pageCount,
+                    PageSizes = pageSize,
+                    Pages = (double)pageCount,
                     TotalRecords = (int) totalsRecords,
                 };
                 return response;
