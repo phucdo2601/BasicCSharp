@@ -3,6 +3,7 @@ using LNet7ApiPaginingB01.Entities;
 using LNet7ApiPaginingB01.UnitOfWorks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.IdentityModel.Tokens;
 using System.Linq;
 
 namespace LNet7ApiPaginingB01.Services.EmployeeServices
@@ -44,19 +45,41 @@ namespace LNet7ApiPaginingB01.Services.EmployeeServices
                 {
                     pageSize = 10;
                 }
-                var pageCount = Math.Ceiling((double)(_context.Employees.Count() / pageSize));
 
-                var products =  _context.Employees
-                    .Where(x => x.JobTitle.Contains(searchQuery))
-                .Skip((int)((pageNum - 1) * pageSize))
-                .Take((int)pageSize)
-                .ToList();
+                var employees = new Object();
+                double pageCount = 0;
+                var totalsRecords = 0;
+
+
+                if (searchQuery.IsNullOrEmpty())
+                {
+                    employees = _context.Employees
+                    .Skip((int)((pageNum - 1) * pageSize))
+                    .Take((int)pageSize)
+                    .ToList();
+
+                     pageCount = Math.Ceiling((double)(_context.Employees.Count() / pageSize));
+
+                    totalsRecords = _context.Employees.Count();
+                } else
+                {
+                    employees = _context.Employees
+                        .Where(x => x.JobTitle.Contains(searchQuery))
+                    .Skip((int)((pageNum - 1) * pageSize))
+                    .Take((int)pageSize)
+                    .ToList();
+
+                    pageCount = Math.Ceiling((double)(_context.Employees.Where(x => x.JobTitle.Contains(searchQuery)).Count() / pageSize));
+                    totalsRecords = _context.Employees.Where(x => x.JobTitle.Contains(searchQuery)).Count();
+                }
+
+                
                 var response = new 
                 {
-                    Products = products,
+                    Employees = employees,
                     CurrentPage = pageNum,
                     Pages = (int)pageCount,
-                    TotalRecords = (int) _context.Employees.Count(),
+                    TotalRecords = (int) totalsRecords,
                 };
                 return response;
             }
