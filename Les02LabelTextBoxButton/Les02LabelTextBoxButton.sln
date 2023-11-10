@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les09ComboBox", "Les09Combo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les12MDIForm", "Les12MDIForm\Les12MDIForm.csproj", "{6E883A1D-61AC-4023-97DC-DE65F6C36D84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les13ImageList", "Les13ImageLít\Les13ImageList.csproj", "{D8352197-2519-4D10-B32C-412603757C11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{6E883A1D-61AC-4023-97DC-DE65F6C36D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E883A1D-61AC-4023-97DC-DE65F6C36D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E883A1D-61AC-4023-97DC-DE65F6C36D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8352197-2519-4D10-B32C-412603757C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8352197-2519-4D10-B32C-412603757C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8352197-2519-4D10-B32C-412603757C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8352197-2519-4D10-B32C-412603757C11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
