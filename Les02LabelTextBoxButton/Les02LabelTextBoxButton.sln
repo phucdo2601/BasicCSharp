@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracLes08BasicFromStudentMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les09ComboBox", "Les09ComboBox\Les09ComboBox.csproj", "{5D201D91-FC02-43DF-AC54-1445CD9765E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les12MDIForm", "Les12MDIForm\Les12MDIForm.csproj", "{6E883A1D-61AC-4023-97DC-DE65F6C36D84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{5D201D91-FC02-43DF-AC54-1445CD9765E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D201D91-FC02-43DF-AC54-1445CD9765E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D201D91-FC02-43DF-AC54-1445CD9765E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E883A1D-61AC-4023-97DC-DE65F6C36D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E883A1D-61AC-4023-97DC-DE65F6C36D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E883A1D-61AC-4023-97DC-DE65F6C36D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E883A1D-61AC-4023-97DC-DE65F6C36D84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
