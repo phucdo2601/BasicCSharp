@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les07DateTimePicker", "Les0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les08ListBox", "Les08ListBox\Les08ListBox.csproj", "{BDB2382B-03A8-47E0-96FD-7E3D50AD7670}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prac08ListBoxB01", "Prac08ListBoxB01\Prac08ListBoxB01.csproj", "{FB1A4ABE-3694-4006-9F29-760612D08D64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{BDB2382B-03A8-47E0-96FD-7E3D50AD7670}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDB2382B-03A8-47E0-96FD-7E3D50AD7670}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDB2382B-03A8-47E0-96FD-7E3D50AD7670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB1A4ABE-3694-4006-9F29-760612D08D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB1A4ABE-3694-4006-9F29-760612D08D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB1A4ABE-3694-4006-9F29-760612D08D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB1A4ABE-3694-4006-9F29-760612D08D64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
