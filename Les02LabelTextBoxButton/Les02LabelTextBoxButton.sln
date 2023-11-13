@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les12MDIForm", "Les12MDIFor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les13ImageList", "Les13ImageLít\Les13ImageList.csproj", "{D8352197-2519-4D10-B32C-412603757C11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les14TimerB01", "Les14TimerB01\Les14TimerB01.csproj", "{161BDB53-2818-4FE7-A632-47F637306E6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracLes14-FunnyGame", "PracLes14-FunnyGame\PracLes14-FunnyGame.csproj", "{ED1612F3-0F71-4C8D-BD72-50674C11120A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{D8352197-2519-4D10-B32C-412603757C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8352197-2519-4D10-B32C-412603757C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8352197-2519-4D10-B32C-412603757C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{161BDB53-2818-4FE7-A632-47F637306E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{161BDB53-2818-4FE7-A632-47F637306E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{161BDB53-2818-4FE7-A632-47F637306E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{161BDB53-2818-4FE7-A632-47F637306E6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED1612F3-0F71-4C8D-BD72-50674C11120A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1612F3-0F71-4C8D-BD72-50674C11120A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1612F3-0F71-4C8D-BD72-50674C11120A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1612F3-0F71-4C8D-BD72-50674C11120A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
