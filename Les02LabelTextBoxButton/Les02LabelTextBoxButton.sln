@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les14TimerB01", "Les14Timer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracLes14-FunnyGame", "PracLes14-FunnyGame\PracLes14-FunnyGame.csproj", "{ED1612F3-0F71-4C8D-BD72-50674C11120A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les15BgWorkerProgressBar", "Les15BgWorkerProgressBar\Les15BgWorkerProgressBar.csproj", "{A90020DB-A213-46AB-BBE3-029414E58837}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{ED1612F3-0F71-4C8D-BD72-50674C11120A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED1612F3-0F71-4C8D-BD72-50674C11120A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED1612F3-0F71-4C8D-BD72-50674C11120A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90020DB-A213-46AB-BBE3-029414E58837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90020DB-A213-46AB-BBE3-029414E58837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90020DB-A213-46AB-BBE3-029414E58837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90020DB-A213-46AB-BBE3-029414E58837}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
