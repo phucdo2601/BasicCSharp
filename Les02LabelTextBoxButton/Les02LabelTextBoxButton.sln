@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les15BgWorkerProgressBar", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les16Toolbar", "Les16Toolbar\Les16Toolbar.csproj", "{894D369A-21E7-4995-A219-DCF4A62E4BC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les17ListView", "Les17ListView\Les17ListView.csproj", "{393F9BFD-7F17-477C-B4FE-13F3AD4257E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{894D369A-21E7-4995-A219-DCF4A62E4BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{894D369A-21E7-4995-A219-DCF4A62E4BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{894D369A-21E7-4995-A219-DCF4A62E4BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393F9BFD-7F17-477C-B4FE-13F3AD4257E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393F9BFD-7F17-477C-B4FE-13F3AD4257E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393F9BFD-7F17-477C-B4FE-13F3AD4257E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393F9BFD-7F17-477C-B4FE-13F3AD4257E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
