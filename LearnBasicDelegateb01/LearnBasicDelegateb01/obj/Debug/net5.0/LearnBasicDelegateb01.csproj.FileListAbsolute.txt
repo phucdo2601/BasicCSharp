@@ -1,0 +1,15 @@
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\bin\Debug\net5.0\LearnBasicDelegateb01.exe
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\bin\Debug\net5.0\LearnBasicDelegateb01.deps.json
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\bin\Debug\net5.0\LearnBasicDelegateb01.runtimeconfig.json
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\bin\Debug\net5.0\LearnBasicDelegateb01.runtimeconfig.dev.json
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\bin\Debug\net5.0\LearnBasicDelegateb01.dll
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\bin\Debug\net5.0\LearnBasicDelegateb01.pdb
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\obj\Debug\net5.0\LearnBasicDelegateb01.GeneratedMSBuildEditorConfig.editorconfig
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\obj\Debug\net5.0\LearnBasicDelegateb01.AssemblyInfoInputs.cache
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\obj\Debug\net5.0\LearnBasicDelegateb01.AssemblyInfo.cs
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\obj\Debug\net5.0\LearnBasicDelegateb01.csproj.CoreCompileInputs.cache
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\obj\Debug\net5.0\LearnBasicDelegateb01.dll
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\obj\Debug\net5.0\refint\LearnBasicDelegateb01.dll
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\obj\Debug\net5.0\LearnBasicDelegateb01.pdb
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\obj\Debug\net5.0\LearnBasicDelegateb01.genruntimeconfig.cache
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\LearnBasicDelegateb01\LearnBasicDelegateb01\obj\Debug\net5.0\ref\LearnBasicDelegateb01.dll
