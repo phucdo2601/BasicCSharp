@@ -1,0 +1,11 @@
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\SchoolHrAdminstration\HrAdminstrationApi\bin\Debug\net6.0\HrAdminstrationApi.deps.json
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\SchoolHrAdminstration\HrAdminstrationApi\bin\Debug\net6.0\HrAdminstrationApi.dll
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\SchoolHrAdminstration\HrAdminstrationApi\bin\Debug\net6.0\HrAdminstrationApi.pdb
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\SchoolHrAdminstration\HrAdminstrationApi\obj\Debug\net6.0\HrAdminstrationApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\SchoolHrAdminstration\HrAdminstrationApi\obj\Debug\net6.0\HrAdminstrationApi.AssemblyInfoInputs.cache
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\SchoolHrAdminstration\HrAdminstrationApi\obj\Debug\net6.0\HrAdminstrationApi.AssemblyInfo.cs
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\SchoolHrAdminstration\HrAdminstrationApi\obj\Debug\net6.0\HrAdminstrationApi.csproj.CoreCompileInputs.cache
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\SchoolHrAdminstration\HrAdminstrationApi\obj\Debug\net6.0\HrAdminstrationApi.dll
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\SchoolHrAdminstration\HrAdminstrationApi\obj\Debug\net6.0\refint\HrAdminstrationApi.dll
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\SchoolHrAdminstration\HrAdminstrationApi\obj\Debug\net6.0\HrAdminstrationApi.pdb
+D:\LearnSelf\c#\fundamental\Fundamental\listAdvanceCSharpProB01\SchoolHrAdminstration\HrAdminstrationApi\obj\Debug\net6.0\ref\HrAdminstrationApi.dll
