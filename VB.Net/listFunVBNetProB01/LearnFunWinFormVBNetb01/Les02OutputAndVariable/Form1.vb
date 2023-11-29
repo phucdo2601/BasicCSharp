@@ -25,4 +25,28 @@
         MsgBox("2nd Mess Hello world and welcome there, " & sFirstName & " " & sLastName & ". I am hero")
 
     End Sub
+
+    Private Sub btnDataType_Click(sender As Object, e As EventArgs) Handles btnDataType.Click
+        Dim stMake As String
+        Dim stModel As String
+        Dim iDoors As Integer
+        Dim stColour As String
+        Dim bTaxed As Boolean
+        Dim iEngineSize As Integer
+        Dim decPrice As Decimal
+        Dim dtDateRegistered As Date
+
+        stMake = "test-make-b01"
+        stModel = "test-model-b01"
+        iDoors = 3
+        stColour = "test-color-b01"
+        bTaxed = True
+        iEngineSize = 134
+        decPrice = 8888.88
+        dtDateRegistered = #4/23/2022#
+
+        MsgBox(dtDateRegistered)
+        MsgBox(dtDateRegistered & vbNewLine & stMake & vbNewLine & decPrice)
+
+    End Sub
 End Class

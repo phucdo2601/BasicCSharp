@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.btnGo = New System.Windows.Forms.Button()
         Me.btnVariable = New System.Windows.Forms.Button()
+        Me.btnDataType = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnGo
@@ -44,11 +45,22 @@ Partial Class Form1
         Me.btnVariable.Text = "Variable Docs"
         Me.btnVariable.UseVisualStyleBackColor = True
         '
+        'btnDataType
+        '
+        Me.btnDataType.Location = New System.Drawing.Point(70, 225)
+        Me.btnDataType.Name = "btnDataType"
+        Me.btnDataType.Size = New System.Drawing.Size(238, 103)
+        Me.btnDataType.TabIndex = 2
+        Me.btnDataType.Text = "Data Type"
+        Me.btnDataType.UseMnemonic = False
+        Me.btnDataType.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnDataType)
         Me.Controls.Add(Me.btnVariable)
         Me.Controls.Add(Me.btnGo)
         Me.Name = "Form1"
@@ -59,4 +71,5 @@ Partial Class Form1
 
     Friend WithEvents btnGo As Button
     Friend WithEvents btnVariable As Button
+    Friend WithEvents btnDataType As Button
 End Class
