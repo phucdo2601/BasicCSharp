@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+
+  sql-server-db:
+    container_name: learn-net8-ecweb-mvc-b01
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - "1436:1433"
+    environment:
+      SA_PASSWORD: "12345678@Abc"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - learn-net8-ecweb-mvc-b01:/var/lib/mssql/data
+
+volumes:
+  learn-net8-ecweb-mvc-b01:
