@@ -1,7 +1,13 @@
+using LearnNet8EcomerceMVCB01.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Adding DBContext Service
+builder.Services.AddDbContext<Hshop2023Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DBConnection")));
 
 var app = builder.Build();
 

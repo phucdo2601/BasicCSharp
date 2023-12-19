@@ -1,0 +1,3 @@
+Câu lệnh để chạy scaffold existed database(Câu lệnh này có thể dùng khi mssql set up khác port 1433 và mssql đc set up trên docker container): Scaffold-DbContext 'server=localhost,1436;user=sa;password=12345678@Abc;database=Hshop2023;Encrypt=false' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+Câu lệnh để chạy để kết nối đến existed database(Câu lệnh này có thể dùng khi mssql set up khác port 1433 và mssql đc set up trên docker container):"DBConnection": "Server=localhost,1436; Database=Hshop2023; user=sa;password=12345678@Abc; Encrypt=false"
