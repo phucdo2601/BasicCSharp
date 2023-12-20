@@ -13,6 +13,17 @@ builder.Services.AddDbContext<Hshop2023Context>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DBConnection"));
 });
+/**
+ * Add Session Config
+ */
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromDays(10);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
 
@@ -28,6 +39,11 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+/**
+ * Using Session
+ */
+app.UseSession();
 
 app.UseAuthorization();
 
