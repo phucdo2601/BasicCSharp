@@ -1,5 +1,6 @@
 using LearnNet8ShoppingWebMVCB01.Data;
 using LearnNet8ShoppingWebMVCB01.Helpers;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +30,16 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromDays(10);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
+});
+
+/**
+ * Add config authentication
+ */
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+{
+    options.LoginPath = "/KhachHang/DangNhap";
+    options.AccessDeniedPath = "/AccessDenied";
+
 });
 
 var app = builder.Build();
