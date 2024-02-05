@@ -1,4 +1,5 @@
 using LearnNet8ShoppingWebMVCB01.Data;
+using LearnNet8ShoppingWebMVCB01.Helpers;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,11 @@ builder.Services.AddDbContext<Hshop2023Context>(options =>
  * Add Session Config
  */
 builder.Services.AddDistributedMemoryCache();
+
+/**
+ * Add autoMapper config
+ */
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 builder.Services.AddSession(options =>
 {

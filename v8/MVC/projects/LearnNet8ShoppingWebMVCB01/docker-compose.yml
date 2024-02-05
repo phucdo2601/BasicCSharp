@@ -11,6 +11,7 @@ services:
       ACCEPT_EULA: "Y"
     volumes:
       - learn-net8-shoppingweb-mvc-b01:/var/lib/mssql/data
+    network_mode: bridge
 
 volumes:
   learn-net8-shoppingweb-mvc-b01:

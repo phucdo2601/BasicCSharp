@@ -11,6 +11,7 @@ namespace LearnNet8ShoppingWebMVCB01.ViewModels
 
         [Display(Name = "Mật khẩu")]
         [Required(ErrorMessage ="*")]
+        [DataType(DataType.Password)]
         public string? MatKhau { get; set; }
 
         [Display(Name = "Họ Tên")]
@@ -19,10 +20,15 @@ namespace LearnNet8ShoppingWebMVCB01.ViewModels
 
         public bool GioiTinh { get; set; } = true;
 
+        [Display(Name = "Ngày Sinh")]
+        [DataType(DataType.Date)]
         public DateTime? NgaySinh { get; set; }
 
+        [Display(Name = "Địa chỉ")]
         [MaxLength(60, ErrorMessage = "Tối đa 60 kí tự")]
         public string DiaChi { get; set; }
+
+        [Display(Name = "Điện Thoại")]
 
         [MaxLength(24, ErrorMessage = "Tối đa 24 kí tự")]
         [RegularExpression(@"0[9875]\d{8}", ErrorMessage = "Chưa đúng định dạng di động việt nam")]
