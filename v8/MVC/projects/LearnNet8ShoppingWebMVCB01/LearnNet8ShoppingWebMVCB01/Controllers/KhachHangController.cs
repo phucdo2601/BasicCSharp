@@ -2,6 +2,9 @@
 using LearnNet8ShoppingWebMVCB01.Data;
 using LearnNet8ShoppingWebMVCB01.Helpers;
 using LearnNet8ShoppingWebMVCB01.ViewModels;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -75,7 +78,7 @@ namespace LearnNet8ShoppingWebMVCB01.Controllers
         }
 
         [HttpPost]
-        public IActionResult DangNhap(LoginVM model, string? ReturnUrl)
+        public async Task<IActionResult> DangNhap(LoginVM model, string? ReturnUrl)
         {
 			ViewBag.ReturnUrl = ReturnUrl;
 
@@ -102,8 +105,28 @@ namespace LearnNet8ShoppingWebMVCB01.Controllers
                         {
                             var claims = new List<Claim>
                             {
-                                
+                                new Claim(ClaimTypes.Email, khachHang.Email),
+                                new Claim(ClaimTypes.Name, khachHang.HoTen),
+                                new Claim("CustomerId", khachHang.MaKh),
+
+                                //Claim - role dynamic
+
+                                new Claim(ClaimTypes.Role, "Customer")
                             };
+
+                            var claimIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                            var claimsPrincipal = new ClaimsPrincipal(claimIdentity);
+
+                            await HttpContext.SignInAsync(claimsPrincipal);
+
+                            if (Url.IsLocalUrl(ReturnUrl))
+                            {
+                                return Redirect(ReturnUrl);
+                            } else
+                            {
+                                return Redirect("/");
+                            }
+
                         }
                     }
                 }
@@ -111,7 +134,21 @@ namespace LearnNet8ShoppingWebMVCB01.Controllers
 			return View();
 		}
 
-		#endregion
+        #endregion
 
-	}
+        [Authorize]
+        public IActionResult Profile()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public async Task<IActionResult> DangXuat()
+        {
+            await HttpContext.SignOutAsync();
+
+            return Redirect("/");
+        }
+
+    }
 }

@@ -62,6 +62,11 @@ app.UseRouting();
  */
 app.UseSession();
 
+/**
+ * Use Authentication
+ */
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(

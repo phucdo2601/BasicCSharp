@@ -22,13 +22,17 @@ namespace LearnNet8ShoppingWebMVCB01.Helpers
 		{
 			try
 			{
-				var fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", folder, Hinh.FileName);
+				var currentTimeStamp = DateTime.Now.ToFileTime();
+
+				var fileName = Hinh.FileName.Split(".")[0] + "-" + currentTimeStamp + "."+ Hinh.FileName.Split(".")[1];
+
+                var fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", folder, fileName);
 				using (var myFile = new FileStream(fullPath, FileMode.CreateNew))
 				{
 					Hinh.CopyTo(myFile);
 				}
 
-				return Hinh.FileName;
+				return fileName;
 			}
 			catch (Exception ex)
 			{
