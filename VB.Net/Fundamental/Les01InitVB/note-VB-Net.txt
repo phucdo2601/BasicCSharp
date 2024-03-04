@@ -1,0 +1,10 @@
+﻿we created a Visual Basic module that held the code. Sub Main indicates the entry point of VB.Net program. Here, we are using Class that contains both code and data. You use classes to create objects. For example, in the code, r is a Rectangle object.
+		An object is an instance of a class −
+
+Dim r As New Rectangle()
+
+A class may have members that can be accessible from outside class, if so specified. Data members are called fields and procedure members are called methods.
+
+Shared methods or static methods can be invoked without creating an object of the class. Instance methods are invoked through an object of the class
+	
+		** Shared methods are similar to shared fields and properties in the fact that they are not actions performed on an object, but rather actions performed on the class level that do not require the existence of an object.

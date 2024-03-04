@@ -5,6 +5,13 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Les01InitVB", "Les01InitVB\Les01InitVB.vbproj", "{CC9BB60B-0B1F-48BC-A872-37787D912464}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Les02BasicSyntax", "Les02BasicSyntax\Les02BasicSyntax.vbproj", "{2A61F0A2-7325-4374-9D15-2A046948F80A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2C949C0E-0FB4-46D9-8FDD-BF61D5C1F554}"
+	ProjectSection(SolutionItems) = preProject
+		note-VB-Net.txt = note-VB-Net.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{CC9BB60B-0B1F-48BC-A872-37787D912464}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC9BB60B-0B1F-48BC-A872-37787D912464}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC9BB60B-0B1F-48BC-A872-37787D912464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A61F0A2-7325-4374-9D15-2A046948F80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A61F0A2-7325-4374-9D15-2A046948F80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A61F0A2-7325-4374-9D15-2A046948F80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A61F0A2-7325-4374-9D15-2A046948F80A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
