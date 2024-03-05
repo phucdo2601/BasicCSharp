@@ -8,3 +8,41 @@ A class may have members that can be accessible from outside class, if so specif
 Shared methods or static methods can be invoked without creating an object of the class. Instance methods are invoked through an object of the class
 	
 		** Shared methods are similar to shared fields and properties in the fact that they are not actions performed on an object, but rather actions performed on the class level that do not require the existence of an object.
+
+
+Data types refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted.
+
+Data Types Available in VB.Net
+VB.Net provides a wide range of data types. The following table shows all the data types available −
+
+Data Type	Storage Allocation	Value Range
+Boolean	Depends on implementing platform	True or False
+Byte	1 byte	0 through 255 (unsigned)
+Char	2 bytes	0 through 65535 (unsigned)
+Date	8 bytes	0:00:00 (midnight) on January 1, 0001 through 11:59:59 PM on December 31, 9999
+Decimal	16 bytes	0 through +/-79,228,162,514,264,337,593,543,950,335 (+/-7.9...E+28) with no decimal point; 0 through +/-7.9228162514264337593543950335 with 28 places to the right of the decimal
+Double	8 bytes	
+-1.79769313486231570E+308 through -4.94065645841246544E-324, for negative values
+
+4.94065645841246544E-324 through 1.79769313486231570E+308, for positive values
+
+Integer	4 bytes	-2,147,483,648 through 2,147,483,647 (signed)
+Long	8 bytes	-9,223,372,036,854,775,808 through 9,223,372,036,854,775,807(signed)
+Object	
+4 bytes on 32-bit platform
+
+8 bytes on 64-bit platform
+
+Any type can be stored in a variable of type Object
+SByte	1 byte	-128 through 127 (signed)
+Short	2 bytes	-32,768 through 32,767 (signed)
+Single	4 bytes	
+-3.4028235E+38 through -1.401298E-45 for negative values;
+
+1.401298E-45 through 3.4028235E+38 for positive values
+
+String	Depends on implementing platform	0 to approximately 2 billion Unicode characters
+UInteger	4 bytes	0 through 4,294,967,295 (unsigned)
+ULong	8 bytes	0 through 18,446,744,073,709,551,615 (unsigned)
+User-Defined	Depends on implementing platform	Each member of the structure has a range determined by its data type and independent of the ranges of the other members
+UShort	2 bytes	0 through 65,535 (unsigned)

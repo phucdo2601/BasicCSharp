@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		note-VB-Net.txt = note-VB-Net.txt
 	EndProjectSection
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Les03DataType", "Les03DataType\Les03DataType.vbproj", "{5E9AAB5A-A540-4200-B80C-FA21E2E1B7B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{2A61F0A2-7325-4374-9D15-2A046948F80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A61F0A2-7325-4374-9D15-2A046948F80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A61F0A2-7325-4374-9D15-2A046948F80A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9AAB5A-A540-4200-B80C-FA21E2E1B7B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9AAB5A-A540-4200-B80C-FA21E2E1B7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9AAB5A-A540-4200-B80C-FA21E2E1B7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9AAB5A-A540-4200-B80C-FA21E2E1B7B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
