@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  p-net7-web-api-pro-2024-b01-dev-db:
+    container_name: p-net7-web-api-pro-2024-b01-dev-db
+    image: postgres:16.3
+    restart: always
+    ports:
+      - 5337:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345678
+      POSTGRES_DB: p-net7-web-api-pro-2024-b01-dev-db
+
+    volumes:
+      - p-net7-web-api-pro-2024-b01-dev-db:/var/lib/postgresql/data
+
+volumes:
+  p-net7-web-api-pro-2024-b01-dev-db:

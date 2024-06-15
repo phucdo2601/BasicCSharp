@@ -51,9 +51,9 @@ public partial class Hshop2023Context : DbContext
 
     public virtual DbSet<YeuThich> YeuThiches { get; set; }
 
-    /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("server=localhost,1436;user=sa;password=12345678@Abc;database=Hshop2023;Encrypt=false");*/
+        => optionsBuilder.UseSqlServer("Server=localhost,1436; Database=Hshop2023; user=sa;password=12345678@Abc; Encrypt=false");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -210,6 +210,7 @@ public partial class Hshop2023Context : DbContext
             entity.Property(e => e.NgayGiao)
                 .HasDefaultValueSql("(((1)/(1))/(1900))")
                 .HasColumnType("datetime");
+            entity.Property(e => e.SoDienThoai).HasMaxLength(24);
 
             entity.HasOne(d => d.MaKhNavigation).WithMany(p => p.HoaDons)
                 .HasForeignKey(d => d.MaKh)

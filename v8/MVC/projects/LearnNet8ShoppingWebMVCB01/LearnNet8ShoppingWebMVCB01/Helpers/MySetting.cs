@@ -3,5 +3,7 @@
     public class MySetting
     {
         public const string CART_KEY = "MYCART";
+
+        public static string CLAIM_CUSTOMER_ID = "CustomerId";
     }
 }
