@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using PracNet7ApiProB01.Model.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,29 +10,49 @@ namespace PracNet7ApiProB01.Model.Infrastructures
 {
     public abstract class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        public T CreateNew(T entity)
+        private readonly PracNet7ApiDbContext _context;
+
+        protected GenericRepository(PracNet7ApiDbContext _context)
         {
-            throw new NotImplementedException();
+            this._context = _context;
         }
 
+        #region CreateNew
+        public void CreateNew(T entity)
+        {
+            _context.Set<T>().Add(entity);
+        }
+        #endregion
+
+        #region Delete
         public void Delete(T entity)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Remove(entity);
         }
+        #endregion
 
+        #region FindAll
         public IQueryable<T> FindAll()
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().AsNoTracking();
         }
+        #endregion
 
-        public IQueryable<T> FindById(string id)
-        {
-            throw new NotImplementedException();
-        }
 
-        public T Update(T entity)
+        #region FindById
+        public T FindById(string id)
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().Find(id);
         }
+        #endregion
+
+
+        #region Update
+        public void Update(T entity)
+        {
+            _context.Set<T>().Remove(entity);
+        }
+        #endregion
+
     }
 }

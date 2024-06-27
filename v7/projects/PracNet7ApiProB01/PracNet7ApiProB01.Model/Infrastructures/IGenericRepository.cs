@@ -13,15 +13,15 @@ namespace PracNet7ApiProB01.Model.Infrastructures
         #endregion
 
         #region Find by id
-        IQueryable<T> FindById(string id);
+        T FindById(string id);
         #endregion
 
         #region Create new
-        T CreateNew(T entity);
+        void CreateNew(T entity);
         #endregion
 
         #region Update 
-        T Update(T entity);
+        void Update(T entity);
         #endregion
 
         #region Delete
