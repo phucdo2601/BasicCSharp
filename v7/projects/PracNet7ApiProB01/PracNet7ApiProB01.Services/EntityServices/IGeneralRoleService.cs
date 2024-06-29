@@ -1,0 +1,29 @@
+﻿using PracNet7ApiProB01.Dto.Dtos.GeneralRole;
+using PracNet7ApiProB01.Model.Entities;
+using PracNet7ApiProB01.Model.Infrastructures;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PracNet7ApiProB01.Services.EntityServices
+{
+    public interface IGeneralRoleService : IGenericService<GeneralRole>
+    {
+
+        #region CreateNewGenRole
+        GeneralRole CreateNewGenRole(CreateGeneralRoleReqDro model);
+        #endregion
+
+        #region UpdateGenRole
+        GeneralRole UpdateGenRole(string genRoleId, UpdateGenRoleReqDto model);
+
+        #endregion
+
+        #region Delete Gen Role
+        int DeleteGenRole(string genRoleId);
+
+        #endregion
+    }
+}

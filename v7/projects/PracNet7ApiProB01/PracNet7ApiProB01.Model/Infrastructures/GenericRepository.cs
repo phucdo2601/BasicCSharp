@@ -3,6 +3,7 @@ using PracNet7ApiProB01.Model.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,9 +39,16 @@ namespace PracNet7ApiProB01.Model.Infrastructures
         }
         #endregion
 
+        #region FindByCondition
+        public IQueryable<T> FindByCondition(Expression<Func<T, bool>> predicate)
+        {
+            return _context.Set<T>().AsNoTracking().Where(predicate);
+        }
+        #endregion
+
 
         #region FindById
-        public T FindById(string id)
+        public T FindById(Guid id)
         {
             return _context.Set<T>().Find(id);
         }
@@ -50,7 +58,7 @@ namespace PracNet7ApiProB01.Model.Infrastructures
         #region Update
         public void Update(T entity)
         {
-            _context.Set<T>().Remove(entity);
+            _context.Set<T>().Update(entity);
         }
         #endregion
 
