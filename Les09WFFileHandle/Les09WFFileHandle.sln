@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Les09WFFileHandle", "Les09WFFileHandle\Les09WFFileHandle.vbproj", "{798BC229-7427-45DC-8360-1957883B60B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{798BC229-7427-45DC-8360-1957883B60B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{798BC229-7427-45DC-8360-1957883B60B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{798BC229-7427-45DC-8360-1957883B60B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{798BC229-7427-45DC-8360-1957883B60B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {200B839D-7552-43FE-B4F0-A8131506B895}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\TuHocLapTrinh\\csharp\\VisualBasic\\Fundamental\\listFunVBNetProB01\\Les09WFFileHandle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{798BC229-7427-45DC-8360-1957883B60B8}|Les09WFFileHandle\\Les09WFFileHandle.vbproj|d:\\tuhoclaptrinh\\csharp\\visualbasic\\fundamental\\listfunvbnetprob01\\les09wffilehandle\\les09wffilehandle\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{798BC229-7427-45DC-8360-1957883B60B8}|Les09WFFileHandle\\Les09WFFileHandle.vbproj|solutionrelative:les09wffilehandle\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{798BC229-7427-45DC-8360-1957883B60B8}|Les09WFFileHandle\\Les09WFFileHandle.vbproj|d:\\tuhoclaptrinh\\csharp\\visualbasic\\fundamental\\listfunvbnetprob01\\les09wffilehandle\\les09wffilehandle\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{798BC229-7427-45DC-8360-1957883B60B8}|Les09WFFileHandle\\Les09WFFileHandle.vbproj|solutionrelative:les09wffilehandle\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "D:\\TuHocLapTrinh\\csharp\\VisualBasic\\Fundamental\\listFunVBNetProB01\\Les09WFFileHandle\\Les09WFFileHandle\\Form1.vb",
+              "RelativeDocumentMoniker": "Les09WFFileHandle\\Form1.vb",
+              "ToolTip": "D:\\TuHocLapTrinh\\csharp\\VisualBasic\\Fundamental\\listFunVBNetProB01\\Les09WFFileHandle\\Les09WFFileHandle\\Form1.vb",
+              "RelativeToolTip": "Les09WFFileHandle\\Form1.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-30T09:27:15.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "D:\\TuHocLapTrinh\\csharp\\VisualBasic\\Fundamental\\listFunVBNetProB01\\Les09WFFileHandle\\Les09WFFileHandle\\Form1.vb",
+              "RelativeDocumentMoniker": "Les09WFFileHandle\\Form1.vb",
+              "ToolTip": "D:\\TuHocLapTrinh\\csharp\\VisualBasic\\Fundamental\\listFunVBNetProB01\\Les09WFFileHandle\\Les09WFFileHandle\\Form1.vb [Design]",
+              "RelativeToolTip": "Les09WFFileHandle\\Form1.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-30T09:06:53.853Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
