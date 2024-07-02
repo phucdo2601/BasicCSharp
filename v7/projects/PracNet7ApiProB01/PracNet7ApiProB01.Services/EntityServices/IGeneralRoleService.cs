@@ -13,11 +13,11 @@ namespace PracNet7ApiProB01.Services.EntityServices
     {
 
         #region CreateNewGenRole
-        GeneralRole CreateNewGenRole(CreateGeneralRoleReqDro model);
+        Task<object> CreateNewGenRole(CreateGeneralRoleReqDro model);
         #endregion
 
         #region UpdateGenRole
-        GeneralRole UpdateGenRole(string genRoleId, UpdateGenRoleReqDto model);
+        Task<object> UpdateGenRole(string genRoleId, UpdateGenRoleReqDto model);
 
         #endregion
 

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PracNet7ApiProB01.Dto.Dtos.GeneralRole;
+using PracNet7ApiProB01.Dto.Dtos.Responses;
 using PracNet7ApiProB01.Model.Entities;
 using PracNet7ApiProB01.Model.Infrastructures;
 using PracNet7ApiProB01.Model.Repositories;
@@ -52,20 +53,47 @@ namespace PracNet7ApiProB01.Controllers
         [HttpPost("createNewGenRole")]
         public async Task<IActionResult> CreateNewGenRole([FromBody] CreateGeneralRoleReqDro generalRoleRequest)
         {
-            GeneralRole created = _genRoleService.CreateNewGenRole(generalRoleRequest);
-            return created != null ? await Task.FromResult(StatusCode(StatusCodes.Status200OK, created))
-                    : await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = "Create General Role is not successfully" }));
+
+            CommonResponseDto<GeneralRole> created = (CommonResponseDto<GeneralRole>)await _genRoleService.CreateNewGenRole(generalRoleRequest);
+            if (created.Data != null)
+            {
+                created.StatusCode = StatusCodes.Status201Created;
+                return await Task.FromResult(StatusCode(StatusCodes.Status201Created, new
+                {
+                    StatusCode = StatusCodes.Status201Created,
+                    ResponseModel = created
+                }));
+            }
+            else
+            {
+                created.StatusCode = StatusCodes.Status400BadRequest;
+                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, ResponseModel = created }));
+            }
         }
 
-        #endregion
 
-        #region Update General Role By Id
-        [HttpPut("updateGenRole/{genRoleId}")]
+            #endregion
+
+            #region Update General Role By Id
+            [HttpPut("updateGenRole/{genRoleId}")]
         public async Task<IActionResult> UpdateGenCodeById([FromRoute(Name =  "genRoleId")] string id, [FromBody] UpdateGenRoleReqDto model)
         {
-            GeneralRole updated = _genRoleService.UpdateGenRole(id, model);
-            return updated != null ? await Task.FromResult(StatusCode(StatusCodes.Status200OK, updated))
-                    : await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = "Updated General Role is not successfully" }));
+            CommonResponseDto<GeneralRole> updated = (CommonResponseDto<GeneralRole>) await _genRoleService.UpdateGenRole(id, model);
+
+            if (updated.Data != null)
+            {
+                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, new
+                {
+                    StatusCode = StatusCodes.Status201Created,
+                    ResponseModel = updated
+                }));
+            }
+            else
+            {
+                updated.StatusCode = StatusCodes.Status400BadRequest;
+                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, ResponseModel = updated }));
+            }
+            
         }
 
         #endregion

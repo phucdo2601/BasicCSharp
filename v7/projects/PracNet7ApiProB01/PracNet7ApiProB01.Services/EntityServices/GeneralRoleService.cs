@@ -1,9 +1,11 @@
 ﻿using PracNet7ApiProB01.Dto.Dtos.GeneralRole;
+using PracNet7ApiProB01.Dto.Dtos.Responses;
 using PracNet7ApiProB01.Model.Entities;
 using PracNet7ApiProB01.Model.Infrastructures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,7 +31,7 @@ namespace PracNet7ApiProB01.Services.EntityServices
         /// <param name="model"></param>
         /// <returns></returns>
         /// <author>Phucdn</author>
-        public GeneralRole CreateNewGenRole(CreateGeneralRoleReqDro model)
+        public async Task<object> CreateNewGenRole(CreateGeneralRoleReqDro model)
         {
             using (var transaction = _context.Database.BeginTransaction())
             {
@@ -38,14 +40,22 @@ namespace PracNet7ApiProB01.Services.EntityServices
                     var genRoleCode = _unitOfWork.GeneralRoleRepository.FindByCondition(e => e.GenRoleCode.Equals(model.GenRoleCode)).FirstOrDefault();
                     if (genRoleCode != null)
                     {
-                        throw new Exception($"General Code '{genRoleCode}' already existed");
+                        return await Task.FromResult(new CommonResponseDto<GeneralRole>
+                        {
+                            Status = HttpStatusCode.BadRequest.ToString(),
+                            Message = $"General Code '{genRoleCode.GenRoleCode}' already existed",
+                        });
                     }
 
                     var genRoleTitle = _unitOfWork.GeneralRoleRepository.FindByCondition(e => e.GenRoleTitle.Equals(model.GenRoleTitle)).FirstOrDefault();
 
                     if (genRoleTitle != null)
                     {
-                        throw new Exception($"General Title '{genRoleTitle}' already existed");
+                        return await Task.FromResult(new CommonResponseDto<GeneralRole>
+                        {
+                            Status = HttpStatusCode.BadRequest.ToString(),
+                            Message = $"General Title '{genRoleTitle.GenRoleTitle}' already existed",
+                        });
                     }
 
                     var Id = Guid.NewGuid();
@@ -62,7 +72,12 @@ namespace PracNet7ApiProB01.Services.EntityServices
                     transaction.Commit();
 
                     var genCodeCreated = _repository.FindById(Id);
-                    return generalRole;
+                    return await Task.FromResult(new CommonResponseDto<GeneralRole>
+                    {
+                        Status = HttpStatusCode.Created.ToString(),
+                        Message = $"Add general role successfully!",
+                        Data = genCodeCreated,
+                    });
 
                 }
                 catch (Exception)
@@ -114,7 +129,7 @@ namespace PracNet7ApiProB01.Services.EntityServices
         /// <param name="model"></param>
         /// <returns></returns>
         /// <author>Phucdn</author>
-        public GeneralRole UpdateGenRole(string genRoleId, UpdateGenRoleReqDto model)
+        public async Task<object> UpdateGenRole(string genRoleId, UpdateGenRoleReqDto model)
         {
             using (var transaction = _context.Database.BeginTransaction())
             {
@@ -124,14 +139,22 @@ namespace PracNet7ApiProB01.Services.EntityServices
 
                     if (!genRoleUuid.Equals(model.Id))
                     {
-                        throw new Exception($"Id in update model and id param does not match");
+                        return await Task.FromResult(new CommonResponseDto<GeneralRole>
+                        {
+                            Status = HttpStatusCode.BadRequest.ToString(),
+                            Message = $"Id in update model and id param does not match"
+                        });
                     }
 
                     var genRole = _unitOfWork.GeneralRoleRepository.FindById(genRoleUuid);
 
                     if (genRole == null)
                     {
-                        throw new Exception($"General Code does not existed");
+                        return await Task.FromResult(new CommonResponseDto<GeneralRole>
+                        {
+                            Status = HttpStatusCode.BadRequest.ToString(),
+                            Message = $"General Code does not existed"
+                        });
                     } else
                     {
                         if (genRole.GenRoleCode.Equals(model.GenRoleCode) && genRole.GenRoleTitle.Equals(model.GenRoleTitle))
@@ -143,14 +166,22 @@ namespace PracNet7ApiProB01.Services.EntityServices
                             var genRoleCode = _unitOfWork.GeneralRoleRepository.FindByCondition(e => e.GenRoleCode.Equals(model.GenRoleCode)).FirstOrDefault();
                             if (genRoleCode != null)
                             {
-                                throw new Exception($"General Code '{genRoleCode.GenRoleCode}' already existed");
+                                return await Task.FromResult(new CommonResponseDto<GeneralRole>
+                                {
+                                    Status = HttpStatusCode.BadRequest.ToString(),
+                                    Message = $"General Code '{genRoleCode.GenRoleCode}' already existed"
+                                });
                             }
 
                             var genRoleTitle = _unitOfWork.GeneralRoleRepository.FindByCondition(e => e.GenRoleTitle.Equals(model.GenRoleTitle)).FirstOrDefault();
 
                             if (genRoleTitle != null)
                             {
-                                throw new Exception($"General Title '{genRoleTitle.GenRoleTitle}' already existed");
+                                return await Task.FromResult(new CommonResponseDto<GeneralRole>
+                                {
+                                    Status = HttpStatusCode.BadRequest.ToString(),
+                                    Message = $"General Title '{genRoleTitle.GenRoleTitle}' already existed"
+                                });
                             }
 
                             genRole.GenRoleTitle = model.GenRoleTitle;
@@ -158,16 +189,17 @@ namespace PracNet7ApiProB01.Services.EntityServices
                         }
                     }
 
-                    
-
-                    
-
                     _unitOfWork.GeneralRoleRepository.Update(genRole);
                     int updated = _unitOfWork.Save();
                     transaction.Commit();
 
                     var genCodeUpdated = _repository.FindById(genRoleUuid);
-                    return genCodeUpdated;
+                    return await Task.FromResult(new CommonResponseDto<GeneralRole>
+                    {
+                        Status = HttpStatusCode.Created.ToString(),
+                        Message = $"Add general role successfully!",
+                        Data = genCodeUpdated,
+                    });
                 }
                 catch (Exception)
                 {
