@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PracNet7ApiProB01.Model.Repositories
+namespace PracNet7ApiProB01.Services.EntityServices.GeneralUserInfoService
 {
-    public interface IGeneralRoleRepository: IGenericRepository<GeneralRole>
+    public interface IGeneralUserInfoService : IGenericService<GeneralUserInfo>
     {
-
+        
     }
 }

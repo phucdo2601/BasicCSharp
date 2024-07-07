@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using PracNet7ApiProB01.Dto.Dtos.GeneralRole;
 using PracNet7ApiProB01.Dto.Dtos.Responses;
 using PracNet7ApiProB01.Model.Entities;
 using PracNet7ApiProB01.Model.Infrastructures;
-using PracNet7ApiProB01.Model.Repositories;
-using PracNet7ApiProB01.Services.EntityServices;
+using PracNet7ApiProB01.Model.Repositories.GeneralRoleRepository;
+using PracNet7ApiProB01.Services.EntityServices.GeneralRoleService;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace PracNet7ApiProB01.Controllers
 {
@@ -98,17 +97,31 @@ namespace PracNet7ApiProB01.Controllers
 
         #endregion
 
-        #region
+        #region DeleteGenRole by Id 
         [HttpDelete("deleteGenRole/{genRoleId}")]
         public async Task<IActionResult> DeleteGenRole([FromRoute(Name = "genRoleId")] string id)
         {
-            int deleted = _genRoleService.DeleteGenRole(id);
-            return deleted != 0 ? await Task.FromResult(StatusCode(StatusCodes.Status200OK, new
+            CommonResponseDto<GeneralRole> deleted = (CommonResponseDto < GeneralRole >) await _genRoleService.DeleteGenRole(id);
+            /*return deleted != 0 ? await Task.FromResult(StatusCode(StatusCodes.Status200OK, new
             {
                 StatusCode = StatusCodes.Status200OK,
                 Message = "Deletes General Role is successfully!"
             }))
-                    : await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = "Delete General Role is not successfully" }));
+                    : await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = "Delete General Role is not successfully" }));*/
+
+            if (deleted.StatusCode == StatusCodes.Status200OK)
+            {
+                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, new
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    Message = "Deletes General Role is successfully!"
+                }));
+            }
+            else
+            {
+                deleted.StatusCode = StatusCodes.Status400BadRequest;
+                return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, ResponseModel = deleted }));
+            }
         }
         #endregion
 

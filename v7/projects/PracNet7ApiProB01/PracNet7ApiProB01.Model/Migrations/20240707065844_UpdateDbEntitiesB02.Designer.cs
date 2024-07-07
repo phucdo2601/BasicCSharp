@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using PracNet7ApiProB01.Model.Entities;
@@ -11,9 +12,11 @@ using PracNet7ApiProB01.Model.Entities;
 namespace PracNet7ApiProB01.Model.Migrations
 {
     [DbContext(typeof(PracNet7ApiDbContext))]
-    partial class PracNet7ApiDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240707065844_UpdateDbEntitiesB02")]
+    partial class UpdateDbEntitiesB02
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,7 +41,7 @@ namespace PracNet7ApiProB01.Model.Migrations
                     b.Property<Guid>("GenUserInfoId")
                         .HasColumnType("uuid");
 
-                    b.Property<DateTime?>("LastPurchaseDate")
+                    b.Property<DateTime>("LastPurchaseDate")
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
@@ -81,10 +84,10 @@ namespace PracNet7ApiProB01.Model.Migrations
                     b.Property<DateTime>("DateOfBirth")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime?>("DateOfCreate")
+                    b.Property<DateTime>("DateOfCreate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime?>("DateOfUpdate")
+                    b.Property<DateTime>("DateOfUpdate")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Email")
@@ -134,10 +137,10 @@ namespace PracNet7ApiProB01.Model.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<DateTime?>("DateOfCreate")
+                    b.Property<DateTime>("DateOfCreate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime?>("DateOfUpdate")
+                    b.Property<DateTime>("DateOfUpdate")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
@@ -184,10 +187,10 @@ namespace PracNet7ApiProB01.Model.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime?>("DateOfCreate")
+                    b.Property<DateTime>("DateOfCreate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime?>("DateOfUpdate")
+                    b.Property<DateTime>("DateOfUpdate")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")

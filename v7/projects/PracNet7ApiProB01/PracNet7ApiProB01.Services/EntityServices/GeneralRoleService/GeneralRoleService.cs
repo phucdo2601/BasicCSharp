@@ -3,13 +3,10 @@ using PracNet7ApiProB01.Dto.Dtos.Responses;
 using PracNet7ApiProB01.Model.Entities;
 using PracNet7ApiProB01.Model.Infrastructures;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace PracNet7ApiProB01.Services.EntityServices
+namespace PracNet7ApiProB01.Services.EntityServices.GeneralRoleService
 {
     public class GeneralRoleService : GenericService<GeneralRole>, IGeneralRoleService
     {
@@ -89,7 +86,7 @@ namespace PracNet7ApiProB01.Services.EntityServices
             }
         }
 
-        public int DeleteGenRole(string genRoleId)
+        public async Task<object> DeleteGenRole(string genRoleId)
         {
             using (var transaction = _context.Database.BeginTransaction())
             {
@@ -99,19 +96,28 @@ namespace PracNet7ApiProB01.Services.EntityServices
                     var genRole = _unitOfWork.GeneralRoleRepository.FindById(genRoleUuid);
                     if (genRole == null)
                     {
-                        throw new Exception($"General Code does not existed");
+                        return await Task.FromResult(new CommonResponseDto<GeneralRole>
+                        {
+                            Status = HttpStatusCode.BadRequest.ToString(),
+                            Message = $"General Code does not existed"
+                        });
                     }
                     else
                     {
                         _unitOfWork.GeneralRoleRepository.Delete(genRole);
                         int deleted = _unitOfWork.Save();
                         transaction.Commit();
-                        return deleted;
+                        return await Task.FromResult(new CommonResponseDto<GeneralRole>
+                        {
+                            Status = HttpStatusCode.OK.ToString(),
+                            Message = $"General Role deleted successfully!",
+                            StatusCode = 200,
+                        });
                     }
                 }
                 catch (Exception)
                 {
-
+                    transaction.Rollback();
                     throw;
                 }
                 finally
@@ -155,13 +161,15 @@ namespace PracNet7ApiProB01.Services.EntityServices
                             Status = HttpStatusCode.BadRequest.ToString(),
                             Message = $"General Code does not existed"
                         });
-                    } else
+                    }
+                    else
                     {
                         if (genRole.GenRoleCode.Equals(model.GenRoleCode) && genRole.GenRoleTitle.Equals(model.GenRoleTitle))
                         {
                             genRole.GenRoleTitle = model.GenRoleTitle;
                             genRole.GenRoleCode = model.GenRoleCode;
-                        } else
+                        }
+                        else
                         {
                             var genRoleCode = _unitOfWork.GeneralRoleRepository.FindByCondition(e => e.GenRoleCode.Equals(model.GenRoleCode)).FirstOrDefault();
                             if (genRoleCode != null)
@@ -197,7 +205,7 @@ namespace PracNet7ApiProB01.Services.EntityServices
                     return await Task.FromResult(new CommonResponseDto<GeneralRole>
                     {
                         Status = HttpStatusCode.Created.ToString(),
-                        Message = $"Add general role successfully!",
+                        Message = $"Update general role successfully!",
                         Data = genCodeUpdated,
                     });
                 }

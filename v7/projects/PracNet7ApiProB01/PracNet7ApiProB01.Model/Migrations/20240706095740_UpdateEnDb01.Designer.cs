@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using PracNet7ApiProB01.Model.Entities;
@@ -11,9 +12,11 @@ using PracNet7ApiProB01.Model.Entities;
 namespace PracNet7ApiProB01.Model.Migrations
 {
     [DbContext(typeof(PracNet7ApiDbContext))]
-    partial class PracNet7ApiDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240706095740_UpdateEnDb01")]
+    partial class UpdateEnDb01
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,7 +41,7 @@ namespace PracNet7ApiProB01.Model.Migrations
                     b.Property<Guid>("GenUserInfoId")
                         .HasColumnType("uuid");
 
-                    b.Property<DateTime?>("LastPurchaseDate")
+                    b.Property<DateTime>("LastPurchaseDate")
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
@@ -81,10 +84,10 @@ namespace PracNet7ApiProB01.Model.Migrations
                     b.Property<DateTime>("DateOfBirth")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime?>("DateOfCreate")
+                    b.Property<DateTime>("DateOfCreate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime?>("DateOfUpdate")
+                    b.Property<DateTime>("DateOfUpdate")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Email")
@@ -126,77 +129,6 @@ namespace PracNet7ApiProB01.Model.Migrations
                     b.HasIndex("GenRoleId");
 
                     b.ToTable("general_user_info_tbl");
-                });
-
-            modelBuilder.Entity("PracNet7ApiProB01.Model.Entities.Product", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime?>("DateOfCreate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime?>("DateOfUpdate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<float>("OriginalPrice")
-                        .HasColumnType("real");
-
-                    b.Property<Guid>("ProductBrandId")
-                        .HasColumnType("uuid");
-
-                    b.Property<float>("ProductCode")
-                        .HasColumnType("real");
-
-                    b.Property<float>("ProductName")
-                        .HasColumnType("real");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("StatusId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductBrandId");
-
-                    b.ToTable("Product");
-                });
-
-            modelBuilder.Entity("PracNet7ApiProB01.Model.Entities.ProductBrand", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("BrandCode")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("BrandNName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime?>("DateOfCreate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime?>("DateOfUpdate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ProductBrand");
                 });
 
             modelBuilder.Entity("PracNet7ApiProB01.Model.Entities.Staff", b =>
@@ -270,17 +202,6 @@ namespace PracNet7ApiProB01.Model.Migrations
                     b.Navigation("GeneralRole");
                 });
 
-            modelBuilder.Entity("PracNet7ApiProB01.Model.Entities.Product", b =>
-                {
-                    b.HasOne("PracNet7ApiProB01.Model.Entities.ProductBrand", "ProductBrand")
-                        .WithMany("Products")
-                        .HasForeignKey("ProductBrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ProductBrand");
-                });
-
             modelBuilder.Entity("PracNet7ApiProB01.Model.Entities.Staff", b =>
                 {
                     b.HasOne("PracNet7ApiProB01.Model.Entities.GeneralUserInfo", "GeneralUserInfo")
@@ -312,11 +233,6 @@ namespace PracNet7ApiProB01.Model.Migrations
 
                     b.Navigation("Staff")
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("PracNet7ApiProB01.Model.Entities.ProductBrand", b =>
-                {
-                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("PracNet7ApiProB01.Model.Entities.StaffRole", b =>

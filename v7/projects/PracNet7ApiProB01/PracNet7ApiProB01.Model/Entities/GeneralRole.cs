@@ -16,5 +16,7 @@ namespace PracNet7ApiProB01.Model.Entities
     {
         public string GenRoleCode { get; set; }
         public string GenRoleTitle { get; set; }
+
+        public ICollection<GeneralUserInfo> GeneralUserInfos { get; set; }
     }
 }

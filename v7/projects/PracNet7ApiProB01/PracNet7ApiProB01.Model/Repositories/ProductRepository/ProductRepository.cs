@@ -6,12 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PracNet7ApiProB01.Model.Repositories
+namespace PracNet7ApiProB01.Model.Repositories.ProductRepository
 {
-    public class GeneralRoleRepository : GenericRepository<GeneralRole>, IGeneralRoleRepository
+    public class ProductRepository : GenericRepository<Product>, IProductRepository
     {
         private readonly PracNet7ApiDbContext _context;
-        public GeneralRoleRepository(PracNet7ApiDbContext _context) : base(_context)
+        public ProductRepository(PracNet7ApiDbContext _context) : base(_context)
         {
             this._context = _context;
         }

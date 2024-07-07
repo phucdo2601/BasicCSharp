@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PracNet7ApiProB01.Services.EntityServices
+namespace PracNet7ApiProB01.Services.EntityServices.GeneralRoleService
 {
     public interface IGeneralRoleService : IGenericService<GeneralRole>
     {
@@ -22,7 +22,7 @@ namespace PracNet7ApiProB01.Services.EntityServices
         #endregion
 
         #region Delete Gen Role
-        int DeleteGenRole(string genRoleId);
+        Task<object> DeleteGenRole(string genRoleId);
 
         #endregion
     }
