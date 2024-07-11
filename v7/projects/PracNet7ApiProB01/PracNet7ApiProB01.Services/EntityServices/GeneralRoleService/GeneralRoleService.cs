@@ -85,7 +85,9 @@ namespace PracNet7ApiProB01.Services.EntityServices.GeneralRoleService
                 finally { _unitOfWork.Dispose(); }
             }
         }
+        #endregion
 
+        #region DeleteGenRole
         public async Task<object> DeleteGenRole(string genRoleId)
         {
             using (var transaction = _context.Database.BeginTransaction())

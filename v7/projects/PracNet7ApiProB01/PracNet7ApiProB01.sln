@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracNet7ApiProB01", "PracNe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracNet7ApiProB01.Model", "PracNet7ApiProB01.Model\PracNet7ApiProB01.Model.csproj", "{C8CC596C-8B18-4399-964E-C00E51BE0B91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracNet7ApiProB01.Services", "PracNet7ApiProB01.Services\PracNet7ApiProB01.Services.csproj", "{89907D48-0982-4D51-8118-2A14CD1C797D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracNet7ApiProB01.Services", "PracNet7ApiProB01.Services\PracNet7ApiProB01.Services.csproj", "{89907D48-0982-4D51-8118-2A14CD1C797D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracNet7ApiProB01.Dto", "PracNet7ApiProB01.Dto\PracNet7ApiProB01.Dto.csproj", "{E1C959C1-5829-4799-953F-CBA70DD4FA63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracNet7ApiProB01.Dto", "PracNet7ApiProB01.Dto\PracNet7ApiProB01.Dto.csproj", "{E1C959C1-5829-4799-953F-CBA70DD4FA63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracNet7ApiProB01.Utils", "PracNet7ApiProB01.Utils\PracNet7ApiProB01.Utils.csproj", "{AD9163D4-4F49-41BB-B5E4-5B7A58F83585}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E1C959C1-5829-4799-953F-CBA70DD4FA63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1C959C1-5829-4799-953F-CBA70DD4FA63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1C959C1-5829-4799-953F-CBA70DD4FA63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD9163D4-4F49-41BB-B5E4-5B7A58F83585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD9163D4-4F49-41BB-B5E4-5B7A58F83585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD9163D4-4F49-41BB-B5E4-5B7A58F83585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD9163D4-4F49-41BB-B5E4-5B7A58F83585}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
