@@ -13,11 +13,11 @@ namespace PracNet7ApiProB01.Services.EntityServices.ProductService
     public interface IProductService : IGenericService<Product>
     {
         #region CreateNewProduct
-        Task<object> CreateNewProduct(CreateProductBrandReqDto model);
+        Task<object> CreateNewProduct(CreateProductReqDto model);
         #endregion
 
         #region UpdateProduct
-        Task<object> UpdateProduct(UpdateProductReqDto model);
+        Task<object> UpdateProduct(string productId, UpdateProductReqDto model);
         #endregion
 
         #region DeleteProduct
