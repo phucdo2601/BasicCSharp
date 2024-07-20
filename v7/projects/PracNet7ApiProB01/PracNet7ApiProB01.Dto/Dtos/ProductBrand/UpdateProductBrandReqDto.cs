@@ -8,11 +8,9 @@ namespace PracNet7ApiProB01.Dto.Dtos.ProductBrand
 {
     public class UpdateProductBrandReqDto
     {
-        public Guid Id { get; set; }
+        public Guid? Id { get; set; }
         public string BrandCode { get; set; }
         public string BrandNName { get; set; }
-        public DateTime DateOfCreate { get; set; }
-        public DateTime DateOfUpdate { get; set; }
         public string Description { get; set; }
     }
 }

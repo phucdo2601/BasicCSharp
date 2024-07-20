@@ -39,6 +39,21 @@ namespace PracNet7ApiProB01.Model.Infrastructures
         }
         #endregion
 
+        #region FindAllInclude
+        public IQueryable<T> FindAllInclude(params Expression<Func<T, object>>[] includes)
+        {
+            var query = _context.Set<T>().AsNoTracking();
+            if (includes != null)
+            {
+                foreach (var include in includes)
+                {
+                    query = query.Include(include);
+                }
+            }
+            return query;
+        }
+        #endregion
+
         #region FindByCondition
         public IQueryable<T> FindByCondition(Expression<Func<T, bool>> predicate)
         {
@@ -52,6 +67,14 @@ namespace PracNet7ApiProB01.Model.Infrastructures
         {
             return _context.Set<T>().Find(id);
         }
+        #endregion
+
+        #region Find by Id with id syntax query
+        public T FindById02(Expression<Func<T, bool>> predicate)
+        {
+            return _context.Set<T>().AsNoTracking().FirstOrDefault(predicate);
+        }
+
         #endregion
 
 

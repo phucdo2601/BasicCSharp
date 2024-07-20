@@ -1,0 +1,443 @@
+2024-07-20 17:37:41.605 +07:00 [INF] Get All Products list on "2024-07-20T17:37:41.6053180+07:00" and [{"DateOfCreate":null,"DateOfUpdate":null,"Description":"test-pro-desc-b02","OriginalPrice":21000,"ProductCode":"test-pro-code-b02","ProductName":"test-pro-title-b02","Quantity":100,"StatusId":"testStatusId","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"b1da17e7-e41d-41d9-84f5-f1551e428ccf","$type":"Product"},{"DateOfCreate":"2024-07-13T17:27:26.2942430","DateOfUpdate":null,"Description":"string","OriginalPrice":0,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"2d961f70-7ae1-4264-a861-2a76dbce9f1f","$type":"Product"},{"DateOfCreate":null,"DateOfUpdate":"2024-07-14T07:51:05.8296910","Description":"string","OriginalPrice":20000,"ProductCode":"string","ProductName":"string","Quantity":200,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"31dd4eab-7820-4750-8ded-4583a1ebfc30","$type":"Product"},{"DateOfCreate":"2024-07-20T16:24:41.4921610","DateOfUpdate":"2024-07-20T16:25:38.4276080","Description":"string","OriginalPrice":12000,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"1da662ef-54bd-4d85-a51c-b3f45239b73a","$type":"Product"}]
+2024-07-20 17:41:47.763 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-20 17:41:48.082 +07:00 [INF] Now listening on: https://localhost:7091
+2024-07-20 17:41:48.083 +07:00 [INF] Now listening on: http://localhost:5111
+2024-07-20 17:41:48.085 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-20 17:41:48.085 +07:00 [INF] Hosting environment: Development
+2024-07-20 17:41:48.086 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01
+2024-07-20 17:41:49.038 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - -
+2024-07-20 17:41:49.290 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - - - 200 - text/html;charset=utf-8 255.0732ms
+2024-07-20 17:41:49.312 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - -
+2024-07-20 17:41:49.312 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - -
+2024-07-20 17:41:49.325 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 12.6015ms
+2024-07-20 17:41:49.359 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.9266ms
+2024-07-20 17:41:49.410 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - -
+2024-07-20 17:41:49.525 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.3567ms
+2024-07-20 17:42:14.237 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product/getAllPros - -
+2024-07-20 17:42:14.250 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01)'
+2024-07-20 17:42:14.269 +07:00 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts() on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:42:15.394 +07:00 [INF] Get All Products list on "2024-07-20T17:42:15.3936319+07:00" and [{"DateOfCreate":null,"DateOfUpdate":null,"Description":"test-pro-desc-b02","OriginalPrice":21000,"ProductCode":"test-pro-code-b02","ProductName":"test-pro-title-b02","Quantity":100,"StatusId":"testStatusId","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"b1da17e7-e41d-41d9-84f5-f1551e428ccf","$type":"Product"},{"DateOfCreate":"2024-07-13T17:27:26.2942430","DateOfUpdate":null,"Description":"string","OriginalPrice":0,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"2d961f70-7ae1-4264-a861-2a76dbce9f1f","$type":"Product"},{"DateOfCreate":null,"DateOfUpdate":"2024-07-14T07:51:05.8296910","Description":"string","OriginalPrice":20000,"ProductCode":"string","ProductName":"string","Quantity":200,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"31dd4eab-7820-4750-8ded-4583a1ebfc30","$type":"Product"},{"DateOfCreate":"2024-07-20T16:24:41.4921610","DateOfUpdate":"2024-07-20T16:25:38.4276080","Description":"string","OriginalPrice":12000,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"1da662ef-54bd-4d85-a51c-b3f45239b73a","$type":"Product"}]
+2024-07-20 17:42:15.446 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PracNet7ApiProB01.Model.Entities.Product, PracNet7ApiProB01.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-20 17:42:15.475 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01) in 1199.8832ms
+2024-07-20 17:42:15.478 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01)'
+2024-07-20 17:42:15.480 +07:00 [INF] HTTP GET /api/Product/getAllPros responded 200 in 1232.6528 ms
+2024-07-20 17:42:15.485 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product/getAllPros - - - 200 - application/json;+charset=utf-8 1248.0470ms
+2024-07-20 17:42:54.267 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-20 17:42:54.602 +07:00 [INF] Now listening on: https://localhost:7091
+2024-07-20 17:42:54.604 +07:00 [INF] Now listening on: http://localhost:5111
+2024-07-20 17:42:54.606 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-20 17:42:54.607 +07:00 [INF] Hosting environment: Development
+2024-07-20 17:42:54.607 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01
+2024-07-20 17:42:55.588 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - -
+2024-07-20 17:42:55.817 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - - - 200 - text/html;charset=utf-8 230.2522ms
+2024-07-20 17:42:55.836 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - -
+2024-07-20 17:42:55.836 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - -
+2024-07-20 17:42:55.854 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 15.0301ms
+2024-07-20 17:42:55.884 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.7896ms
+2024-07-20 17:42:55.935 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - -
+2024-07-20 17:42:56.054 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.5069ms
+2024-07-20 17:42:59.846 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product/getAllPros - -
+2024-07-20 17:42:59.854 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01)'
+2024-07-20 17:42:59.871 +07:00 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts() on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:43:00.987 +07:00 [INF] Get All Products list on "2024-07-20T17:43:00.9868520+07:00" and [{"DateOfCreate":null,"DateOfUpdate":null,"Description":"test-pro-desc-b02","OriginalPrice":21000,"ProductCode":"test-pro-code-b02","ProductName":"test-pro-title-b02","Quantity":100,"StatusId":"testStatusId","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"b1da17e7-e41d-41d9-84f5-f1551e428ccf","$type":"Product"},{"DateOfCreate":"2024-07-13T17:27:26.2942430","DateOfUpdate":null,"Description":"string","OriginalPrice":0,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"2d961f70-7ae1-4264-a861-2a76dbce9f1f","$type":"Product"},{"DateOfCreate":null,"DateOfUpdate":"2024-07-14T07:51:05.8296910","Description":"string","OriginalPrice":20000,"ProductCode":"string","ProductName":"string","Quantity":200,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"31dd4eab-7820-4750-8ded-4583a1ebfc30","$type":"Product"},{"DateOfCreate":"2024-07-20T16:24:41.4921610","DateOfUpdate":"2024-07-20T16:25:38.4276080","Description":"string","OriginalPrice":12000,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"1da662ef-54bd-4d85-a51c-b3f45239b73a","$type":"Product"}]
+2024-07-20 17:43:01.035 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PracNet7ApiProB01.Model.Entities.Product, PracNet7ApiProB01.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-20 17:43:01.064 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01) in 1187.5241ms
+2024-07-20 17:43:01.067 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01)'
+2024-07-20 17:43:01.070 +07:00 [INF] HTTP GET /api/Product/getAllPros responded 200 in 1216.7271 ms
+2024-07-20 17:43:01.073 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product/getAllPros - - - 200 - application/json;+charset=utf-8 1226.9272ms
+2024-07-20 17:52:43.086 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-20 17:52:43.497 +07:00 [INF] Now listening on: https://localhost:7091
+2024-07-20 17:52:43.498 +07:00 [INF] Now listening on: http://localhost:5111
+2024-07-20 17:52:43.501 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-20 17:52:43.502 +07:00 [INF] Hosting environment: Development
+2024-07-20 17:52:43.502 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01
+2024-07-20 17:52:44.738 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - -
+2024-07-20 17:52:45.004 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - - - 200 - text/html;charset=utf-8 267.3777ms
+2024-07-20 17:52:45.025 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - -
+2024-07-20 17:52:45.025 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - -
+2024-07-20 17:52:45.031 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 5.7482ms
+2024-07-20 17:52:45.078 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.3804ms
+2024-07-20 17:52:45.130 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - -
+2024-07-20 17:52:45.262 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.7643ms
+2024-07-20 17:52:52.465 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product/getAllPros - -
+2024-07-20 17:52:52.473 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01)'
+2024-07-20 17:52:52.491 +07:00 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts() on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:52:53.663 +07:00 [INF] Get All Products list on "2024-07-20T17:52:53.6628339+07:00" and [{"DateOfCreate":null,"DateOfUpdate":null,"Description":"test-pro-desc-b02","OriginalPrice":21000,"ProductCode":"test-pro-code-b02","ProductName":"test-pro-title-b02","Quantity":100,"StatusId":"testStatusId","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"b1da17e7-e41d-41d9-84f5-f1551e428ccf","$type":"Product"},{"DateOfCreate":"2024-07-13T17:27:26.2942430","DateOfUpdate":null,"Description":"string","OriginalPrice":0,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"2d961f70-7ae1-4264-a861-2a76dbce9f1f","$type":"Product"},{"DateOfCreate":null,"DateOfUpdate":"2024-07-14T07:51:05.8296910","Description":"string","OriginalPrice":20000,"ProductCode":"string","ProductName":"string","Quantity":200,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"31dd4eab-7820-4750-8ded-4583a1ebfc30","$type":"Product"},{"DateOfCreate":"2024-07-20T16:24:41.4921610","DateOfUpdate":"2024-07-20T16:25:38.4276080","Description":"string","OriginalPrice":12000,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"1da662ef-54bd-4d85-a51c-b3f45239b73a","$type":"Product"}]
+2024-07-20 17:52:53.714 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PracNet7ApiProB01.Model.Entities.Product, PracNet7ApiProB01.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-20 17:52:53.746 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01) in 1246.6958ms
+2024-07-20 17:52:53.749 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01)'
+2024-07-20 17:52:53.751 +07:00 [INF] HTTP GET /api/Product/getAllPros responded 200 in 1280.5048 ms
+2024-07-20 17:52:53.754 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product/getAllPros - - - 200 - application/json;+charset=utf-8 1289.4889ms
+2024-07-20 17:53:11.925 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product/getProById/31dd4eab-7820-4750-8ded-4583a1ebfc30 - -
+2024-07-20 17:53:11.929 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.GetProductBy (PracNet7ApiProB01)'
+2024-07-20 17:53:11.942 +07:00 [INF] Route matched with {action = "GetProductBy", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductBy(System.String) on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:53:12.671 +07:00 [INF] Get  Product by id 31dd4eab-7820-4750-8ded-4583a1ebfc30 list on "2024-07-20T17:53:12.6708843+07:00" and {"DateOfCreate":null,"DateOfUpdate":"2024-07-14T07:51:05.8296910","Description":"string","OriginalPrice":20000,"ProductCode":"string","ProductName":"string","Quantity":200,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"31dd4eab-7820-4750-8ded-4583a1ebfc30","$type":"Product"}
+2024-07-20 17:53:12.682 +07:00 [INF] Executing ObjectResult, writing value of type 'PracNet7ApiProB01.Model.Entities.Product'.
+2024-07-20 17:53:12.685 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.GetProductBy (PracNet7ApiProB01) in 739.3076ms
+2024-07-20 17:53:12.687 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.GetProductBy (PracNet7ApiProB01)'
+2024-07-20 17:53:12.689 +07:00 [INF] HTTP GET /api/Product/getProById/31dd4eab-7820-4750-8ded-4583a1ebfc30 responded 200 in 760.2429 ms
+2024-07-20 17:53:12.692 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product/getProById/31dd4eab-7820-4750-8ded-4583a1ebfc30 - - - 200 - application/json;+charset=utf-8 766.7967ms
+2024-07-20 17:53:19.721 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product/createNewPro application/json 206
+2024-07-20 17:53:19.723 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01)'
+2024-07-20 17:53:19.729 +07:00 [INF] Route matched with {action = "CreateNewPro", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateNewPro(PracNet7ApiProB01.Dto.Dtos.Product.CreateProductReqDto) on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:53:20.344 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01) in 612.3059ms
+2024-07-20 17:53:20.348 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01)'
+2024-07-20 17:53:20.349 +07:00 [ERR] HTTP POST /api/Product/createNewPro responded 500 in 625.8608 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "Product" violates foreign key constraint "FK_Product_ProductBrand_ProductBrandId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "Product" violates foreign key constraint "FK_Product_ProductBrand_ProductBrandId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Product
+    ConstraintName: FK_Product_ProductBrand_ProductBrandId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at PracNet7ApiProB01.Model.Infrastructures.UnitOfWork.Save() in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Model\Infrastructures\UnitOfWork.cs:line 47
+   at PracNet7ApiProB01.Services.EntityServices.ProductService.ProductService.CreateNewProduct(CreateProductReqDto model) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\ProductService\ProductService.cs:line 51
+   at PracNet7ApiProB01.Controllers.ProductController.CreateNewPro(CreateProductReqDto proRequest) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01\Controllers\ProductController.cs:line 60
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-07-20 17:53:20.412 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "Product" violates foreign key constraint "FK_Product_ProductBrand_ProductBrandId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "Product" violates foreign key constraint "FK_Product_ProductBrand_ProductBrandId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Product
+    ConstraintName: FK_Product_ProductBrand_ProductBrandId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at PracNet7ApiProB01.Model.Infrastructures.UnitOfWork.Save() in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Model\Infrastructures\UnitOfWork.cs:line 47
+   at PracNet7ApiProB01.Services.EntityServices.ProductService.ProductService.CreateNewProduct(CreateProductReqDto model) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\ProductService\ProductService.cs:line 51
+   at PracNet7ApiProB01.Controllers.ProductController.CreateNewPro(CreateProductReqDto proRequest) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01\Controllers\ProductController.cs:line 60
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-20 17:53:20.445 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product/createNewPro application/json 206 - 500 - text/plain;+charset=utf-8 724.6137ms
+2024-07-20 17:54:55.837 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product/createNewPro application/json 206
+2024-07-20 17:54:55.847 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01)'
+2024-07-20 17:54:55.849 +07:00 [INF] Route matched with {action = "CreateNewPro", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateNewPro(PracNet7ApiProB01.Dto.Dtos.Product.CreateProductReqDto) on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:54:55.891 +07:00 [INF] Create new Product on "2024-07-20T17:54:55.8913750+07:00" and {"StatusCode":201,"Status":"Created","Message":"Add Product successfully!","Data":{"DateOfCreate":"2024-07-20T17:54:55.8596830","DateOfUpdate":null,"Description":"string","OriginalPrice":0,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"4d75b962-2915-48ed-aa9c-8c91af0cb207","$type":"Product"},"$type":"CommonResponseDto`1"}b Success
+2024-07-20 17:54:55.904 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[[PracNet7ApiProB01.Model.Entities.Product, PracNet7ApiProB01.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PracNet7ApiProB01.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-20 17:54:55.910 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01) in 57.5442ms
+2024-07-20 17:54:55.912 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01)'
+2024-07-20 17:54:55.913 +07:00 [INF] HTTP POST /api/Product/createNewPro responded 201 in 65.7447 ms
+2024-07-20 17:54:55.915 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product/createNewPro application/json 206 - 201 - application/json;+charset=utf-8 79.0670ms
+2024-07-20 17:55:31.084 +07:00 [INF] Request starting HTTP/2 PUT https://localhost:7091/api/Product/updatePro/4d75b962-2915-48ed-aa9c-8c91af0cb207 application/json 254
+2024-07-20 17:55:31.091 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.UpdateProById (PracNet7ApiProB01)'
+2024-07-20 17:55:31.096 +07:00 [INF] Route matched with {action = "UpdateProById", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProById(System.String, PracNet7ApiProB01.Dto.Dtos.Product.UpdateProductReqDto) on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:55:31.146 +07:00 [INF] Update Product with id 4d75b962-2915-48ed-aa9c-8c91af0cb207 on "2024-07-20T17:55:31.1460140+07:00" and {"StatusCode":200,"Status":"OK","Message":"Update product successfully!","Data":{"DateOfCreate":"2024-07-20T17:54:55.8596830","DateOfUpdate":"2024-07-20T17:55:31.1299900","Description":"string","OriginalPrice":0,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"4d75b962-2915-48ed-aa9c-8c91af0cb207","$type":"Product"},"$type":"CommonResponseDto`1"} Success
+2024-07-20 17:55:31.159 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[[PracNet7ApiProB01.Model.Entities.Product, PracNet7ApiProB01.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PracNet7ApiProB01.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-20 17:55:31.161 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.UpdateProById (PracNet7ApiProB01) in 60.8542ms
+2024-07-20 17:55:31.163 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.UpdateProById (PracNet7ApiProB01)'
+2024-07-20 17:55:31.164 +07:00 [INF] HTTP PUT /api/Product/updatePro/4d75b962-2915-48ed-aa9c-8c91af0cb207 responded 200 in 72.9094 ms
+2024-07-20 17:55:31.166 +07:00 [INF] Request finished HTTP/2 PUT https://localhost:7091/api/Product/updatePro/4d75b962-2915-48ed-aa9c-8c91af0cb207 application/json 254 - 200 - application/json;+charset=utf-8 81.9975ms
+2024-07-20 17:55:43.520 +07:00 [INF] Request starting HTTP/2 DELETE https://localhost:7091/api/Product/deletePro/4d75b962-2915-48ed-aa9c-8c91af0cb207 - -
+2024-07-20 17:55:43.522 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01)'
+2024-07-20 17:55:43.527 +07:00 [INF] Route matched with {action = "DeletePro", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeletePro(System.String) on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:55:43.619 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01) in 89.4867ms
+2024-07-20 17:55:43.622 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01)'
+2024-07-20 17:55:43.623 +07:00 [ERR] HTTP DELETE /api/Product/deletePro/4d75b962-2915-48ed-aa9c-8c91af0cb207 responded 500 in 101.5817 ms
+System.InvalidCastException: Unable to cast object of type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.Product]' to type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.ProductBrand]'.
+   at PracNet7ApiProB01.Controllers.ProductController.DeletePro(String id) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01\Controllers\ProductController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-07-20 17:55:43.634 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.Product]' to type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.ProductBrand]'.
+   at PracNet7ApiProB01.Controllers.ProductController.DeletePro(String id) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01\Controllers\ProductController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-20 17:55:43.644 +07:00 [INF] Request finished HTTP/2 DELETE https://localhost:7091/api/Product/deletePro/4d75b962-2915-48ed-aa9c-8c91af0cb207 - - - 500 - text/plain;+charset=utf-8 124.0339ms
+2024-07-20 17:57:35.479 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-20 17:57:35.900 +07:00 [INF] Now listening on: https://localhost:7091
+2024-07-20 17:57:35.903 +07:00 [INF] Now listening on: http://localhost:5111
+2024-07-20 17:57:35.907 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-20 17:57:35.908 +07:00 [INF] Hosting environment: Development
+2024-07-20 17:57:35.909 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01
+2024-07-20 17:57:36.961 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - -
+2024-07-20 17:57:37.278 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - - - 200 - text/html;charset=utf-8 319.3238ms
+2024-07-20 17:57:37.324 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - -
+2024-07-20 17:57:37.324 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - -
+2024-07-20 17:57:37.335 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 10.8943ms
+2024-07-20 17:57:37.378 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.8880ms
+2024-07-20 17:57:37.478 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - -
+2024-07-20 17:57:37.645 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 166.3779ms
+2024-07-20 17:57:46.172 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product/getAllPros - -
+2024-07-20 17:57:46.184 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01)'
+2024-07-20 17:57:46.212 +07:00 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts() on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:57:47.344 +07:00 [INF] Get All Products list on "2024-07-20T17:57:47.3441769+07:00" and [{"DateOfCreate":null,"DateOfUpdate":null,"Description":"test-pro-desc-b02","OriginalPrice":21000,"ProductCode":"test-pro-code-b02","ProductName":"test-pro-title-b02","Quantity":100,"StatusId":"testStatusId","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"b1da17e7-e41d-41d9-84f5-f1551e428ccf","$type":"Product"},{"DateOfCreate":"2024-07-13T17:27:26.2942430","DateOfUpdate":null,"Description":"string","OriginalPrice":0,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"2d961f70-7ae1-4264-a861-2a76dbce9f1f","$type":"Product"},{"DateOfCreate":null,"DateOfUpdate":"2024-07-14T07:51:05.8296910","Description":"string","OriginalPrice":20000,"ProductCode":"string","ProductName":"string","Quantity":200,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"31dd4eab-7820-4750-8ded-4583a1ebfc30","$type":"Product"},{"DateOfCreate":"2024-07-20T16:24:41.4921610","DateOfUpdate":"2024-07-20T16:25:38.4276080","Description":"string","OriginalPrice":12000,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"1da662ef-54bd-4d85-a51c-b3f45239b73a","$type":"Product"}]
+2024-07-20 17:57:47.398 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PracNet7ApiProB01.Model.Entities.Product, PracNet7ApiProB01.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-20 17:57:47.427 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01) in 1209.6393ms
+2024-07-20 17:57:47.430 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.GetAllProducts (PracNet7ApiProB01)'
+2024-07-20 17:57:47.433 +07:00 [INF] HTTP GET /api/Product/getAllPros responded 200 in 1253.2993 ms
+2024-07-20 17:57:47.436 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product/getAllPros - - - 200 - application/json;+charset=utf-8 1263.8296ms
+2024-07-20 17:58:04.085 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product/createNewPro application/json 206
+2024-07-20 17:58:04.089 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01)'
+2024-07-20 17:58:04.102 +07:00 [INF] Route matched with {action = "CreateNewPro", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateNewPro(PracNet7ApiProB01.Dto.Dtos.Product.CreateProductReqDto) on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:58:04.595 +07:00 [INF] Create new Product on "2024-07-20T17:58:04.5957891+07:00" and {"StatusCode":201,"Status":"Created","Message":"Add Product successfully!","Data":{"DateOfCreate":"2024-07-20T17:58:04.2256210","DateOfUpdate":null,"Description":"string","OriginalPrice":0,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"05943d62-593d-47e4-a4e5-5944d022d9b9","$type":"Product"},"$type":"CommonResponseDto`1"}b Success
+2024-07-20 17:58:04.610 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[[PracNet7ApiProB01.Model.Entities.Product, PracNet7ApiProB01.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PracNet7ApiProB01.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-20 17:58:04.616 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01) in 511.317ms
+2024-07-20 17:58:04.619 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01)'
+2024-07-20 17:58:04.620 +07:00 [INF] HTTP POST /api/Product/createNewPro responded 201 in 530.5656 ms
+2024-07-20 17:58:04.621 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product/createNewPro application/json 206 - 201 - application/json;+charset=utf-8 536.7989ms
+2024-07-20 17:58:24.334 +07:00 [INF] Request starting HTTP/2 DELETE https://localhost:7091/api/Product/deletePro/05943d62-593d-47e4-a4e5-5944d022d9b9 - -
+2024-07-20 17:58:24.336 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01)'
+2024-07-20 17:58:24.341 +07:00 [INF] Route matched with {action = "DeletePro", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeletePro(System.String) on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:58:24.472 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01) in 128.0931ms
+2024-07-20 17:58:24.474 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01)'
+2024-07-20 17:58:24.476 +07:00 [ERR] HTTP DELETE /api/Product/deletePro/05943d62-593d-47e4-a4e5-5944d022d9b9 responded 500 in 139.6395 ms
+System.InvalidCastException: Unable to cast object of type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.Product]' to type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.ProductBrand]'.
+   at PracNet7ApiProB01.Controllers.ProductController.DeletePro(String id) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01\Controllers\ProductController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-07-20 17:58:24.506 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.Product]' to type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.ProductBrand]'.
+   at PracNet7ApiProB01.Controllers.ProductController.DeletePro(String id) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01\Controllers\ProductController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-20 17:58:24.518 +07:00 [INF] Request finished HTTP/2 DELETE https://localhost:7091/api/Product/deletePro/05943d62-593d-47e4-a4e5-5944d022d9b9 - - - 500 - text/plain;+charset=utf-8 183.9581ms
+2024-07-20 17:58:31.657 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product/createNewPro application/json 206
+2024-07-20 17:58:31.658 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01)'
+2024-07-20 17:58:31.660 +07:00 [INF] Route matched with {action = "CreateNewPro", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateNewPro(PracNet7ApiProB01.Dto.Dtos.Product.CreateProductReqDto) on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:58:31.691 +07:00 [INF] Create new Product on "2024-07-20T17:58:31.6910793+07:00" and {"StatusCode":201,"Status":"Created","Message":"Add Product successfully!","Data":{"DateOfCreate":"2024-07-20T17:58:31.6744690","DateOfUpdate":null,"Description":"string","OriginalPrice":0,"ProductCode":"string","ProductName":"string","Quantity":0,"StatusId":"string","ProductBrandId":"1d00821d-35ad-473b-a945-23c70e7119d8","ProductBrand":null,"Id":"8a5c8908-a1ee-42ad-88c7-10888555c851","$type":"Product"},"$type":"CommonResponseDto`1"}b Success
+2024-07-20 17:58:31.703 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[[PracNet7ApiProB01.Model.Entities.Product, PracNet7ApiProB01.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PracNet7ApiProB01.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-20 17:58:31.705 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01) in 41.7829ms
+2024-07-20 17:58:31.707 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.CreateNewPro (PracNet7ApiProB01)'
+2024-07-20 17:58:31.709 +07:00 [INF] HTTP POST /api/Product/createNewPro responded 201 in 50.2766 ms
+2024-07-20 17:58:31.710 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product/createNewPro application/json 206 - 201 - application/json;+charset=utf-8 53.8870ms
+2024-07-20 17:58:38.855 +07:00 [INF] Request starting HTTP/2 DELETE https://localhost:7091/api/Product/deletePro/05943d62-593d-47e4-a4e5-5944d022d9b9 - -
+2024-07-20 17:58:38.857 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01)'
+2024-07-20 17:58:38.859 +07:00 [INF] Route matched with {action = "DeletePro", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeletePro(System.String) on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 17:58:38.904 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01) in 41.7032ms
+2024-07-20 17:58:38.906 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01)'
+2024-07-20 17:58:38.907 +07:00 [ERR] HTTP DELETE /api/Product/deletePro/05943d62-593d-47e4-a4e5-5944d022d9b9 responded 500 in 50.3158 ms
+System.InvalidCastException: Unable to cast object of type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.Product]' to type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.ProductBrand]'.
+   at PracNet7ApiProB01.Controllers.ProductController.DeletePro(String id) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01\Controllers\ProductController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-07-20 17:58:38.919 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.Product]' to type 'PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[PracNet7ApiProB01.Model.Entities.ProductBrand]'.
+   at PracNet7ApiProB01.Controllers.ProductController.DeletePro(String id) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01\Controllers\ProductController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-20 17:58:38.936 +07:00 [INF] Request finished HTTP/2 DELETE https://localhost:7091/api/Product/deletePro/05943d62-593d-47e4-a4e5-5944d022d9b9 - - - 500 - text/plain;+charset=utf-8 80.9737ms
+2024-07-20 18:00:18.296 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-20 18:00:18.700 +07:00 [INF] Now listening on: https://localhost:7091
+2024-07-20 18:00:18.701 +07:00 [INF] Now listening on: http://localhost:5111
+2024-07-20 18:00:18.703 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-20 18:00:18.704 +07:00 [INF] Hosting environment: Development
+2024-07-20 18:00:18.705 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01
+2024-07-20 18:00:19.688 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - -
+2024-07-20 18:00:19.968 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - - - 200 - text/html;charset=utf-8 283.7020ms
+2024-07-20 18:00:20.009 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - -
+2024-07-20 18:00:20.009 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - -
+2024-07-20 18:00:20.020 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 10.1915ms
+2024-07-20 18:00:20.070 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.7019ms
+2024-07-20 18:00:20.129 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - -
+2024-07-20 18:00:20.334 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 205.0660ms
+2024-07-20 18:00:36.016 +07:00 [INF] Request starting HTTP/2 DELETE https://localhost:7091/api/ProductBrand/deleteProBrand/8a5c8908-a1ee-42ad-88c7-10888555c851 - -
+2024-07-20 18:00:36.026 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductBrandController.DeleteProBrand (PracNet7ApiProB01)'
+2024-07-20 18:00:36.049 +07:00 [INF] Route matched with {action = "DeleteProBrand", controller = "ProductBrand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProBrand(System.String) on controller PracNet7ApiProB01.Controllers.ProductBrandController (PracNet7ApiProB01).
+2024-07-20 18:00:37.276 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[[PracNet7ApiProB01.Model.Entities.ProductBrand, PracNet7ApiProB01.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PracNet7ApiProB01.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-20 18:00:37.294 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductBrandController.DeleteProBrand (PracNet7ApiProB01) in 1238.7534ms
+2024-07-20 18:00:37.299 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductBrandController.DeleteProBrand (PracNet7ApiProB01)'
+2024-07-20 18:00:37.301 +07:00 [INF] HTTP DELETE /api/ProductBrand/deleteProBrand/8a5c8908-a1ee-42ad-88c7-10888555c851 responded 400 in 1277.8506 ms
+2024-07-20 18:00:37.304 +07:00 [INF] Request finished HTTP/2 DELETE https://localhost:7091/api/ProductBrand/deleteProBrand/8a5c8908-a1ee-42ad-88c7-10888555c851 - - - 400 - application/json;+charset=utf-8 1289.0474ms
+2024-07-20 18:00:51.682 +07:00 [INF] Request starting HTTP/2 DELETE https://localhost:7091/api/Product/deletePro/8a5c8908-a1ee-42ad-88c7-10888555c851 - -
+2024-07-20 18:00:51.684 +07:00 [INF] Executing endpoint 'PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01)'
+2024-07-20 18:00:51.690 +07:00 [INF] Route matched with {action = "DeletePro", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeletePro(System.String) on controller PracNet7ApiProB01.Controllers.ProductController (PracNet7ApiProB01).
+2024-07-20 18:00:51.885 +07:00 [INF] Delete Product with id 8a5c8908-a1ee-42ad-88c7-10888555c851 on "2024-07-20T18:00:51.8845583+07:00" Success
+2024-07-20 18:00:51.889 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PracNet7ApiProB01.Dto.Dtos.Responses.CommonResponseDto`1[[PracNet7ApiProB01.Model.Entities.Product, PracNet7ApiProB01.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PracNet7ApiProB01.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-20 18:00:51.894 +07:00 [INF] Executed action PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01) in 199.489ms
+2024-07-20 18:00:51.896 +07:00 [INF] Executed endpoint 'PracNet7ApiProB01.Controllers.ProductController.DeletePro (PracNet7ApiProB01)'
+2024-07-20 18:00:51.897 +07:00 [INF] HTTP DELETE /api/Product/deletePro/8a5c8908-a1ee-42ad-88c7-10888555c851 responded 200 in 212.8637 ms
+2024-07-20 18:00:51.899 +07:00 [INF] Request finished HTTP/2 DELETE https://localhost:7091/api/Product/deletePro/8a5c8908-a1ee-42ad-88c7-10888555c851 - - - 200 - application/json;+charset=utf-8 217.0567ms

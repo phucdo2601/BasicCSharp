@@ -35,6 +35,7 @@ namespace PracNet7ApiProB01.Services.EntityServices.ProductService
                     // TODO: VALIDATE ALL FIELDS NECCESSARY
 
                     var Id = Guid.NewGuid();
+                    var currentDate = DateTime.Now;
 
                     /**
                      * set up auto mapping from input to entity
@@ -45,6 +46,7 @@ namespace PracNet7ApiProB01.Services.EntityServices.ProductService
                     var _modelMapperConfig = ModelMapperConfig.IniializeAutoMapper();
                     var productEntity = _modelMapperConfig.Map<CreateProductReqDto, Product>(model);
                     productEntity.Id = Id;
+                    productEntity.DateOfCreate = currentDate;
                     _unitOfWork.ProductRepository.CreateNew(productEntity);
                     int created = _unitOfWork.Save();
                     transaction.Commit();
@@ -56,6 +58,7 @@ namespace PracNet7ApiProB01.Services.EntityServices.ProductService
                         {
                             Status = HttpStatusCode.Created.ToString(),
                             Message = $"Add Product successfully!",
+                            Data = productCreated
                         }
                         );
 
@@ -114,6 +117,14 @@ namespace PracNet7ApiProB01.Services.EntityServices.ProductService
         }
         #endregion
 
+        #region Get Product With Sub Object
+        public async Task<object> GetAllProductsWithSubObject()
+        {
+            var proList = _repository.FindAllInclude(p => p.ProductBrand);
+            return await Task.FromResult(proList);
+        }
+        #endregion
+
         #region UpdateProduct
         public async Task<object> UpdateProduct(string productId, UpdateProductReqDto model)
         {
@@ -131,7 +142,7 @@ namespace PracNet7ApiProB01.Services.EntityServices.ProductService
                         });
                     }
 
-                    var product = _unitOfWork.ProductRepository.FindById(productUUid);
+                    var product = _unitOfWork.ProductRepository.FindById02(p => p.Id == model.Id);
 
                     if (product == null)
                     {
@@ -150,14 +161,18 @@ namespace PracNet7ApiProB01.Services.EntityServices.ProductService
                      * to: Product
                      */
                     var _modelMapperConfig = ModelMapperConfig.IniializeAutoMapper();
-                    product = _modelMapperConfig.Map<UpdateProductReqDto, Product>(model);
+                    
+                    var productUp = _modelMapperConfig.Map<UpdateProductReqDto, Product>(model);
+                    productUp.DateOfUpdate = DateTime.Now;
+                    productUp.DateOfCreate = product.DateOfCreate;
+                    _unitOfWork.ProductRepository.Update(productUp);
                     int updated = _unitOfWork.Save();
                     transaction.Commit();
 
                     var productUpdated = _repository.FindById(model.Id);
                     return await Task.FromResult(new CommonResponseDto<Product>
                     {
-                        Status = HttpStatusCode.Created.ToString(),
+                        Status = HttpStatusCode.OK.ToString(),
                         Message = $"Update product successfully!",
                         Data = productUpdated,
                     });

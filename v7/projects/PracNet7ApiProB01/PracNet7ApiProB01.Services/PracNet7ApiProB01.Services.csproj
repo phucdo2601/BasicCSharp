@@ -12,4 +12,9 @@
     <ProjectReference Include="..\PracNet7ApiProB01.Utils\PracNet7ApiProB01.Utils.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="EntityServices\CustomerService\" />
+    <Folder Include="EntityServices\StaffService\" />
+  </ItemGroup>
+
 </Project>

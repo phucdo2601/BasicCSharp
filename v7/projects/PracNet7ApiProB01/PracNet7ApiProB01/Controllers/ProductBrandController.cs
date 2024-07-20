@@ -7,6 +7,7 @@ using PracNet7ApiProB01.Model.Entities;
 using PracNet7ApiProB01.Model.Infrastructures;
 using PracNet7ApiProB01.Model.Repositories.ProductBrandRepository;
 using PracNet7ApiProB01.Services.EntityServices.ProductBrandService;
+using Serilog;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace PracNet7ApiProB01.Controllers
@@ -34,6 +35,8 @@ namespace PracNet7ApiProB01.Controllers
         public async Task<IActionResult> GetAllProBrands()
         {
             List<ProductBrand> productBrands = _productBrandService.FindAll();
+            Log.Information("Get All ProductBrands list on {@var1} and {@var2}", DateTime.Now, productBrands);
+
             return await Task.FromResult(StatusCode(StatusCodes.Status200OK, productBrands));
         }
         #endregion
@@ -44,6 +47,7 @@ namespace PracNet7ApiProB01.Controllers
         {
             Guid proBrandId = Guid.Parse(id);
             ProductBrand productBrand = _productBrandService.FindById(proBrandId);
+            Log.Information("Get productBrand by id {@var1} list on {@var2} and {@var3}", id, DateTime.Now, productBrand);
             return productBrand != null ? await Task.FromResult(StatusCode(StatusCodes.Status200OK, productBrand)) :
                     await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"Product Brand with {id} does not exist." }));
         }
@@ -56,13 +60,15 @@ namespace PracNet7ApiProB01.Controllers
         {
 
             CommonResponseDto<ProductBrand> created = (CommonResponseDto<ProductBrand>)await _productBrandService.CreateNewProductBrand(proBrandRequest);
+            Console.WriteLine(created);
             if (created.Data != null)
             {
                 created.StatusCode = StatusCodes.Status201Created;
+                Log.Information("Created ProductBrand on {@var1} and {@var2}", DateTime.Now, created);
                 return await Task.FromResult(StatusCode(StatusCodes.Status201Created, new
                 {
                     StatusCode = StatusCodes.Status201Created,
-                    ResponseModel = created
+                    ResponseModel = created,
                 }));
             }
             else
@@ -83,16 +89,18 @@ namespace PracNet7ApiProB01.Controllers
 
             if (updated.Data != null)
             {
+                updated.StatusCode = 200;
+                Log.Information("Update Product with id {@var1} on {@var2} and {@var3} Success", id, DateTime.Now, updated);
                 return await Task.FromResult(StatusCode(StatusCodes.Status200OK, new
                 {
-                    StatusCode = StatusCodes.Status201Created,
+                    StatusCode = StatusCodes.Status200OK,
                     ResponseModel = updated
                 }));
             }
             else
             {
                 updated.StatusCode = StatusCodes.Status400BadRequest;
-                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, ResponseModel = updated }));
+                return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, ResponseModel = updated }));
             }
 
         }
@@ -107,6 +115,7 @@ namespace PracNet7ApiProB01.Controllers
 
             if (deleted.StatusCode == StatusCodes.Status200OK)
             {
+                Log.Information("Delete ProductBrand with id {@var1} on {@var2} Success", id, DateTime.Now);
                 return await Task.FromResult(StatusCode(StatusCodes.Status200OK, new
                 {
                     StatusCode = StatusCodes.Status200OK,

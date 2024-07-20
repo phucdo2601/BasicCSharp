@@ -2,6 +2,7 @@
 using PracNet7ApiProB01.Dto.Dtos.Responses;
 using PracNet7ApiProB01.Model.Entities;
 using PracNet7ApiProB01.Model.Infrastructures;
+using PracNet7ApiProB01.Utils.Configs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,15 +36,16 @@ namespace PracNet7ApiProB01.Services.EntityServices.ProductBrandService
 
                     var Id = Guid.NewGuid();
 
-                    ProductBrand productBrand = new ProductBrand()
-                    {
-                        Id = Id,
-                        BrandCode = model.BrandCode,
-                        BrandNName = model.BrandNName,
-                        DateOfCreate = DateTime.Now,
-                        DateOfUpdate = null,
-                        Description = model.Description,
-                    };
+                    /**
+                     * set up auto mapping from input to entity
+                     * from: CreateProductBrandReqDto
+                     * to: ProductBrand
+                     */
+                    var _modelMapperConfig = ModelMapperConfig.IniializeAutoMapper();
+                    var productBrand = _modelMapperConfig.Map<CreateProductBrandReqDto, ProductBrand>(model);
+                    productBrand.Id = Id;
+                    productBrand.DateOfCreate = DateTime.Now;
+
                     _unitOfWork.ProductBrandRepository.CreateNew(productBrand);
                     int created = _unitOfWork.Save();
                     transaction.Commit();
@@ -130,7 +132,7 @@ namespace PracNet7ApiProB01.Services.EntityServices.ProductBrandService
                         });
                     }
 
-                    var productBrand = _unitOfWork.ProductBrandRepository.FindById(productBrandUuid);
+                    var productBrand = _unitOfWork.ProductBrandRepository.FindById02(p => p.Id == model.Id);
 
                     if (productBrand == null)
                     {
@@ -142,19 +144,24 @@ namespace PracNet7ApiProB01.Services.EntityServices.ProductBrandService
                     }
                     // TODO: VALIDATE ALL FIELDS NECESSARY
 
-                    productBrand.DateOfUpdate = DateTime.Now;
-                    productBrand.BrandNName = model.BrandNName;
-                    productBrand.BrandCode = model.BrandCode;
-                    productBrand.Description = model.Description;
+                    /**
+                     * set up auto mapping from input to entity
+                     * from: CreateProductBrandReqDto
+                     * to: ProductBrand
+                     */
+                    var _modelMapperConfig = ModelMapperConfig.IniializeAutoMapper();
+                    var proBrandUp = _modelMapperConfig.Map<UpdateProductBrandReqDto, ProductBrand>(model);
+                    proBrandUp.DateOfUpdate = DateTime.Now;
+                    proBrandUp.DateOfCreate = productBrand.DateOfCreate;
 
-                    _unitOfWork.ProductBrandRepository.Update(productBrand);
+                    _unitOfWork.ProductBrandRepository.Update(proBrandUp);
                     int updated = _unitOfWork.Save();
                     transaction.Commit();
 
                     var productBrandUpdated = _repository.FindById(productBrandUuid);
                     return await Task.FromResult(new CommonResponseDto<ProductBrand>
                     {
-                        Status = HttpStatusCode.Created.ToString(),
+                        Status = HttpStatusCode.OK.ToString(),
                         Message = $"Update product brand successfully!",
                         Data = productBrandUpdated,
                     });

@@ -24,5 +24,9 @@ namespace PracNet7ApiProB01.Services.EntityServices.ProductService
         Task<object> DeleteProduct(string productId);
         #endregion
 
+        #region Get Product With Sub Object
+        Task<object> GetAllProductsWithSubObject();
+        #endregion
+
     }
 }

@@ -32,7 +32,7 @@ namespace PracNet7ApiProB01.Controllers
 
         #endregion
 
-        #region
+        #region GetItemById
         [HttpGet("getById/{id}")]
         public async Task<IActionResult> GetItemById([FromRoute(Name = "id")] string id)
         {

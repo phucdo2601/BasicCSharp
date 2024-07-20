@@ -17,6 +17,11 @@ namespace PracNet7ApiProB01.Model.Infrastructures
         T FindById(Guid id);
         #endregion
 
+        #region Find by Id with id syntax query
+        T FindById02(Expression<Func<T, bool>> predicate);
+
+        #endregion
+
         #region Create new
         void CreateNew(T entity);
         #endregion
@@ -44,6 +49,12 @@ namespace PracNet7ApiProB01.Model.Infrastructures
          * Truy vấn và lọc dữ liệu trên server và dữ liệu trả về cho client.
          */
         IQueryable<T> FindByCondition(Expression<Func<T, bool>> predicate);
+
+        /**
+         * Lấy list data cuar mootj object bao gom casc object con (object lien ket) - khi su dung
+         * EF CORE va Linq
+         */
+        IQueryable<T> FindAllInclude(params Expression<Func<T, object>>[] includes);
 
         #endregion
     }

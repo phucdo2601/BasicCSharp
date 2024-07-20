@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using PracNet7ApiProB01.Dto.Dtos.Product;
+using PracNet7ApiProB01.Dto.Dtos.ProductBrand;
 using PracNet7ApiProB01.Model.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,9 @@ namespace PracNet7ApiProB01.Utils.Configs
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<CreateProductReqDto, Product>();
+                cfg.CreateMap<UpdateProductReqDto, Product>();
+                cfg.CreateMap<CreateProductBrandReqDto, ProductBrand>();
+                cfg.CreateMap<UpdateProductBrandReqDto, ProductBrand>();
             });
 
             //Create an Instance of Mapper and return that instance
