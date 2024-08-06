@@ -12,11 +12,11 @@ namespace PracNet7ApiProB01.Services.EntityServices.StaffRoleService
     public interface IStaffRoleService : IGenericService<StaffRole>
     {
         #region Create new staff role
-        Task<object> CreateNewStaff(CreateStaffRoleReqDto model);
+        Task<object> CreateNewStaffRole(CreateStaffRoleReqDto model);
         #endregion
 
         #region Update staff role
-        Task<object> UpdateStaffRole(UpdateStaffRoleReqDto model);
+        Task<object> UpdateStaffRole(string staffRoleId, UpdateStaffRoleReqDto model);
 
         #endregion
 

@@ -33,6 +33,9 @@ builder.Services.AddMvc()
 // Add Serilog Config
 builder.Host.UseSerilog();
 
+// Add CORS 
+builder.Services.AddCors();
+
 var app = builder.Build();
 
 
@@ -42,6 +45,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Use CORS
+app.UseCors(C => C.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
 // Use Serilog Request
 app.UseSerilogRequestLogging();
