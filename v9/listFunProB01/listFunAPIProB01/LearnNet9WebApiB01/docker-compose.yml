@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: learn-net9-fun-api-b01
+    ports:
+      - "1449:1443"
+    environment:
+      ACCEPT_EULA: "Y"              # Accept the license agreement
+      SA_PASSWORD: "12345678@Ab"  # Set a strong password for the SA user
+    volumes:
+      - mssql_data:/var/opt/mssql
+
+volumes:
+  mssql_data:

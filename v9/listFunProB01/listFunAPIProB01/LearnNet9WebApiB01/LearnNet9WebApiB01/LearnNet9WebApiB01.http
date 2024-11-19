@@ -1,0 +1,6 @@
+@LearnNet9WebApiB01_HostAddress = http://localhost:5163
+
+GET {{LearnNet9WebApiB01_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
