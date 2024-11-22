@@ -1,0 +1,14 @@
+½
+±D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\obj\Debug\net7.0\PracNet7ApiProB01.Services.AssemblyInfo.csutf-8Á
+µD:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.csutf-8¿
+³D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\obj\Debug\net7.0\PracNet7ApiProB01.Services.GlobalUsings.g.csutf-8³
+©D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\StaffRoleService\StaffRoleService.csutf-8´
+ªD:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\StaffRoleService\IStaffRoleService.csutf-8¯
+¥D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\ProductService\ProductService.csutf-8°
+¦D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\ProductService\IProductService.csutf-8¹
+¯D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\ProductBrandService\ProductBrandService.csutf-8º
+°D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\ProductBrandService\IProductBrandService.csutf-8À
+¶D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\GeneralUserInfoService\IGeneralUserInfoService.csutf-8¿
+µD:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\GeneralUserInfoService\GeneralUserInfoService.csutf-8¸
+®D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\GeneralRoleService\IGeneralRoleService.csutf-8·
+­D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\GeneralRoleService\GeneralRoleService.csutf-8

@@ -8,8 +8,8 @@ namespace PracNet7ApiProB01.Dto.Dtos.ProductBrand
 {
     public class CreateProductBrandReqDto
     {
-        public string BrandCode { get; set; }
-        public string BrandNName { get; set; }
-        public string Description { get; set; }
+        public required string BrandCode { get; set; }
+        public required string BrandNName { get; set; }
+        public string? Description { get; set; }
     }
 }

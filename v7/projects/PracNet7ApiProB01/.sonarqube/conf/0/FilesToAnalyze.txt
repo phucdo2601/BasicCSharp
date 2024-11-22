@@ -1,0 +1,9 @@
+﻿D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\GeneralRole\CreateGeneralRoleReqDro.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\GeneralRole\UpdateGenRoleReqDto.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\ProductBrand\CreateProductBrandReqDto.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\ProductBrand\UpdateProductBrandReqDto.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\Product\CreateProductReqDto.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\Product\UpdateProductReqDto.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\Responses\CommonResponseDto.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\StaffRole\CreateStaffRoleReqDto.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\StaffRole\UpdateStaffRoleReqDto.cs

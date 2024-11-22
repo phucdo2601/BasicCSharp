@@ -1,0 +1,10 @@
+﻿D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\GeneralRoleService\GeneralRoleService.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\GeneralRoleService\IGeneralRoleService.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\GeneralUserInfoService\GeneralUserInfoService.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\GeneralUserInfoService\IGeneralUserInfoService.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\ProductBrandService\IProductBrandService.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\ProductBrandService\ProductBrandService.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\ProductService\IProductService.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\ProductService\ProductService.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\StaffRoleService\IStaffRoleService.cs
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Services\EntityServices\StaffRoleService\StaffRoleService.cs

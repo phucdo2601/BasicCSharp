@@ -1,0 +1,13 @@
+³
+§D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\obj\Debug\net7.0\PracNet7ApiProB01.Dto.AssemblyInfo.csutf-8¼
+°D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.csutf-8µ
+©D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\obj\Debug\net7.0\PracNet7ApiProB01.Dto.GlobalUsings.g.csutf-8¢
+˜D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\StaffRole\UpdateStaffRoleReqDto.csutf-8¢
+˜D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\StaffRole\CreateStaffRoleReqDto.csutf-8ž
+”D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\Responses\CommonResponseDto.csutf-8ž
+”D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\Product\UpdateProductReqDto.csutf-8ž
+”D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\Product\CreateProductReqDto.csutf-8¨
+žD:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\ProductBrand\UpdateProductBrandReqDto.csutf-8¨
+žD:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\ProductBrand\CreateProductBrandReqDto.csutf-8¢
+˜D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\GeneralRole\UpdateGenRoleReqDto.csutf-8¦
+œD:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\PracNet7ApiProB01.Dto\Dtos\GeneralRole\CreateGeneralRoleReqDro.csutf-8

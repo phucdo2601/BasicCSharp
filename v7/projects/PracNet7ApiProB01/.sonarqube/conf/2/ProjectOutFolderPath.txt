@@ -1,0 +1,1 @@
+D:\LearnSelf\csharp\fundamental\netCore\listFunNetCoreProB01\v7\projects\PracNet7ApiProB01\.sonarqube\out\2

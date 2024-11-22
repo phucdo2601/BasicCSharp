@@ -1,0 +1,1445 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.11.0.0",
+        "fileVersion": "4.11.0-3.24365.8 (9e9c7c1d)",
+        "semanticVersion": "4.11.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possible null reference assignment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 197,
+                  "startColumn": 52,
+                  "endLine": 197,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possible null reference assignment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 198,
+                  "startColumn": 51,
+                  "endLine": 198,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_context' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralUserInfoService/GeneralUserInfoService.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 47,
+                  "endLine": 13,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_unitOfWork' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralUserInfoService/GeneralUserInfoService.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 38,
+                  "endLine": 14,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 24,
+                  "endLine": 35,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 24,
+                  "endLine": 145,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 24,
+                  "endLine": 35,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 24,
+                  "endLine": 156,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 24,
+                  "endLine": 36,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 165,
+                  "startColumn": 24,
+                  "endLine": 165,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 38,
+                  "endLine": 77,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 25,
+                  "endLine": 95,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 21,
+                  "endLine": 106,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'deleted'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 29,
+                  "endLine": 94,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 38,
+                  "endLine": 31,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 38,
+                  "endLine": 31,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 21,
+                  "endLine": 51,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 21,
+                  "endLine": 52,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 21,
+                  "endLine": 68,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'created'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 25,
+                  "endLine": 51,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 21,
+                  "endLine": 63,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await DisposeAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 21,
+                  "endLine": 68,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'created'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 25,
+                  "endLine": 50,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 38,
+                  "endLine": 80,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 25,
+                  "endLine": 98,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 21,
+                  "endLine": 109,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await DisposeAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 21,
+                  "endLine": 114,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'deleted'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 29,
+                  "endLine": 97,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 38,
+                  "endLine": 32,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 21,
+                  "endLine": 50,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 21,
+                  "endLine": 64,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await DisposeAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 21,
+                  "endLine": 75,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'created'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 25,
+                  "endLine": 49,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 38,
+                  "endLine": 84,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 25,
+                  "endLine": 102,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 21,
+                  "endLine": 116,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await DisposeAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 21,
+                  "endLine": 127,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'deleted'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 29,
+                  "endLine": 101,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 38,
+                  "endLine": 33,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 38,
+                  "endLine": 93,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 25,
+                  "endLine": 111,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 21,
+                  "endLine": 122,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 21,
+                  "endLine": 69,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'deleted'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 29,
+                  "endLine": 110,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 21,
+                  "endLine": 82,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'created'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 25,
+                  "endLine": 68,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 38,
+                  "endLine": 131,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 38,
+                  "endLine": 120,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 38,
+                  "endLine": 137,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 21,
+                  "endLine": 159,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 21,
+                  "endLine": 170,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 171,
+                  "startColumn": 21,
+                  "endLine": 171,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 182,
+                  "startColumn": 21,
+                  "endLine": 182,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 176,
+                  "startColumn": 21,
+                  "endLine": 176,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await DisposeAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 187,
+                  "startColumn": 21,
+                  "endLine": 187,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 189,
+                  "startColumn": 21,
+                  "endLine": 189,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await DisposeAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 21,
+                  "endLine": 199,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'updated'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductBrandService/ProductBrandService.cs",
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 25,
+                  "endLine": 158,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'updated'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/ProductService/ProductService.cs",
+                "region": {
+                  "startLine": 169,
+                  "startColumn": 25,
+                  "endLine": 169,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'updated'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/StaffRoleService/StaffRoleService.cs",
+                "region": {
+                  "startLine": 175,
+                  "startColumn": 25,
+                  "endLine": 175,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await BeginTransactionAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 38,
+                  "endLine": 142,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await CommitAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 204,
+                  "startColumn": 21,
+                  "endLine": 204,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RollbackAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 216,
+                  "startColumn": 21,
+                  "endLine": 216,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'updated'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Services/EntityServices/GeneralRoleService/GeneralRoleService.cs",
+                "region": {
+                  "startLine": 203,
+                  "startColumn": 25,
+                  "endLine": 203,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS8601": {
+          "id": "CS8601",
+          "shortDescription": "Possible null reference assignment.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8601)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1135": {
+          "id": "S1135",
+          "shortDescription": "Track uses of \"TODO\" tags",
+          "fullDescription": "Developers often use TODO tags to mark areas in the code where additional work or improvements are needed but are not implemented immediately. However, these TODO tags sometimes get overlooked or forgotten, leading to incomplete or unfinished code. This rule aims to identify and address unattended TODO tags to ensure a clean and maintainable codebase. This description explores why this is a problem and how it can be fixed to improve the overall code quality.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1135",
+          "properties": {
+            "category": "Info Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1481": {
+          "id": "S1481",
+          "shortDescription": "Unused local variables should be removed",
+          "fullDescription": "An unused local variable is a variable that has been declared but is not used anywhere in the block of code where it is defined. It is dead code, contributing to unnecessary complexity and leading to confusion when reading the code. Therefore, it should be removed from your code to maintain clarity and efficiency.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4487": {
+          "id": "S4487",
+          "shortDescription": "Unread \"private\" fields should be removed",
+          "fullDescription": "Private fields which are written but never read are a case of \"dead store\". Changing the value of such a field is useless and most probably indicates an error in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

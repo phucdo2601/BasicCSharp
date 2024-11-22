@@ -8,7 +8,7 @@ namespace PracNet7ApiProB01.Dto.Dtos.GeneralRole
 {
     public class CreateGeneralRoleReqDro
     {
-        public string GenRoleCode { get; set; }
-        public string GenRoleTitle { get; set; }
+        public required string GenRoleCode { get; set; }
+        public required string GenRoleTitle { get; set; }
     }
 }

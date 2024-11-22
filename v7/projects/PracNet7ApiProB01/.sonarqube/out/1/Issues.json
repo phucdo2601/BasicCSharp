@@ -1,0 +1,3851 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.11.0.0",
+        "fileVersion": "4.11.0-3.24365.8 (9e9c7c1d)",
+        "semanticVersion": "4.11.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'StaffRoleCode' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/StaffRole.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/StaffRole.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'StaffRoleTitle' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/StaffRole.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/StaffRole.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Staffs' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/StaffRole.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 35,
+                  "endLine": 15,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/StaffRole.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 35,
+                  "endLine": 15,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'StaffRoleCode' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Staff.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Staff.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'StaffRoleTitle' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Staff.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Staff.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'StaffRole' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Staff.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 26,
+                  "endLine": 16,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Staff.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 26,
+                  "endLine": 16,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'GeneralUserInfo' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Staff.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 32,
+                  "endLine": 23,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Staff.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 32,
+                  "endLine": 23,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'BrandCode' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/ProductBrand.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/ProductBrand.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'BrandNName' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/ProductBrand.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/ProductBrand.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Description' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/ProductBrand.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/ProductBrand.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Products' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/ProductBrand.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 37,
+                  "endLine": 17,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/ProductBrand.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 37,
+                  "endLine": 17,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Description' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Product.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Product.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'ProductCode' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Product.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Product.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'ProductName' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Product.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Product.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'StatusId' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Product.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 23,
+                  "endLine": 19,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Product.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 23,
+                  "endLine": 19,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'ProductBrand' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Product.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 29,
+                  "endLine": 21,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Product.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 29,
+                  "endLine": 21,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'GeneralRoles' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 16,
+                  "endLine": 27,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 35,
+                  "endLine": 37,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'GeneralUserInfo' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 16,
+                  "endLine": 27,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 39,
+                  "endLine": 38,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Customer' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 16,
+                  "endLine": 27,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 32,
+                  "endLine": 39,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Staff' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 16,
+                  "endLine": 27,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 29,
+                  "endLine": 40,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'StaffRole' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 16,
+                  "endLine": 27,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 33,
+                  "endLine": 41,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'GeneralRoles' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 19,
+                  "endLine": 31,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 35,
+                  "endLine": 37,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'GeneralUserInfo' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 19,
+                  "endLine": 31,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 39,
+                  "endLine": 38,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Customer' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 19,
+                  "endLine": 31,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 32,
+                  "endLine": 39,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Staff' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 19,
+                  "endLine": 31,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 29,
+                  "endLine": 40,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'StaffRole' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 19,
+                  "endLine": 31,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 33,
+                  "endLine": 41,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Address' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Email' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'FullName' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Gender' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 23,
+                  "endLine": 19,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 23,
+                  "endLine": 19,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'NationalId' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 23,
+                  "endLine": 21,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 23,
+                  "endLine": 21,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Password' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 23,
+                  "endLine": 22,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 23,
+                  "endLine": 22,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'PhoneNumber' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 23,
+                  "endLine": 23,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 23,
+                  "endLine": 23,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'UserName' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 23,
+                  "endLine": 24,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 23,
+                  "endLine": 24,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'GeneralRole' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 28,
+                  "endLine": 26,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 28,
+                  "endLine": 26,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Customer' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 25,
+                  "endLine": 32,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 25,
+                  "endLine": 32,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Staff' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 22,
+                  "endLine": 38,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralUserInfo.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 22,
+                  "endLine": 38,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'GenRoleCode' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralRole.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralRole.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'GenRoleTitle' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralRole.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralRole.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'GeneralUserInfos' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralRole.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 45,
+                  "endLine": 20,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/GeneralRole.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 45,
+                  "endLine": 20,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Infrastructures/GenericRepository.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 20,
+                  "endLine": 68,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Infrastructures/GenericRepository.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 20,
+                  "endLine": 75,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'CustomerCode' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Customer.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Customer.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'GeneralUserInfo' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Customer.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 32,
+                  "endLine": 22,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/Customer.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 32,
+                  "endLine": 22,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 13,
+                  "endLine": 57,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_context' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Repositories/CustomerRepository/CustomerRepository.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 47,
+                  "endLine": 13,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_context' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Repositories/GeneralRoleRepository/GeneralRoleRepository.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 47,
+                  "endLine": 13,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_context' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Infrastructures/GenericService.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 47,
+                  "endLine": 12,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'connectionStr' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 24,
+                  "endLine": 35,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 24,
+                  "endLine": 35,
+                  "endColumn": 147
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_context' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Repositories/GeneralUserInfoRepository/GeneralUserInfoRepository.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 47,
+                  "endLine": 13,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'general_user_info_tbl' 5 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 41,
+                  "endLine": 73,
+                  "endColumn": 64
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 41,
+                  "endLine": 94,
+                  "endColumn": 64
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 24,
+                  "endLine": 113,
+                  "endColumn": 47
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 138,
+                  "startColumn": 23,
+                  "endLine": 138,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'timestamp with time zone' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 64,
+                  "endLine": 20,
+                  "endColumn": 90
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 65,
+                  "endLine": 21,
+                  "endColumn": 91
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 65,
+                  "endLine": 22,
+                  "endColumn": 91
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 69,
+                  "endLine": 64,
+                  "endColumn": 95
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'staffs_tbl' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 23,
+                  "endLine": 79,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 24,
+                  "endLine": 118,
+                  "endColumn": 36
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 24,
+                  "endLine": 124,
+                  "endColumn": 36
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240706095740_UpdateEnDb01.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 23,
+                  "endLine": 135,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_context' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Repositories/ProductBrandRepository/ProductBrandRepository.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 47,
+                  "endLine": 13,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_context' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Repositories/ProductRepository/ProductRepository.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 47,
+                  "endLine": 13,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'timestamp with time zone' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707065844_UpdateDbEntitiesB02.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 65,
+                  "endLine": 21,
+                  "endColumn": 91
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707065844_UpdateDbEntitiesB02.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 65,
+                  "endLine": 22,
+                  "endColumn": 91
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707065844_UpdateDbEntitiesB02.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 65,
+                  "endLine": 35,
+                  "endColumn": 91
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707065844_UpdateDbEntitiesB02.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 65,
+                  "endLine": 36,
+                  "endColumn": 91
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_context' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Repositories/StaffRepository/StaffRepository.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 47,
+                  "endLine": 13,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_context' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Repositories/StaffRoleRepository/StaffRoleRepository.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 47,
+                  "endLine": 13,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'DateOfUpdate' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 23,
+                  "endLine": 49,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 23,
+                  "endLine": 67,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 23,
+                  "endLine": 106,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 140,
+                  "startColumn": 23,
+                  "endLine": 140,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 23,
+                  "endLine": 158,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'ProductBrand' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 24,
+                  "endLine": 16,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 24,
+                  "endLine": 25,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 24,
+                  "endLine": 107,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 24,
+                  "endLine": 116,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'timestamp without time zone' 16 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 23,
+                  "endLine": 26,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 23,
+                  "endLine": 51,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 23,
+                  "endLine": 60,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 23,
+                  "endLine": 69,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 23,
+                  "endLine": 78,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 23,
+                  "endLine": 87,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 23,
+                  "endLine": 95,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 26,
+                  "endLine": 111,
+                  "endColumn": 55
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 26,
+                  "endLine": 120,
+                  "endColumn": 55
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 26,
+                  "endLine": 145,
+                  "endColumn": 55
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 26,
+                  "endLine": 154,
+                  "endColumn": 55
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 26,
+                  "endLine": 163,
+                  "endColumn": 55
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 172,
+                  "startColumn": 26,
+                  "endLine": 172,
+                  "endColumn": 55
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 181,
+                  "startColumn": 26,
+                  "endLine": 181,
+                  "endColumn": 55
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 189,
+                  "startColumn": 26,
+                  "endLine": 189,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "10": null,
+              "11": null,
+              "12": null,
+              "13": null,
+              "14": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null,
+              "7": null,
+              "8": null,
+              "9": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'timestamp with time zone' 16 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 26,
+                  "endLine": 20,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 26,
+                  "endLine": 29,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 26,
+                  "endLine": 54,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 26,
+                  "endLine": 63,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 26,
+                  "endLine": 72,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 26,
+                  "endLine": 81,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 26,
+                  "endLine": 90,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 26,
+                  "endLine": 98,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 23,
+                  "endLine": 108,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 23,
+                  "endLine": 117,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 23,
+                  "endLine": 142,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 23,
+                  "endLine": 151,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 160,
+                  "startColumn": 23,
+                  "endLine": 160,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 169,
+                  "startColumn": 23,
+                  "endLine": 169,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 178,
+                  "startColumn": 23,
+                  "endLine": 178,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 186,
+                  "startColumn": 23,
+                  "endLine": 186,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "10": null,
+              "11": null,
+              "12": null,
+              "13": null,
+              "14": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null,
+              "7": null,
+              "8": null,
+              "9": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'DateOfCreate' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 23,
+                  "endLine": 24,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 23,
+                  "endLine": 58,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 23,
+                  "endLine": 76,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 23,
+                  "endLine": 115,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 23,
+                  "endLine": 149,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 23,
+                  "endLine": 167,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Product' 8 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 24,
+                  "endLine": 34,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 24,
+                  "endLine": 42,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 24,
+                  "endLine": 50,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 24,
+                  "endLine": 59,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 24,
+                  "endLine": 125,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 24,
+                  "endLine": 133,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 141,
+                  "startColumn": 24,
+                  "endLine": 141,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 150,
+                  "startColumn": 24,
+                  "endLine": 150,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'general_user_info_tbl' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 24,
+                  "endLine": 68,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 24,
+                  "endLine": 77,
+                  "endColumn": 47
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 24,
+                  "endLine": 86,
+                  "endColumn": 47
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 24,
+                  "endLine": 159,
+                  "endColumn": 47
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 168,
+                  "startColumn": 24,
+                  "endLine": 168,
+                  "endColumn": 47
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240713084528_Update-Db-product-model-b01.cs",
+                "region": {
+                  "startLine": 177,
+                  "startColumn": 24,
+                  "endLine": 177,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'DateOfUpdate' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 23,
+                  "endLine": 31,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 23,
+                  "endLine": 47,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 23,
+                  "endLine": 75,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 23,
+                  "endLine": 95,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 23,
+                  "endLine": 115,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'ProductBrand' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 24,
+                  "endLine": 16,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 24,
+                  "endLine": 24,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 24,
+                  "endLine": 76,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 24,
+                  "endLine": 86,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'timestamp with time zone' 28 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 26,
+                  "endLine": 20,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 23,
+                  "endLine": 25,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 26,
+                  "endLine": 28,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 23,
+                  "endLine": 33,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 26,
+                  "endLine": 36,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 23,
+                  "endLine": 41,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 26,
+                  "endLine": 44,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 23,
+                  "endLine": 49,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 26,
+                  "endLine": 52,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 23,
+                  "endLine": 57,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 26,
+                  "endLine": 60,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 23,
+                  "endLine": 65,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 26,
+                  "endLine": 68,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 23,
+                  "endLine": 77,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 26,
+                  "endLine": 81,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 23,
+                  "endLine": 87,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 26,
+                  "endLine": 91,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 23,
+                  "endLine": 97,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 26,
+                  "endLine": 101,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 23,
+                  "endLine": 107,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 26,
+                  "endLine": 111,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 23,
+                  "endLine": 117,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 26,
+                  "endLine": 121,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 23,
+                  "endLine": 127,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 26,
+                  "endLine": 131,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 23,
+                  "endLine": 137,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 141,
+                  "startColumn": 26,
+                  "endLine": 141,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "10": null,
+              "11": null,
+              "12": null,
+              "13": null,
+              "14": null,
+              "15": null,
+              "16": null,
+              "17": null,
+              "18": null,
+              "19": null,
+              "2": null,
+              "20": null,
+              "21": null,
+              "22": null,
+              "23": null,
+              "24": null,
+              "25": null,
+              "26": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null,
+              "7": null,
+              "8": null,
+              "9": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'DateOfCreate' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 23,
+                  "endLine": 23,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 23,
+                  "endLine": 39,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 23,
+                  "endLine": 55,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 23,
+                  "endLine": 85,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 23,
+                  "endLine": 105,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 23,
+                  "endLine": 125,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Product' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 24,
+                  "endLine": 32,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 24,
+                  "endLine": 40,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 24,
+                  "endLine": 96,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 24,
+                  "endLine": 106,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'general_user_info_tbl' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 24,
+                  "endLine": 48,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 24,
+                  "endLine": 56,
+                  "endColumn": 47
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 24,
+                  "endLine": 116,
+                  "endColumn": 47
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Migrations/20240707081638_UpdateDbSetUpFieldsB01.cs",
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 24,
+                  "endLine": 126,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S3881",
+          "level": "warning",
+          "message": "Fix this implementation of 'IDisposable' to conform to the dispose pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Infrastructures/UnitOfWork.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 18,
+                  "endLine": 17,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Infrastructures/UnitOfWork.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 18,
+                  "endLine": 17,
+                  "endColumn": 28
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Infrastructures/UnitOfWork.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 21,
+                  "endLine": 40,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Provide 'protected' overridable implementation of 'Dispose(bool)' on 'UnitOfWork' or mark the type as 'sealed'.",
+              "1": "'UnitOfWork.Dispose()' should call 'Dispose(true)' and 'GC.SuppressFinalize(this)'."
+            }
+          }
+        },
+        {
+          "ruleId": "CA1816",
+          "level": "note",
+          "message": "Change UnitOfWork.Dispose() to call GC.SuppressFinalize(object). This will prevent derived types that introduce a finalizer from needing to re-implement 'IDisposable' to call it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Infrastructures/UnitOfWork.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 21,
+                  "endLine": 40,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Infrastructures/GenericService.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 13,
+                  "endLine": 36,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Infrastructures/GenericService.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 13,
+                  "endLine": 53,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2255",
+          "level": "warning",
+          "message": "The 'ModuleInitializer' attribute is only intended to be used in application code or advanced source generator scenarios",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/LearnSelf/csharp/fundamental/netCore/listFunNetCoreProB01/v7/projects/PracNet7ApiProB01/PracNet7ApiProB01.Model/Entities/PracNet7ApiDbContext.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 10,
+                  "endLine": 18,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1816": {
+          "id": "CA1816",
+          "shortDescription": "Dispose methods should call SuppressFinalize",
+          "fullDescription": "A method that is an implementation of Dispose does not call GC.SuppressFinalize; or a method that is not an implementation of Dispose calls GC.SuppressFinalize; or a method calls GC.SuppressFinalize and passes something other than this (Me in Visual Basic).",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1816",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2255": {
+          "id": "CA2255",
+          "shortDescription": "The 'ModuleInitializer' attribute should not be used in libraries",
+          "fullDescription": "Module initializers are intended to be used by application code to ensure an application's components are initialized before the application code begins executing. If library code declares a method with the 'ModuleInitializerAttribute', it can interfere with application initialization and also lead to limitations in that application's trimming abilities. Instead of using methods marked with 'ModuleInitializerAttribute', the library should expose methods that can be used to initialize any components within the library and allow the application to invoke the method during application initialization.",
+          "defaultLevel": "warning",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2255",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS8603": {
+          "id": "CS8603",
+          "shortDescription": "Possible null reference return.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8603)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1192": {
+          "id": "S1192",
+          "shortDescription": "String literals should not be duplicated",
+          "fullDescription": "Duplicated string literals make the process of refactoring complex and error-prone, as any change would need to be propagated on all occurrences.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1192",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Commented-out code distracts the focus from the actual executed code. It creates a noise that increases maintenance code. And because it is never executed, it quickly becomes out of date and invalid.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2068": {
+          "id": "S2068",
+          "shortDescription": "Hard-coded credentials are security-sensitive",
+          "fullDescription": "Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2068",
+          "properties": {
+            "category": "Blocker Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2737": {
+          "id": "S2737",
+          "shortDescription": "\"catch\" clauses should do more than rethrow",
+          "fullDescription": "A catch clause that only rethrows the caught exception has the same effect as omitting the catch altogether and letting it bubble up automatically.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2737",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2933": {
+          "id": "S2933",
+          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
+          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that’s not marked readonly but is only set in the constructor, it could cause confusion about the field’s intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3881": {
+          "id": "S3881",
+          "shortDescription": "\"IDisposable\" should be implemented correctly",
+          "fullDescription": "The IDisposable interface is a mechanism to release unmanaged resources, if not implemented correctly this could result in resource leaks or more severe bugs.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3881",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4487": {
+          "id": "S4487",
+          "shortDescription": "Unread \"private\" fields should be removed",
+          "fullDescription": "Private fields which are written but never read are a case of \"dead store\". Changing the value of such a field is useless and most probably indicates an error in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
