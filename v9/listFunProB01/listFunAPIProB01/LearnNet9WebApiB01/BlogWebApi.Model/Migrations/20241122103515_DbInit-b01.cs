@@ -118,7 +118,6 @@ namespace BlogWebApi.Model.Migrations
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     BlogId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    BlogEntityId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     DateOfCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DateOfModified = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -126,8 +125,8 @@ namespace BlogWebApi.Model.Migrations
                 {
                     table.PrimaryKey("PK_comments_tbl", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_comments_tbl_blogs_tbl_BlogEntityId",
-                        column: x => x.BlogEntityId,
+                        name: "FK_comments_tbl_blogs_tbl_BlogId",
+                        column: x => x.BlogId,
                         principalTable: "blogs_tbl",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -147,8 +146,6 @@ namespace BlogWebApi.Model.Migrations
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     BlogId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     InteractionTypeId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    BlogEntityId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    InteractionTypeEntityId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     DateOfCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DateOfModified = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -156,14 +153,14 @@ namespace BlogWebApi.Model.Migrations
                 {
                     table.PrimaryKey("PK_interaction_tbl", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_interaction_tbl_blogs_tbl_BlogEntityId",
-                        column: x => x.BlogEntityId,
+                        name: "FK_interaction_tbl_blogs_tbl_BlogId",
+                        column: x => x.BlogId,
                         principalTable: "blogs_tbl",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_interaction_tbl_interaction_types_tbl_InteractionTypeEntityId",
-                        column: x => x.InteractionTypeEntityId,
+                        name: "FK_interaction_tbl_interaction_types_tbl_InteractionTypeId",
+                        column: x => x.InteractionTypeId,
                         principalTable: "interaction_types_tbl",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -182,7 +179,6 @@ namespace BlogWebApi.Model.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     BlogId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    BlogEntityId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     DateOfCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DateOfModified = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -190,8 +186,8 @@ namespace BlogWebApi.Model.Migrations
                 {
                     table.PrimaryKey("PK_likes_tbl", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_likes_tbl_blogs_tbl_BlogEntityId",
-                        column: x => x.BlogEntityId,
+                        name: "FK_likes_tbl_blogs_tbl_BlogId",
+                        column: x => x.BlogId,
                         principalTable: "blogs_tbl",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -210,7 +206,6 @@ namespace BlogWebApi.Model.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     BlogId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    BlogEntityId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     DateOfCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DateOfModified = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -218,8 +213,8 @@ namespace BlogWebApi.Model.Migrations
                 {
                     table.PrimaryKey("PK_shares_tbl", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_shares_tbl_blogs_tbl_BlogEntityId",
-                        column: x => x.BlogEntityId,
+                        name: "FK_shares_tbl_blogs_tbl_BlogId",
+                        column: x => x.BlogId,
                         principalTable: "blogs_tbl",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -242,9 +237,9 @@ namespace BlogWebApi.Model.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_comments_tbl_BlogEntityId",
+                name: "IX_comments_tbl_BlogId",
                 table: "comments_tbl",
-                column: "BlogEntityId");
+                column: "BlogId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_comments_tbl_UserId",
@@ -252,14 +247,14 @@ namespace BlogWebApi.Model.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_interaction_tbl_BlogEntityId",
+                name: "IX_interaction_tbl_BlogId",
                 table: "interaction_tbl",
-                column: "BlogEntityId");
+                column: "BlogId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_interaction_tbl_InteractionTypeEntityId",
+                name: "IX_interaction_tbl_InteractionTypeId",
                 table: "interaction_tbl",
-                column: "InteractionTypeEntityId");
+                column: "InteractionTypeId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_interaction_tbl_UserId",
@@ -267,9 +262,9 @@ namespace BlogWebApi.Model.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_likes_tbl_BlogEntityId",
+                name: "IX_likes_tbl_BlogId",
                 table: "likes_tbl",
-                column: "BlogEntityId");
+                column: "BlogId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_likes_tbl_UserId",
@@ -277,9 +272,9 @@ namespace BlogWebApi.Model.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_shares_tbl_BlogEntityId",
+                name: "IX_shares_tbl_BlogId",
                 table: "shares_tbl",
-                column: "BlogEntityId");
+                column: "BlogId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_shares_tbl_UserId",

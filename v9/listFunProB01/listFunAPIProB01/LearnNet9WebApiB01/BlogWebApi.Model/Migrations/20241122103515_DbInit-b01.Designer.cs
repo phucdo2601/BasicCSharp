@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogWebApi.Model.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241122085728_DbInit-b01")]
+    [Migration("20241122103515_DbInit-b01")]
     partial class DbInitb01
     {
         /// <inheritdoc />
@@ -91,9 +91,6 @@ namespace BlogWebApi.Model.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("BlogEntityId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("BlogId")
                         .HasColumnType("uniqueidentifier");
 
@@ -112,7 +109,7 @@ namespace BlogWebApi.Model.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BlogEntityId");
+                    b.HasIndex("BlogId");
 
                     b.HasIndex("UserId");
 
@@ -125,9 +122,6 @@ namespace BlogWebApi.Model.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("BlogEntityId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("BlogId")
                         .HasColumnType("uniqueidentifier");
 
@@ -137,9 +131,6 @@ namespace BlogWebApi.Model.Migrations
                     b.Property<DateTime>("DateOfModified")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("InteractionTypeEntityId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("InteractionTypeId")
                         .HasColumnType("uniqueidentifier");
 
@@ -148,9 +139,9 @@ namespace BlogWebApi.Model.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BlogEntityId");
+                    b.HasIndex("BlogId");
 
-                    b.HasIndex("InteractionTypeEntityId");
+                    b.HasIndex("InteractionTypeId");
 
                     b.HasIndex("UserId");
 
@@ -184,9 +175,6 @@ namespace BlogWebApi.Model.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("BlogEntityId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("BlogId")
                         .HasColumnType("uniqueidentifier");
 
@@ -201,7 +189,7 @@ namespace BlogWebApi.Model.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BlogEntityId");
+                    b.HasIndex("BlogId");
 
                     b.HasIndex("UserId");
 
@@ -235,9 +223,6 @@ namespace BlogWebApi.Model.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("BlogEntityId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("BlogId")
                         .HasColumnType("uniqueidentifier");
 
@@ -252,7 +237,7 @@ namespace BlogWebApi.Model.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BlogEntityId");
+                    b.HasIndex("BlogId");
 
                     b.HasIndex("UserId");
 
@@ -331,7 +316,7 @@ namespace BlogWebApi.Model.Migrations
                 {
                     b.HasOne("BlogWebApi.Model.Entities.BlogEntity", "BlogEntity")
                         .WithMany("CommentEntities")
-                        .HasForeignKey("BlogEntityId")
+                        .HasForeignKey("BlogId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -350,13 +335,13 @@ namespace BlogWebApi.Model.Migrations
                 {
                     b.HasOne("BlogWebApi.Model.Entities.BlogEntity", "BlogEntity")
                         .WithMany("InteractionEntities")
-                        .HasForeignKey("BlogEntityId")
+                        .HasForeignKey("BlogId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("BlogWebApi.Model.Entities.InteractionTypeEntity", "InteractionTypeEntity")
                         .WithMany("InteractionEntities")
-                        .HasForeignKey("InteractionTypeEntityId")
+                        .HasForeignKey("InteractionTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -377,7 +362,7 @@ namespace BlogWebApi.Model.Migrations
                 {
                     b.HasOne("BlogWebApi.Model.Entities.BlogEntity", "BlogEntity")
                         .WithMany("LikeEntities")
-                        .HasForeignKey("BlogEntityId")
+                        .HasForeignKey("BlogId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -396,7 +381,7 @@ namespace BlogWebApi.Model.Migrations
                 {
                     b.HasOne("BlogWebApi.Model.Entities.BlogEntity", "BlogEntity")
                         .WithMany("ShareEntities")
-                        .HasForeignKey("BlogEntityId")
+                        .HasForeignKey("BlogId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

@@ -35,13 +35,13 @@ namespace BlogWebApi.Model.Entities
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new RoleEntityConfiguration());
             modelBuilder.ApplyConfiguration(new UserEntityConfiguration());
-            //modelBuilder.ApplyConfiguration(new BlogCategoryEntityConfiguration());
-            //modelBuilder.ApplyConfiguration(new BlogEntityConfiguration());
-            //modelBuilder.ApplyConfiguration(new CommentEntityConfiguration());
-            //modelBuilder.ApplyConfiguration(new LikeEntityConfiguration());
-            //modelBuilder.ApplyConfiguration(new ShareEntityConfiguration());
-            //modelBuilder.ApplyConfiguration(new InteractionEntityConfiguration());
-            //modelBuilder.ApplyConfiguration(new InteractionTypeEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new BlogCategoryEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new BlogEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new CommentEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new LikeEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new ShareEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new InteractionEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new InteractionTypeEntityConfiguration());
         }
 
         #endregion
