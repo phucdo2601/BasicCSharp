@@ -35,6 +35,6 @@ namespace BlogWebApi.Application.UnitOfWork
 
         IUserRepository UserRepository { get; }
 
-        int save();
+        int Save();
     }
 }

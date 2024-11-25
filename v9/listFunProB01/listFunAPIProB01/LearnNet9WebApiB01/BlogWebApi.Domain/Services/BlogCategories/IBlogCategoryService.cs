@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BlogWebApi.Domain.Services.Generics;
+using BlogWebApi.Model.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BlogWebApi.Domain.Services.BlogCategories
 {
-    public interface IBlogCategoryService
+    public interface IBlogCategoryService : IGenericService<BlogCategoryEntity>
     {
     }
 }

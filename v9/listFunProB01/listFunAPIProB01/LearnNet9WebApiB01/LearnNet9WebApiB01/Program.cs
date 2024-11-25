@@ -16,7 +16,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(option =>{
 });
 
 // Conifguration add unit of work for using repository
-builder.Services.AddSingleton<IUnitOfWork, UnitOfWork>();
+builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

@@ -40,7 +40,7 @@ namespace BlogWebApi.Application.UnitOfWork
             _dbContext.Dispose();
         }
 
-        public int save()
+        public int Save()
         {
             return _dbContext.SaveChanges();
         }

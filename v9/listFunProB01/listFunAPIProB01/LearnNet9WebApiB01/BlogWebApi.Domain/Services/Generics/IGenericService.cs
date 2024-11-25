@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BlogWebApi.Domain.Dtos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ namespace BlogWebApi.Domain.Services.Generics
     {
         IEnumerable<T> FindAll();
         T FindById(Guid id);
-        T update(T entity);
+        int update(T entity);
 
-        T Create(T entity);
+        int Create(T entity);
 
         bool Delete(T entity);
 
