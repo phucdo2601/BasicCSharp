@@ -10,8 +10,6 @@ namespace BlogWebApi.Model.Entities
         {
         }
 
-        private const string connectionStr = @"Server=localhost,1441; Database=BlogNet9ApiB01; user=sa;password=12345678@Abc; Encrypt=false";
-
         #region the region import and export data
         public DbSet<RoleEntity> RoleEntities { get; set; }
         public DbSet<UserEntity> UserEntities { get; set; }
@@ -27,7 +25,7 @@ namespace BlogWebApi.Model.Entities
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer(connectionStr);
+            optionsBuilder.UseSqlServer(UtilsConstant.CONNECTION_STR);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

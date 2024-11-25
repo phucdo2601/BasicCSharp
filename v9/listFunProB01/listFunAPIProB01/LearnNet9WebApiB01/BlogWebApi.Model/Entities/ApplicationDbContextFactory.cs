@@ -13,7 +13,7 @@ namespace BlogWebApi.Model.Entities
         public ApplicationDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseSqlServer("Server=localhost,1441; Database=BlogNet9ApiB01; user=sa;password=12345678@Abc; Encrypt=false");
+            optionsBuilder.UseSqlServer(UtilsConstant.CONNECTION_STR);
 
             return new ApplicationDbContext(optionsBuilder.Options);
         }
