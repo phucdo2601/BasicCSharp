@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BlogWebApi.Domain.Dtos.BlogCategoríes;
+using BlogWebApi.Domain.Dtos.Blogs;
 using BlogWebApi.Model.Entities;
 
 namespace BlogWebApi.Presentation.Configurations
@@ -14,6 +15,13 @@ namespace BlogWebApi.Presentation.Configurations
             // Map CreateBlogCategoryDto to BlogCategoryEntity (for adding new Blog Category)
             // Source: CreateBlogCategoryDto and Destination: BlogCategoryEntity
             CreateMap<CreateBlogCategoryDto, BlogCategoryEntity>();
+
+            // Map BlogEntity to BlogDto (for customers)
+            // Source: BlogEntity and Destination: BlogDto
+            CreateMap<BlogEntity, BlogDto>();
+            // Map BlogCreateDto to BlogEntity (for adding new Blog Category)
+            // Source: BlogCreateDto and Destination: BlogEntity
+            CreateMap<BlogCreateDto, BlogEntity>();
         }
     }
 }
