@@ -30,6 +30,9 @@ Log.Logger = new LoggerConfiguration()
 // This will also replace default logging provider with Serilog
 builder.Host.UseSerilog();
 
+// Set Auto Mapper for this project
+builder.Services.AddAutoMapper(typeof(Program));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

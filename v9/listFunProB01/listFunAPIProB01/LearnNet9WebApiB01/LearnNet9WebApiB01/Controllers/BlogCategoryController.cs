@@ -1,4 +1,5 @@
-﻿using BlogWebApi.Application.Repositories.GenericRepository;
+﻿using AutoMapper;
+using BlogWebApi.Application.Repositories.GenericRepository;
 using BlogWebApi.Application.UnitOfWork;
 using BlogWebApi.Domain.Dtos.BlogCategoríes;
 using BlogWebApi.Domain.Services.BlogCategories;
@@ -18,14 +19,16 @@ namespace BlogWebApi.Presentation.Controllers
         private readonly IGenericRepository<BlogCategoryEntity> _blogCategoryRepo;
         private readonly IBlogCategoryService _blogCateService;
         private readonly ILogger<BlogCategoryController> _logger;
+        private readonly IMapper _mapper;
 
-        public BlogCategoryController(IUnitOfWork unitOfWork, ApplicationDbContext context, ILogger<BlogCategoryController> logger)
+        public BlogCategoryController(IUnitOfWork unitOfWork, ApplicationDbContext context, ILogger<BlogCategoryController> logger, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _context = context;
             _blogCategoryRepo = new GenericRepository<BlogCategoryEntity>(_context);
             _blogCateService = new BlogCategoryService(_context, _unitOfWork, _blogCategoryRepo);
             _logger = logger;
+            _mapper = mapper;
         }
 
         [HttpGet("getAllBlogCates")]
@@ -74,13 +77,17 @@ namespace BlogWebApi.Presentation.Controllers
                 return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"The blog category title is not null" }));
             }
             var blogCateId = Guid.NewGuid();
-            BlogCategoryEntity entity = new()
-            {
-                Id = blogCateId,
-                BlogCategoryTitle = model.BlogCategoryTitle,
-                DateOfCreated = DateTime.UtcNow,
-                DateOfModified = DateTime.UtcNow,
-            };
+            //BlogCategoryEntity entity = new()
+            //{
+            //    Id = blogCateId,
+            //    BlogCategoryTitle = model.BlogCategoryTitle,
+            //    DateOfCreated = DateTime.UtcNow,
+            //    DateOfModified = DateTime.UtcNow,
+            //};
+            BlogCategoryEntity entity = _mapper.Map<BlogCategoryEntity>(model);
+            entity.Id = blogCateId;
+            entity.DateOfCreated = DateTime.UtcNow;
+            entity.DateOfModified = DateTime.UtcNow;
             var res = _blogCateService.Create(entity);
             BlogCategoryEntity blogCate = _blogCateService.FindById(entity.Id);
             if (res > 0)
