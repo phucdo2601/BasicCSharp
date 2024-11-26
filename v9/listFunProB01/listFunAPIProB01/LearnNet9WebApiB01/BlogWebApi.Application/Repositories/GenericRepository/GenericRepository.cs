@@ -35,7 +35,6 @@ namespace BlogWebApi.Application.Repositories.GenericRepository
         {
             return _dbContext.Set<T>().Find(id);
         }
-
         public void Remove(T entity)
         {
             _dbContext.Set<T>().Remove(entity);

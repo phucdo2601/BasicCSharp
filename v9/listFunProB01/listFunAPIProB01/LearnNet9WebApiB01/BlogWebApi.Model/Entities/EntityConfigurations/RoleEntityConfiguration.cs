@@ -21,6 +21,26 @@ namespace BlogWebApi.Model.Entities.EntityConfigurations
             builder.HasMany(p => p.UserEntities)
                 .WithOne(p => p.RoleEntity)
                 .HasForeignKey(p => p.RoleId);
+
+            /**
+             * Seeding data on database
+             */
+            builder.HasData(
+                new RoleEntity
+                {
+                    Id = Guid.NewGuid(),
+                    RoleTitle = "ADMIN",
+                    DateOfCreated = DateTime.Now,
+                    DateOfModified = DateTime.Now,
+                },
+                new RoleEntity
+                {
+                    Id = Guid.NewGuid(),
+                    RoleTitle = "USER",
+                    DateOfCreated = DateTime.Now,
+                    DateOfModified = DateTime.Now,
+                }
+                );
         }
     }
 }

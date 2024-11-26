@@ -88,21 +88,9 @@ namespace BlogWebApi.Domain.Services.Generics
 
         public T FindById(Guid id)
         {
-            var connection = _context.Database.GetDbConnection();
             try
             {
                 T objRe;
-                //if (connection.State == System.Data.ConnectionState.Closed)
-                //{
-                //    connection.Open();
-                //    objRe = _repository.FindById(id);
-                //    return objRe;
-                //}
-                //else
-                //{
-                //    objRe = _repository.FindById(id);
-                //    return objRe;
-                //}
                 objRe = _repository.FindById(id);
                 return objRe;
             }
@@ -111,10 +99,12 @@ namespace BlogWebApi.Domain.Services.Generics
 
                 throw;
             }
-            finally { _unitOfWork.Dispose(); }
+            //finally { _unitOfWork.Dispose(); }
         }
 
-        public int update(T entity)
+        
+
+        public int Update(T entity)
         {
             using (var transaction = _context.Database.BeginTransaction())
             {

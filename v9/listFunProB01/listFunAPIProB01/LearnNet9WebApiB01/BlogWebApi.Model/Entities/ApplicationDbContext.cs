@@ -1,5 +1,6 @@
 ﻿using BlogWebApi.Model.Entities.EntityConfigurations;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace BlogWebApi.Model.Entities
 {
@@ -26,6 +27,8 @@ namespace BlogWebApi.Model.Entities
         {
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer(UtilsConstant.CONNECTION_STR);
+            optionsBuilder.ConfigureWarnings(warnings =>
+        warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

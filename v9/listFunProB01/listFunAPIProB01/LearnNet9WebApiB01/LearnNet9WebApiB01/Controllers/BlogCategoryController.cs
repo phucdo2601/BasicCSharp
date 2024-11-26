@@ -36,9 +36,16 @@ namespace BlogWebApi.Presentation.Controllers
         [HttpGet("GetBlogCateById/{blogCateId}")]
         public async Task<IActionResult> GetBlogCateById([FromRoute(Name = "blogCateId")] string id)
         {
-            var getBlogCateById = _blogCateService.FindById(new Guid(id));
-            return getBlogCateById != null ? await Task.FromResult(StatusCode(StatusCodes.Status200OK, getBlogCateById))
-                : await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found Blog Category with id {id}" }));
+            try
+            {
+                var getBlogCateById = _blogCateService.FindById(Guid.Parse(id));
+                return getBlogCateById != null ? await Task.FromResult(StatusCode(StatusCodes.Status200OK, getBlogCateById))
+                    : await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found Blog Category with id {id}" }));
+            }
+            catch (Exception)
+            {
+                return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"ID {id} is not valid!" }));
+            }
         }
 
         [HttpPost("addNewBlogCate")]
@@ -68,8 +75,54 @@ namespace BlogWebApi.Presentation.Controllers
         [HttpPut("UpdateBlogCategory/{blogCateId}")]
         public async Task<IActionResult> UpdateBlogCategory([FromRoute(Name = "blogCateId")] string id, [FromBody] CreateBlogCategoryDto model)
         {
-            // TODO: IMPLEMENT Update Blog Category
-            return null;
+            try
+            {
+                var blogCateId = Guid.Parse(id);
+                BlogCategoryEntity existedBlogCate = _blogCateService.FindById(blogCateId);
+                if (existedBlogCate == null)
+                {
+                    return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found Blog Category with id {id}" }));
+                }
+
+                existedBlogCate.Id = blogCateId;
+                existedBlogCate.BlogCategoryTitle = model.BlogCategoryTitle;
+                existedBlogCate.DateOfModified = DateTime.Now;
+                int updatedBlogCate = _blogCateService.Update(existedBlogCate);
+                if (updatedBlogCate > 0)
+                {
+                    return await Task.FromResult(StatusCode(StatusCodes.Status200OK, existedBlogCate));
+                }
+
+                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = "Update Category is not successfully" }));
+            }
+            catch (Exception)
+            {
+                return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"ID {id} is not valid!" }));
+            }
+        }
+
+        [HttpDelete("DeleteBlogCategory/{blogCateId}")]
+        public async Task<IActionResult> DeleteBlogCategory([FromRoute(Name = "blogCateId")] string id)
+        {
+            try
+            {
+                var blogCateId = Guid.Parse(id);
+                BlogCategoryEntity existedBlogCate = _blogCateService.FindById(blogCateId);
+                if (existedBlogCate == null)
+                {
+                    return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found Blog Category with id {id}" }));
+                }
+                bool isDeleted = _blogCateService.Delete(existedBlogCate);
+                if (isDeleted)
+                {
+                    return await Task.FromResult(StatusCode(StatusCodes.Status200OK, new { StatusCode = StatusCodes.Status200OK, Message = $"Delete Blog Category is successfully!" }));
+                }
+                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Delete Blog Category is failed!" }));
+            }
+            catch (Exception)
+            {
+                return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"ID {id} is not valid!" }));
+            }
         }
     }
 }

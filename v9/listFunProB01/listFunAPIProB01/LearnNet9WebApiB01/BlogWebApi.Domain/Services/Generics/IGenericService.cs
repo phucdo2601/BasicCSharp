@@ -11,7 +11,7 @@ namespace BlogWebApi.Domain.Services.Generics
     {
         IEnumerable<T> FindAll();
         T FindById(Guid id);
-        int update(T entity);
+        int Update(T entity);
 
         int Create(T entity);
 
