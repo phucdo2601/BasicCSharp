@@ -2,6 +2,7 @@ using BlogWebApi.Application.UnitOfWork;
 using BlogWebApi.Model.Entities;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,17 @@ builder.Services.AddDbContext<ApplicationDbContext>(option =>{
 
 // Conifguration add unit of work for using repository
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+
+// Configure Serilog for logging
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .WriteTo.Console()
+    .WriteTo.File("logs/MyAppLog.txt")
+    .CreateLogger();
+
+// Set Serilog as the logging provider
+// This will also replace default logging provider with Serilog
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 
