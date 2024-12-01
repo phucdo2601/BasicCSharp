@@ -4,6 +4,7 @@ using BlogWebApi.Model.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogWebApi.Model.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241127021651_DbUpdate-Config-dtype-blogs_tbl-b01")]
+    partial class DbUpdateConfigdtypeblogs_tblb01
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -216,16 +219,16 @@ namespace BlogWebApi.Model.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("81c2a943-c473-4fa4-b437-6b6d442d1f69"),
-                            DateOfCreated = new DateTime(2024, 12, 1, 16, 9, 4, 535, DateTimeKind.Local).AddTicks(4087),
-                            DateOfModified = new DateTime(2024, 12, 1, 16, 9, 4, 536, DateTimeKind.Local).AddTicks(7579),
+                            Id = new Guid("1a633bf0-09ba-4ad2-9c0e-2fb61fba200a"),
+                            DateOfCreated = new DateTime(2024, 11, 27, 9, 16, 50, 723, DateTimeKind.Local).AddTicks(1534),
+                            DateOfModified = new DateTime(2024, 11, 27, 9, 16, 50, 724, DateTimeKind.Local).AddTicks(981),
                             RoleTitle = "ADMIN"
                         },
                         new
                         {
-                            Id = new Guid("15baee4b-c6fb-47ec-871a-e798ab9c5594"),
-                            DateOfCreated = new DateTime(2024, 12, 1, 16, 9, 4, 536, DateTimeKind.Local).AddTicks(7937),
-                            DateOfModified = new DateTime(2024, 12, 1, 16, 9, 4, 536, DateTimeKind.Local).AddTicks(7940),
+                            Id = new Guid("ef367267-a0cc-4608-b549-358e10a6c405"),
+                            DateOfCreated = new DateTime(2024, 11, 27, 9, 16, 50, 724, DateTimeKind.Local).AddTicks(1181),
+                            DateOfModified = new DateTime(2024, 11, 27, 9, 16, 50, 724, DateTimeKind.Local).AddTicks(1182),
                             RoleTitle = "USER"
                         });
                 });
@@ -284,7 +287,7 @@ namespace BlogWebApi.Model.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Password")
+                    b.Property<string>("Passord")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

@@ -49,6 +49,11 @@ namespace BlogWebApi.Presentation.Controllers
         public async Task<IActionResult> GetBlogCateById([FromRoute(Name = "blogCateId")] string id)
         {
             _logger.LogInformation($"Begin {nameof(GetBlogCateById)} function in {this.GetType().Name}");
+            if (string.IsNullOrWhiteSpace(id))
+            {
+                _logger.LogError($"Id params of {nameof(GetBlogCateById)} function in {this.GetType().Name} is null.");
+                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Id params is not null or blank or whitespa" }));
+            }
             try
             {
                 var getBlogCateById = _blogCateService.FindById(Guid.Parse(id));

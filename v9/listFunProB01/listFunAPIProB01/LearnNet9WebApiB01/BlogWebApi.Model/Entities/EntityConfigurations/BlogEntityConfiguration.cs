@@ -12,6 +12,7 @@ namespace BlogWebApi.Model.Entities.EntityConfigurations
     {
         public void Configure(EntityTypeBuilder<BlogEntity> builder)
         {
+            #region Making entity relation ship
             /**
              * One-To-Many:
              * Making relationship between Blog and BlogCategory N-To-1
@@ -61,6 +62,12 @@ namespace BlogWebApi.Model.Entities.EntityConfigurations
             builder.HasMany(p => p.LikeEntities)
                 .WithOne(p => p.BlogEntity)
                 .HasForeignKey(p => p.BlogId);
+            #endregion
+
+            #region Configuring datatype of table
+            builder.Property(p => p.Content)
+                .HasColumnType("ntext");
+            #endregion
         }
     }
 }
