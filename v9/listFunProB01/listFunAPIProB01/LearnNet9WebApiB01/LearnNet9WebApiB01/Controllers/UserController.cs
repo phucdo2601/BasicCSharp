@@ -106,7 +106,7 @@ namespace BlogWebApi.Presentation.Controllers
             }
             try
             {
-                var userId = Guid.NewGuid();
+                var userId = Guid.Parse(id);
                 UserEntity existedUser = _userService.FindById(userId);
                 if (existedUser == null)
                 {
@@ -114,7 +114,7 @@ namespace BlogWebApi.Presentation.Controllers
                     return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found User with id {id}" }));
                 }
 
-                existedUser = _mapper.Map<UserEntity>(model);
+                _mapper.Map(model, existedUser);
                 existedUser.DateOfModified = DateTime.UtcNow;
                 int updatedUser = _userService.Update(existedUser);
                 if (updatedUser > 0)
