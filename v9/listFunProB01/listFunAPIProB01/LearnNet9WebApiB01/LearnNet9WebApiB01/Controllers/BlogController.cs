@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using BlogWebApi.Application.Repositories.BlogCategoryRepository;
+using BlogWebApi.Application.Repositories.BlogRepository;
 using BlogWebApi.Application.Repositories.GenericRepository;
 using BlogWebApi.Application.UnitOfWork;
 using BlogWebApi.Domain.Dtos.Blogs;
@@ -17,8 +19,11 @@ namespace BlogWebApi.Presentation.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ApplicationDbContext _context;
-        private readonly IGenericRepository<BlogEntity> _blogRepo;
-        private readonly IGenericRepository<BlogCategoryEntity> _blogCategoryRepo;
+        //private readonly IGenericRepository<BlogEntity> _blogRepo;
+        //private readonly IGenericRepository<BlogCategoryEntity> _blogCategoryRepo;
+        //private readonly IGenericRepository<UserEntity> _userRepo;
+        private readonly IBlogRepository _blogRepo;
+        private readonly IBlogCategoryRepository _blogCategoryRepo;
         private readonly IBlogService _blogService;
         private readonly IBlogCategoryService _blogCategoryService;
         private readonly ILogger<BlogController> _logger;
@@ -28,8 +33,9 @@ namespace BlogWebApi.Presentation.Controllers
         {
             _unitOfWork = unitOfWork;
             _context = context;
-            _blogRepo = new GenericRepository<BlogEntity>(_context);
+            _blogRepo = new BlogRepository(_context);
             _blogService = new BlogService(_context, unitOfWork, _blogRepo);
+            _blogCategoryRepo = new BlogCategoryRepository(_context);
             _blogCategoryService = new BlogCategoryService(_context, unitOfWork, _blogCategoryRepo);
             _logger = logger;
             _mapper = mapper;
@@ -99,9 +105,9 @@ namespace BlogWebApi.Presentation.Controllers
             entity.DateOfCreated = DateTime.UtcNow;
             entity.DateOfModified = DateTime.UtcNow;
             var res = _blogService.Create(entity);
-            BlogEntity blog = _blogService.FindById(entity.Id);
             if (res > 0)
             {
+                BlogEntity blog = _blogService.FindById(entity.Id);
                 _logger.LogInformation($"Adding data of {nameof(AddNewBlog)} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status200OK, blog));
             }

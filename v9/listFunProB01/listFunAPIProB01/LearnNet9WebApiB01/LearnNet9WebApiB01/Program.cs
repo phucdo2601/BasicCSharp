@@ -7,7 +7,11 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+// Configure Newtonsoft.Json for resolving  serialization cycle was detected when serializing data to JSON
+builder.Services.AddControllers().AddNewtonsoftJson(options =>
+{
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+});
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
@@ -29,6 +33,8 @@ Log.Logger = new LoggerConfiguration()
 // Set Serilog as the logging provider
 // This will also replace default logging provider with Serilog
 builder.Host.UseSerilog();
+
+
 
 // Set Auto Mapper for this project
 builder.Services.AddAutoMapper(typeof(Program));

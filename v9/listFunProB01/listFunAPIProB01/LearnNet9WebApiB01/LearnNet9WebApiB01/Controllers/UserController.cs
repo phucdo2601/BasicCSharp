@@ -84,10 +84,10 @@ namespace BlogWebApi.Presentation.Controllers
             entity.Id = userId;
             entity.DateOfCreated = DateTime.UtcNow;
             entity.DateOfModified = DateTime.UtcNow;
-            var res = _userService.Create(entity);
-            UserEntity user = _userService.FindById(userId);
+            var res = _userService.Create(entity); 
             if (res > 0)
             {
+                UserEntity user = _userService.FindById(entity.Id);
                 _logger.LogInformation($"Adding data of {nameof(AddNewUser)} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status200OK, user));
             }

@@ -55,6 +55,7 @@ namespace BlogWebApi.Domain.Services.Generics
                 {
                     _repository.Remove(entity);
                     int saved = _unitOfWork.Save();
+                    transaction.Commit();
                     return true;
                 }
                 catch (Exception)

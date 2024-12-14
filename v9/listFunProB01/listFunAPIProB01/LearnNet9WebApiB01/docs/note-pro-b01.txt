@@ -1,0 +1,2 @@
+cau lenh truy cap vo giao dien scalar for display api cua project:
+    https://localhost:7158/scalar/v1
