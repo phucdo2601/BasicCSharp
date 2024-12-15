@@ -84,7 +84,7 @@ namespace BlogWebApi.Presentation.Controllers
             entity.Id = userId;
             entity.DateOfCreated = DateTime.UtcNow;
             entity.DateOfModified = DateTime.UtcNow;
-            var res = _userService.Create(entity); 
+            var res = _userService.Create(entity);
             if (res > 0)
             {
                 UserEntity user = _userService.FindById(entity.Id);
@@ -138,7 +138,7 @@ namespace BlogWebApi.Presentation.Controllers
             _logger.LogInformation($"Begin {nameof(DeleteUser)} function in {this.GetType().Name}");
             if (string.IsNullOrWhiteSpace(id))
             {
-                _logger.LogError($"Id params of {nameof(GetUserById)} function in {this.GetType().Name} is null.");
+                _logger.LogError($"Id params of {nameof(DeleteUser)} function in {this.GetType().Name} is null.");
                 return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Id params is not null or blank or whitespa" }));
             }
             try
@@ -162,10 +162,9 @@ namespace BlogWebApi.Presentation.Controllers
             }
             catch (Exception)
             {
-                _logger.LogError($"ID {id} is not valid! of {nameof(UpdateUser)} function in {this.GetType().Name}");
+                _logger.LogError($"ID {id} is not valid! of {nameof(DeleteUser)} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"ID {id} is not valid!" }));
             }
-
         }
     }
 }

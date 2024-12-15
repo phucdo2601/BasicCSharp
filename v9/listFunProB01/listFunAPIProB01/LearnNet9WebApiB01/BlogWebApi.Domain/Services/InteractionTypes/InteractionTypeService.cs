@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace BlogWebApi.Domain.Services.InteractionTypes
 {
-    public class InteractionTypeService : GenericService<InteractionEntity>, IInteractionTypeService
+    public class InteractionTypeService : GenericService<InteractionTypeEntity>, IInteractionTypeService
     {
-        public InteractionTypeService(ApplicationDbContext context, IUnitOfWork unitOfWork, IGenericRepository<InteractionEntity> repository) : base(context, unitOfWork, repository)
+        public InteractionTypeService(ApplicationDbContext context, IUnitOfWork unitOfWork, IGenericRepository<InteractionTypeEntity> repository) : base(context, unitOfWork, repository)
         {
         }
     }

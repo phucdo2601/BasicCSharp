@@ -52,7 +52,7 @@ namespace BlogWebApi.Presentation.Controllers
             if (string.IsNullOrWhiteSpace(id))
             {
                 _logger.LogError($"Id params of {nameof(GetBlogCateById)} function in {this.GetType().Name} is null.");
-                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Id params is not null or blank or whitespa" }));
+                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Id params is not null or blank or whitespace" }));
             }
             try
             {

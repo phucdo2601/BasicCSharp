@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BlogWebApi.Domain.Services.InteractionTypes
 {
-    public interface IInteractionTypeService : IGenericService<InteractionEntity>
+    public interface IInteractionTypeService : IGenericService<InteractionTypeEntity>
     {
     }
 }

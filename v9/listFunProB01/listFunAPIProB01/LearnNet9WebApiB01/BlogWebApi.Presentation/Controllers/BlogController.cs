@@ -2,11 +2,13 @@
 using BlogWebApi.Application.Repositories.BlogCategoryRepository;
 using BlogWebApi.Application.Repositories.BlogRepository;
 using BlogWebApi.Application.Repositories.GenericRepository;
+using BlogWebApi.Application.Repositories.UserEntityRepository;
 using BlogWebApi.Application.UnitOfWork;
 using BlogWebApi.Domain.Dtos.Blogs;
 using BlogWebApi.Domain.Services.BlogCategories;
 using BlogWebApi.Domain.Services.Blogs;
 using BlogWebApi.Domain.Services.Generics;
+using BlogWebApi.Domain.Services.Users;
 using BlogWebApi.Model.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,13 +21,12 @@ namespace BlogWebApi.Presentation.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ApplicationDbContext _context;
-        //private readonly IGenericRepository<BlogEntity> _blogRepo;
-        //private readonly IGenericRepository<BlogCategoryEntity> _blogCategoryRepo;
-        //private readonly IGenericRepository<UserEntity> _userRepo;
         private readonly IBlogRepository _blogRepo;
         private readonly IBlogCategoryRepository _blogCategoryRepo;
+        private readonly IUserRepository _userRepository;
         private readonly IBlogService _blogService;
         private readonly IBlogCategoryService _blogCategoryService;
+        private readonly IUserService _userService;
         private readonly ILogger<BlogController> _logger;
         private readonly IMapper _mapper;
 
@@ -37,6 +38,8 @@ namespace BlogWebApi.Presentation.Controllers
             _blogService = new BlogService(_context, unitOfWork, _blogRepo);
             _blogCategoryRepo = new BlogCategoryRepository(_context);
             _blogCategoryService = new BlogCategoryService(_context, unitOfWork, _blogCategoryRepo);
+            _userRepository = new UserRepository(_context);
+            _userService = new UserService(_context, unitOfWork, _userRepository);
             _logger = logger;
             _mapper = mapper;
         }
@@ -92,11 +95,22 @@ namespace BlogWebApi.Presentation.Controllers
                 _logger.LogError($"The property {nameof(model.BlogCategoryId)} is null or empty or whitespace in {nameof(model)} of {nameof(AddNewBlog)} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"The {nameof(model.BlogCategoryId)} is not null" }));
             }
+            if (string.IsNullOrWhiteSpace(model.UserId.ToString()))
+            {
+                _logger.LogError($"The property {nameof(model.UserId)} is null or empty or whitespace in {nameof(model)} of {nameof(AddNewBlog)} function in {this.GetType().Name}");
+                return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"The {nameof(model.UserId)} is not null" }));
+            }
             BlogCategoryEntity blogCate = _blogCategoryService.FindById(model.BlogCategoryId);
             if (blogCate == null)
             {
                 _logger.LogError($"Not Found {nameof(BlogCategoryEntity)} by id {model.BlogCategoryId.ToString()} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found {nameof(BlogCategoryEntity)} by id {model.BlogCategoryId.ToString()}" }));
+            }
+            UserEntity user = _userService.FindById(model.UserId);
+            if (user == null)
+            {
+                _logger.LogError($"Not Found {nameof(UserEntity)} by id {model.UserId.ToString()} function in {this.GetType().Name}");
+                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found {nameof(UserEntity)} by id {model.UserId.ToString()}" }));
             }
 
             var blogId = Guid.NewGuid();
@@ -129,6 +143,23 @@ namespace BlogWebApi.Presentation.Controllers
             {
                 _logger.LogError($"The property {nameof(model.BlogCategoryId)} is null or empty or whitespace in {nameof(model)} of {nameof(AddNewBlog)} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"The {nameof(model.BlogCategoryId)} is not null" }));
+            }
+            if (string.IsNullOrWhiteSpace(model.UserId.ToString()))
+            {
+                _logger.LogError($"The property {nameof(model.UserId)} is null or empty or whitespace in {nameof(model)} of {nameof(AddNewBlog)} function in {this.GetType().Name}");
+                return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"The {nameof(model.UserId)} is not null" }));
+            }
+            BlogCategoryEntity blogCate = _blogCategoryService.FindById(model.BlogCategoryId);
+            if (blogCate == null)
+            {
+                _logger.LogError($"Not Found {nameof(BlogCategoryEntity)} by id {model.BlogCategoryId.ToString()} function in {this.GetType().Name}");
+                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found {nameof(BlogCategoryEntity)} by id {model.BlogCategoryId.ToString()}" }));
+            }
+            UserEntity user = _userService.FindById(model.UserId);
+            if (user == null)
+            {
+                _logger.LogError($"Not Found {nameof(UserEntity)} by id {model.UserId.ToString()} function in {this.GetType().Name}");
+                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found {nameof(UserEntity)} by id {model.UserId.ToString()}" }));
             }
             try
             {

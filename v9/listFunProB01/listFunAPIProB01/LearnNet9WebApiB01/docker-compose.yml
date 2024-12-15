@@ -1,17 +1,19 @@
-version: "3.8"
-services:
+version: '3.8'
 
-  sql-server-db:
-    container_name: learn-net9-fun-api-b01
+services:
+  sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
     ports:
-      - "1441:1433"
+      - "1441:1433" # Expose SQL Server on port 1433
     environment:
-      SA_PASSWORD: "12345678@Abc"
-      ACCEPT_EULA: "Y"
+      ACCEPT_EULA: "Y"                 # Accept the license agreement
+      MSSQL_SA_PASSWORD: "12345678@Abc" # Ensure the password meets complexity requirements
+    security_opt:
+      - seccomp:unconfined            # Disable security restrictions for debugging purposes
     volumes:
-      - learn-net9-fun-api-b01:/var/lib/mssql/data
-    network_mode: bridge
+      - sql_data:/var/opt/mssql       # Persistent data storage
+    restart: unless-stopped           # Automatically restart the container unless stopped manually
 
 volumes:
-  learn-net9-fun-api-b01:
+  sql_data:
