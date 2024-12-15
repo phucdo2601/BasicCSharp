@@ -1,0 +1,37 @@
+2024-12-15 11:33:37.320 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-15 11:33:37.361 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-15 11:33:37.450 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-15 11:33:37.452 +07:00 [INF] Hosting environment: Development
+2024-12-15 11:33:37.454 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-15 11:33:54.747 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-15 11:33:54.946 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-15 11:33:54.962 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-15 11:33:54.974 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-15 11:33:54.984 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 245.6208ms
+2024-12-15 11:33:55.029 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-15 11:33:55.029 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-15 11:33:55.059 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 30.3435ms
+2024-12-15 11:33:55.106 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-15 11:33:55.114 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-15 11:33:55.115 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 86.4858ms
+2024-12-15 11:33:55.319 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-15 11:33:55.320 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-15 11:33:55.328 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-15 11:33:55.329 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 223.5784ms
+2024-12-15 11:33:55.343 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-15 11:33:55.346 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 26.5778ms
+2024-12-15 11:33:55.686 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/favicon.ico - null null
+2024-12-15 11:33:55.696 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/favicon.ico - 404 0 null 10.0246ms
+2024-12-15 11:33:55.703 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7158/favicon.ico, Response status code: 404
+2024-12-15 11:34:01.442 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/api/BlogCategory/getAllBlogCates - null null
+2024-12-15 11:34:01.448 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.BlogCategoryController.GetAllBlogCategory (BlogWebApi.Presentation)'
+2024-12-15 11:34:01.490 +07:00 [INF] Route matched with {action = "GetAllBlogCategory", controller = "BlogCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBlogCategory() on controller BlogWebApi.Presentation.Controllers.BlogCategoryController (BlogWebApi.Presentation).
+2024-12-15 11:34:02.282 +07:00 [INF] Begin GetAllBlogCategory function in BlogCategoryController
+2024-12-15 11:34:04.174 +07:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlogCategoryTitle], [b].[DateOfCreated], [b].[DateOfModified]
+FROM [blog_cates_tbl] AS [b]
+2024-12-15 11:34:04.229 +07:00 [INF] Loading list data of GetAllBlogCategory function in BlogCategoryController
+2024-12-15 11:34:04.238 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BlogWebApi.Model.Entities.BlogCategoryEntity, BlogWebApi.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-15 11:34:04.374 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.BlogCategoryController.GetAllBlogCategory (BlogWebApi.Presentation) in 2873.9122ms
+2024-12-15 11:34:04.380 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.BlogCategoryController.GetAllBlogCategory (BlogWebApi.Presentation)'
+2024-12-15 11:34:04.384 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/api/BlogCategory/getAllBlogCates - 200 378 application/json; charset=utf-8 2941.5897ms

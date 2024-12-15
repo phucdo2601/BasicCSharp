@@ -1,0 +1,47 @@
+2024-12-14 22:15:48.176 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-14 22:15:48.226 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-14 22:15:48.314 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-14 22:15:48.316 +07:00 [INF] Hosting environment: Development
+2024-12-14 22:15:48.319 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\LearnNet9WebApiB01
+2024-12-14 22:15:57.968 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-14 22:15:58.188 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-14 22:15:58.202 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-14 22:15:58.211 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-14 22:15:58.217 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 255.12ms
+2024-12-14 22:15:58.257 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-14 22:15:58.257 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/scalar.js - null null
+2024-12-14 22:15:58.257 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-14 22:15:58.269 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-14 22:15:58.278 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 21.4281ms
+2024-12-14 22:15:58.280 +07:00 [INF] Sending file with download name ''.
+2024-12-14 22:15:58.295 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-14 22:15:58.298 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/scalar.js - 304 null null 40.8464ms
+2024-12-14 22:15:58.355 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.8392ms
+2024-12-14 22:15:58.497 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-14 22:15:58.509 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-14 22:15:58.688 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-14 22:15:58.691 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-14 22:15:58.694 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 196.6118ms
+2024-12-14 22:15:58.703 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-14 22:15:58.718 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-14 22:15:58.730 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 38.9304ms
+2024-12-14 22:16:26.846 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/favicon.ico - null null
+2024-12-14 22:16:26.860 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/favicon.ico - 404 0 null 14.0802ms
+2024-12-14 22:16:26.869 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7158/favicon.ico, Response status code: 404
+2024-12-14 22:19:53.172 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-14 22:19:53.182 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-14 22:19:53.186 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-14 22:19:53.189 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-14 22:19:53.192 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 19.982ms
+2024-12-14 22:19:53.232 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-14 22:19:53.232 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-14 22:19:53.242 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 9.753ms
+2024-12-14 22:19:53.263 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.7186ms
+2024-12-14 22:19:53.433 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-14 22:19:53.439 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-14 22:19:53.450 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-14 22:19:53.452 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 19.6287ms
+2024-12-14 22:19:53.455 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-14 22:19:53.465 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-14 22:19:53.474 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-14 22:19:53.477 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 22.3225ms
