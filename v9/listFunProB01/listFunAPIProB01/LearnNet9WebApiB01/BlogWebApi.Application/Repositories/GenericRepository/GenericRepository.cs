@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,6 +30,11 @@ namespace BlogWebApi.Application.Repositories.GenericRepository
         public IEnumerable<T> FindAll()
         {
             return _dbContext.Set<T>().ToList();
+        }
+
+        public IEnumerable<T> FindByConditions(Expression<Func<T, bool>> predicate)
+        {
+            return _dbContext.Set<T>().Where(predicate).ToList();
         }
 
         public T FindById(Guid id)

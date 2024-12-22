@@ -25,8 +25,6 @@ namespace BlogWebApi.Presentation.Controllers
         private readonly IBlogCategoryRepository _blogCategoryRepo;
         private readonly IUserRepository _userRepository;
         private readonly IBlogService _blogService;
-        private readonly IBlogCategoryService _blogCategoryService;
-        private readonly IUserService _userService;
         private readonly ILogger<BlogController> _logger;
         private readonly IMapper _mapper;
 
@@ -37,9 +35,7 @@ namespace BlogWebApi.Presentation.Controllers
             _blogRepo = new BlogRepository(_context);
             _blogService = new BlogService(_context, unitOfWork, _blogRepo);
             _blogCategoryRepo = new BlogCategoryRepository(_context);
-            _blogCategoryService = new BlogCategoryService(_context, unitOfWork, _blogCategoryRepo);
             _userRepository = new UserRepository(_context);
-            _userService = new UserService(_context, unitOfWork, _userRepository);
             _logger = logger;
             _mapper = mapper;
         }
@@ -100,13 +96,13 @@ namespace BlogWebApi.Presentation.Controllers
                 _logger.LogError($"The property {nameof(model.UserId)} is null or empty or whitespace in {nameof(model)} of {nameof(AddNewBlog)} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"The {nameof(model.UserId)} is not null" }));
             }
-            BlogCategoryEntity blogCate = _blogCategoryService.FindById(model.BlogCategoryId);
+            BlogCategoryEntity blogCate = _blogCategoryRepo.FindById(model.BlogCategoryId);
             if (blogCate == null)
             {
                 _logger.LogError($"Not Found {nameof(BlogCategoryEntity)} by id {model.BlogCategoryId.ToString()} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found {nameof(BlogCategoryEntity)} by id {model.BlogCategoryId.ToString()}" }));
             }
-            UserEntity user = _userService.FindById(model.UserId);
+            UserEntity user = _userRepository.FindById(model.UserId);
             if (user == null)
             {
                 _logger.LogError($"Not Found {nameof(UserEntity)} by id {model.UserId.ToString()} function in {this.GetType().Name}");
@@ -119,11 +115,10 @@ namespace BlogWebApi.Presentation.Controllers
             entity.DateOfCreated = DateTime.UtcNow;
             entity.DateOfModified = DateTime.UtcNow;
             var res = _blogService.Create(entity);
-            if (res > 0)
+            if (res != null)
             {
-                BlogEntity blog = _blogService.FindById(entity.Id);
                 _logger.LogInformation($"Adding data of {nameof(AddNewBlog)} function in {this.GetType().Name}");
-                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, blog));
+                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, res));
             }
             _logger.LogError($"Not Adding data of {nameof(AddNewBlog)} function in {this.GetType().Name}");
             return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"Create {nameof(BlogEntity)} is not successfully" }));
@@ -149,13 +144,13 @@ namespace BlogWebApi.Presentation.Controllers
                 _logger.LogError($"The property {nameof(model.UserId)} is null or empty or whitespace in {nameof(model)} of {nameof(AddNewBlog)} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"The {nameof(model.UserId)} is not null" }));
             }
-            BlogCategoryEntity blogCate = _blogCategoryService.FindById(model.BlogCategoryId);
+            BlogCategoryEntity blogCate = _blogCategoryRepo.FindById(model.BlogCategoryId);
             if (blogCate == null)
             {
                 _logger.LogError($"Not Found {nameof(BlogCategoryEntity)} by id {model.BlogCategoryId.ToString()} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found {nameof(BlogCategoryEntity)} by id {model.BlogCategoryId.ToString()}" }));
             }
-            UserEntity user = _userService.FindById(model.UserId);
+            UserEntity user = _userRepository.FindById(model.UserId);
             if (user == null)
             {
                 _logger.LogError($"Not Found {nameof(UserEntity)} by id {model.UserId.ToString()} function in {this.GetType().Name}");
@@ -164,7 +159,7 @@ namespace BlogWebApi.Presentation.Controllers
             try
             {
                 var blogCateId = Guid.Parse(id);
-                BlogEntity existedBlog = _blogService.FindById(blogCateId);
+                BlogEntity existedBlog = _blogRepo.FindById(blogCateId);
                 if (string.Equals(id, model.Id.ToString()))
                 {
                     _logger.LogError($"The id {id} in params is not matched with id {model.Id.ToString()} in the updating model of {nameof(UpdateBlog)} function in {this.GetType().Name}");
@@ -179,8 +174,8 @@ namespace BlogWebApi.Presentation.Controllers
                 existedBlog.Id = blogCateId;
                 existedBlog.Title = model.Title;
                 existedBlog.DateOfModified = DateTime.Now;
-                int updatedBlogCate = _blogService.Update(existedBlog);
-                if (updatedBlogCate > 0)
+                BlogEntity updatedBlogCate = _blogService.Update(existedBlog);
+                if (updatedBlogCate != null)
                 {
                     _logger.LogInformation($"Updating data of {nameof(UpdateBlog)} function in {this.GetType().Name}");
                     return await Task.FromResult(StatusCode(StatusCodes.Status200OK, updatedBlogCate));
@@ -201,7 +196,7 @@ namespace BlogWebApi.Presentation.Controllers
             _logger.LogInformation($"Begin {nameof(DeleteBlog)} function in {this.GetType().Name}");
             try
             {
-                var getBlogById = _blogService.FindById(Guid.Parse(id));
+                var getBlogById = _blogRepo.FindById(Guid.Parse(id));
                 if (getBlogById != null)
                 {
                     _logger.LogInformation($"Loading data of {nameof(DeleteBlog)} function in {this.GetType().Name}");

@@ -85,11 +85,10 @@ namespace BlogWebApi.Presentation.Controllers
             entity.DateOfCreated = DateTime.UtcNow;
             entity.DateOfModified = DateTime.UtcNow;
             var res = _userService.Create(entity);
-            if (res > 0)
+            if (res != null)
             {
-                UserEntity user = _userService.FindById(entity.Id);
                 _logger.LogInformation($"Adding data of {nameof(AddNewUser)} function in {this.GetType().Name}");
-                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, user));
+                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, res));
             }
             _logger.LogError($"Not Adding data of {nameof(AddNewUser)} function in {this.GetType().Name}");
             return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = "Create User is not successfully" }));
@@ -107,7 +106,7 @@ namespace BlogWebApi.Presentation.Controllers
             try
             {
                 var userId = Guid.Parse(id);
-                UserEntity existedUser = _userService.FindById(userId);
+                UserEntity existedUser = _userRepo.FindById(userId);
                 if (existedUser == null)
                 {
                     _logger.LogError($"Not Load data of {nameof(UpdateUser)} function in {this.GetType().Name}");
@@ -116,8 +115,8 @@ namespace BlogWebApi.Presentation.Controllers
 
                 _mapper.Map(model, existedUser);
                 existedUser.DateOfModified = DateTime.UtcNow;
-                int updatedUser = _userService.Update(existedUser);
-                if (updatedUser > 0)
+                UserEntity updatedUser = _userService.Update(existedUser);
+                if (updatedUser != null)
                 {
                     _logger.LogInformation($"Updating data of {nameof(UpdateUser)} function in {this.GetType().Name}");
                     return await Task.FromResult(StatusCode(StatusCodes.Status200OK, existedUser));
@@ -144,7 +143,7 @@ namespace BlogWebApi.Presentation.Controllers
             try
             {
                 var userId = Guid.Parse(id);
-                UserEntity existedUser = _userService.FindById(userId);
+                UserEntity existedUser = _userRepo.FindById(userId);
                 if (existedUser == null)
                 {
                     _logger.LogError($"Not Load data of {nameof(DeleteUser)} function in {this.GetType().Name}");

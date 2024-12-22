@@ -82,23 +82,15 @@ namespace BlogWebApi.Presentation.Controllers
                 return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"The blog category title is not null" }));
             }
             var blogCateId = Guid.NewGuid();
-            //BlogCategoryEntity entity = new()
-            //{
-            //    Id = blogCateId,
-            //    BlogCategoryTitle = model.BlogCategoryTitle,
-            //    DateOfCreated = DateTime.UtcNow,
-            //    DateOfModified = DateTime.UtcNow,
-            //};
             BlogCategoryEntity entity = _mapper.Map<BlogCategoryEntity>(model);
             entity.Id = blogCateId;
             entity.DateOfCreated = DateTime.UtcNow;
             entity.DateOfModified = DateTime.UtcNow;
             var res = _blogCateService.Create(entity);
-            BlogCategoryEntity blogCate = _blogCateService.FindById(entity.Id);
-            if (res > 0)
+            if (res != null)
             {
                 _logger.LogInformation($"Adding data of {nameof(AddNewBlogCate)} function in {this.GetType().Name}");
-                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, blogCate));
+                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, res));
             }
             _logger.LogError($"Not Adding data of {nameof(AddNewBlogCate)} function in {this.GetType().Name}");
             return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = "Create Category is not successfully" }));
@@ -111,7 +103,7 @@ namespace BlogWebApi.Presentation.Controllers
             try
             {
                 var blogCateId = Guid.Parse(id);
-                BlogCategoryEntity existedBlogCate = _blogCateService.FindById(blogCateId);
+                BlogCategoryEntity existedBlogCate = _blogCategoryRepo.FindById(blogCateId);
                 if (existedBlogCate == null)
                 {
                     _logger.LogError($"Not Load data of {nameof(UpdateBlogCategory)} function in {this.GetType().Name}");
@@ -121,11 +113,11 @@ namespace BlogWebApi.Presentation.Controllers
                 existedBlogCate.Id = blogCateId;
                 existedBlogCate.BlogCategoryTitle = model.BlogCategoryTitle;
                 existedBlogCate.DateOfModified = DateTime.Now;
-                int updatedBlogCate = _blogCateService.Update(existedBlogCate);
-                if (updatedBlogCate > 0)
+                BlogCategoryEntity updatedBlogCate = _blogCateService.Update(existedBlogCate);
+                if (updatedBlogCate != null)
                 {
                     _logger.LogInformation($"Updating data of {nameof(UpdateBlogCategory)} function in {this.GetType().Name}");
-                    return await Task.FromResult(StatusCode(StatusCodes.Status200OK, existedBlogCate));
+                    return await Task.FromResult(StatusCode(StatusCodes.Status200OK, updatedBlogCate));
                 }
                 _logger.LogError($"Not Updating data of {nameof(UpdateBlogCategory)} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = "Update Category is not successfully" }));
@@ -144,7 +136,7 @@ namespace BlogWebApi.Presentation.Controllers
             try
             {
                 var blogCateId = Guid.Parse(id);
-                BlogCategoryEntity existedBlogCate = _blogCateService.FindById(blogCateId);
+                BlogCategoryEntity existedBlogCate = _blogCategoryRepo.FindById(blogCateId);
                 if (existedBlogCate == null)
                 {
                     _logger.LogError($"Not Load data of {nameof(DeleteBlogCategory)} function in {this.GetType().Name}");

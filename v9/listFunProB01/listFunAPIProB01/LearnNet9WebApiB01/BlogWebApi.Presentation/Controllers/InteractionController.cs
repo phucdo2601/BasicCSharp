@@ -31,10 +31,7 @@ namespace BlogWebApi.Presentation.Controllers
         private readonly IInteractionRepostiory _interactionRepostiory;
         private readonly IUserRepository _userRepository;
         private readonly IBlogRepository _blogRepository;
-        private readonly IInteractionTypeService _interactionTypeService;
         private readonly IInteractionService _interactionService;
-        private readonly IUserService _userService;
-        private readonly IBlogService _blogService;
 
 
         public InteractionController(IUnitOfWork unitOfWork, ApplicationDbContext context, ILogger<InteractionController> logger, IMapper mapper)
@@ -44,9 +41,10 @@ namespace BlogWebApi.Presentation.Controllers
             _logger = logger;
             _mapper = mapper;
             _interactionTypeRepository = new InteractionTypeRepository(_context);
-            _interactionTypeService = new InteractionTypeService(_context, _unitOfWork, _interactionTypeRepository);
             _interactionRepostiory = new InteractionRepository(_context);
             _interactionService = new InteractionService(_context, _unitOfWork, _interactionRepostiory);
+            _userRepository = new UserRepository(_context);
+            _blogRepository = new BlogRepository(_context);
         }
 
         [HttpGet("getAllInteractions")]
@@ -90,7 +88,8 @@ namespace BlogWebApi.Presentation.Controllers
             }
         }
 
-        public async Task<IActionResult> AddNewInteraction([FromBody] InteractionDto model)
+        [HttpPost("addNewInteraction")]
+        public async Task<IActionResult> AddNewInteraction([FromBody] CreateInteractionDto model)
         {
             _logger.LogInformation($"Begin {nameof(AddNewInteraction)} function in {this.GetType().Name}");
             if (!ModelState.IsValid)
@@ -123,7 +122,7 @@ namespace BlogWebApi.Presentation.Controllers
 
             try
             {
-                user = _userService.FindById(model.UserId);
+                user = _userRepository.FindById(model.UserId);
                 if (user == null)
                 {
                     _logger.LogError($"Not Found {nameof(UserEntity)} by id {model.UserId.ToString()} function in {this.GetType().Name}");
@@ -138,7 +137,7 @@ namespace BlogWebApi.Presentation.Controllers
 
             try
             {
-                blog = _blogService.FindById(model.BlogId);
+                blog = _blogRepository.FindById(model.BlogId);
                 if (blog == null)
                 {
                     _logger.LogError($"Not Found {nameof(BlogEntity)} by id {model.BlogId.ToString()} function in {this.GetType().Name}");
@@ -153,7 +152,7 @@ namespace BlogWebApi.Presentation.Controllers
 
             try
             {
-                interactionType = _interactionTypeService.FindById(model.InteractionTypeId);
+                interactionType = _interactionTypeRepository.FindById(model.InteractionTypeId);
                 if (interactionType == null)
                 {
                     _logger.LogError($"Not Found {nameof(InteractionTypeEntity)} by id {model.InteractionTypeId.ToString()} function in {this.GetType().Name}");
@@ -172,12 +171,11 @@ namespace BlogWebApi.Presentation.Controllers
             entity.DateOfCreated = DateTime.UtcNow;
             entity.DateOfModified = DateTime.UtcNow;
 
-            var res = _interactionService.Create(entity);
-            if (res > 0)
+            InteractionEntity res = _interactionService.Create(entity);
+            if (res != null)
             {
-                InteractionEntity interaction = _interactionService.FindById(entity.Id);
                 _logger.LogInformation($"Adding data of {nameof(AddNewInteraction)} function in {this.GetType().Name}");
-                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, interaction));
+                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, res));
             }
             _logger.LogError($"Not Adding data of {nameof(AddNewInteraction)} function in {this.GetType().Name}");
             return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"Create {nameof(InteractionEntity)} is not successfully" }));
@@ -214,12 +212,12 @@ namespace BlogWebApi.Presentation.Controllers
             try
             {
                 var interactionId = Guid.Parse(id);
-                InteractionEntity existedInteraction = _interactionService.FindById(interactionId);
                 if (string.Equals(id, model.Id.ToString()))
                 {
                     _logger.LogError($"The id {id} in params is not matched with id {model.Id.ToString()} in the updating model of {nameof(UpdateInteraction)} function in {this.GetType().Name}");
                     return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"The id {id} in params is not matched with id {model.Id.ToString()} in the updating model" }));
                 }
+                InteractionEntity existedInteraction = _interactionRepostiory.FindById(interactionId);
                 if (existedInteraction == null)
                 {
                     _logger.LogError($"Not Load data of {nameof(existedInteraction)} function in {this.GetType().Name}");
@@ -228,11 +226,11 @@ namespace BlogWebApi.Presentation.Controllers
 
                 _mapper.Map(model, existedInteraction);
                 existedInteraction.DateOfModified = DateTime.UtcNow;
-                int updatedInteractionId = _interactionService.Update(existedInteraction);
-                if (updatedInteractionId > 0)
+                InteractionEntity updatedInteractionId = _interactionService.Update(existedInteraction);
+                if (updatedInteractionId != null)
                 {
                     _logger.LogInformation($"Updating data of {nameof(UpdateInteraction)} function in {this.GetType().Name}");
-                    return await Task.FromResult(StatusCode(StatusCodes.Status200OK, existedInteraction));
+                    return await Task.FromResult(StatusCode(StatusCodes.Status200OK, updatedInteractionId));
                 }
                 _logger.LogError($"Not Updating data of {nameof(UpdateInteraction)} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = "Update interaction is not successfully" }));
@@ -256,14 +254,14 @@ namespace BlogWebApi.Presentation.Controllers
             }
             try
             {
-                var userId = Guid.Parse(id);
-                UserEntity existedUser = _userService.FindById(userId);
-                if (existedUser == null)
+                var interactionId = Guid.Parse(id);
+                InteractionEntity existedInteraction = _interactionRepostiory.FindById(interactionId);
+                if (existedInteraction == null)
                 {
                     _logger.LogError($"Not Load data of {nameof(DeleteInteraction)} function in {this.GetType().Name}");
                     return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found interaction with id {id}" }));
                 }
-                bool isDeleted = _userService.Delete(existedUser);
+                bool isDeleted = _interactionService.Delete(existedInteraction);
                 if (isDeleted)
                 {
                     _logger.LogInformation($"Deleting data of {nameof(DeleteInteraction)} function in {this.GetType().Name}");

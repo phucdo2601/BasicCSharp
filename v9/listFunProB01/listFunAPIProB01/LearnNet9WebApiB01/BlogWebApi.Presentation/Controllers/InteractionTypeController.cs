@@ -91,11 +91,10 @@ namespace BlogWebApi.Presentation.Controllers
             entity.DateOfCreated = DateTime.UtcNow;
             entity.DateOfModified = DateTime.UtcNow;
             var res = _interactionTypeService.Create(entity);
-            if (res > 0)
+            if (res != null)
             {
-                InteractionTypeEntity interactionType = _interactionTypeService.FindById(interactionTypeId);
                 _logger.LogInformation($"Adding data of {nameof(AddNewInteractionType)} function in {this.GetType().Name}");
-                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, interactionType));
+                return await Task.FromResult(StatusCode(StatusCodes.Status200OK, res));
             }
             _logger.LogError($"Not Adding data of {nameof(AddNewInteractionType)} function in {this.GetType().Name}");
             return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status400BadRequest, Message = "Create interaction type is not successfully" }));
@@ -108,7 +107,7 @@ namespace BlogWebApi.Presentation.Controllers
             try
             {
                 var interactionTypeId = Guid.Parse(id);
-                InteractionTypeEntity existedInteractionType = _interactionTypeService.FindById(interactionTypeId);
+                InteractionTypeEntity existedInteractionType = _interactionTypeRepository.FindById(interactionTypeId);
                 if (existedInteractionType == null)
                 {
                     _logger.LogError($"Not Load data of {nameof(UpdateInteractionType)} function in {this.GetType().Name}");
@@ -116,8 +115,8 @@ namespace BlogWebApi.Presentation.Controllers
                 }
                 _mapper.Map(model, existedInteractionType);
                 existedInteractionType.DateOfModified = DateTime.UtcNow;
-                int updatedInteractionType = _interactionTypeService.Update(existedInteractionType);
-                if (updatedInteractionType > 0)
+                InteractionTypeEntity updatedInteractionType = _interactionTypeService.Update(existedInteractionType);
+                if (updatedInteractionType != null)
                 {
                     _logger.LogInformation($"Updating data of {nameof(UpdateInteractionType)} function in {this.GetType().Name}");
                     return await Task.FromResult(StatusCode(StatusCodes.Status200OK, updatedInteractionType));
@@ -145,7 +144,7 @@ namespace BlogWebApi.Presentation.Controllers
             try
             {
                 var interactionTypeId = Guid.Parse(id);
-                InteractionTypeEntity existedInteractionType = _interactionTypeService.FindById(interactionTypeId);
+                InteractionTypeEntity existedInteractionType = _interactionTypeRepository.FindById(interactionTypeId);
                 if (existedInteractionType == null)
                 {
                     _logger.LogError($"Not Load data of {nameof(DeleteInteractionType)} function in {this.GetType().Name}");

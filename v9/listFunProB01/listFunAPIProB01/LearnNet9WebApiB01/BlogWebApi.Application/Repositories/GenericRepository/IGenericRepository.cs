@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,6 +12,8 @@ namespace BlogWebApi.Application.Repositories.GenericRepository
         T FindById(Guid id);
 
         IEnumerable<T> FindAll();
+
+        IEnumerable<T> FindByConditions(Expression<Func<T, bool>> predicate);
 
         void Add(T entity);
 

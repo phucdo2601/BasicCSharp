@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,10 +11,12 @@ namespace BlogWebApi.Domain.Services.Generics
     public interface IGenericService<T> where T : class
     {
         IEnumerable<T> FindAll();
-        T FindById(Guid id);
-        int Update(T entity);
+        IEnumerable<T> FindByConditions(Expression<Func<T, bool>> predicate);
 
-        int Create(T entity);
+        T FindById(Guid id);
+        T Update(T entity);
+
+        T Create(T entity);
 
         bool Delete(T entity);
 

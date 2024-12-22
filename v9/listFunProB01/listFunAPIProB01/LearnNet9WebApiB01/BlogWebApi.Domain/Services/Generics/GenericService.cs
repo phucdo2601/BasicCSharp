@@ -5,12 +5,13 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BlogWebApi.Domain.Services.Generics
 {
-    public class GenericService<T> : IGenericService<T> where T : class
+    public class GenericService<T> : IGenericService<T> where T : BaseEntity
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGenericRepository<T> _repository;
@@ -23,7 +24,7 @@ namespace BlogWebApi.Domain.Services.Generics
             _repository = repository;
         }
 
-        public int Create(T entity)
+        public T Create(T entity)
         {
             using (var transaction = _context.Database.BeginTransaction())
             {
@@ -32,16 +33,17 @@ namespace BlogWebApi.Domain.Services.Generics
                     _repository.Add(entity);
                     int created = _unitOfWork.Save();
                     transaction.Commit();
-                    return created;
+                    entity = _repository.FindById(entity.Id);
+                    return entity;
                 }
                 catch (Exception)
                 {
                     transaction.Rollback();
-                    return -1;
+                    return null;
                 }
                 finally
                 {
-                    //_unitOfWork.Dispose();
+                    _unitOfWork.Dispose();
                 }
             }
 
@@ -87,6 +89,23 @@ namespace BlogWebApi.Domain.Services.Generics
             }
         }
 
+        public IEnumerable<T> FindByConditions(Expression<Func<T, bool>> predicate)
+        {
+            try
+            {
+                var listVals = _repository.FindByConditions(predicate);
+                return listVals;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                _unitOfWork.Dispose();
+            }
+        }
+
         public T FindById(Guid id)
         {
             try
@@ -100,12 +119,12 @@ namespace BlogWebApi.Domain.Services.Generics
 
                 throw;
             }
-            //finally { _unitOfWork.Dispose(); }
+            finally { _unitOfWork.Dispose(); }
         }
 
-        
 
-        public int Update(T entity)
+
+        public T Update(T entity)
         {
             using (var transaction = _context.Database.BeginTransaction())
             {
@@ -114,12 +133,13 @@ namespace BlogWebApi.Domain.Services.Generics
                     _repository.Update(entity);
                     int save = _unitOfWork.Save();
                     transaction.Commit();
-                    return save;
+                    entity = _repository.FindById(entity.Id);
+                    return entity;
                 }
                 catch (Exception)
                 {
                     transaction.Rollback();
-                    return -1;
+                    return null;
                 }
                 finally
                 {
