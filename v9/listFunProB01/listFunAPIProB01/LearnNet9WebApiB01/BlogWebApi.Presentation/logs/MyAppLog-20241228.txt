@@ -1,0 +1,890 @@
+2024-12-28 10:42:24.628 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 10:42:24.735 +07:00 [INF] Creating key {66376ecc-3165-4124-8a96-4d188ecc3d70} with creation date 2024-12-28 03:42:24Z, activation date 2024-12-28 03:42:24Z, and expiration date 2025-03-28 03:42:24Z.
+2024-12-28 10:42:24.751 +07:00 [INF] Writing data to file 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys\key-66376ecc-3165-4124-8a96-4d188ecc3d70.xml'.
+2024-12-28 10:42:25.009 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 10:42:25.012 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 10:42:25.059 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 10:42:25.062 +07:00 [INF] Hosting environment: Development
+2024-12-28 10:42:25.064 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 10:42:28.252 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 10:42:29.910 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 10:42:29.926 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 10:42:29.936 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 10:42:29.945 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 1697.0262ms
+2024-12-28 10:42:30.087 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/scalar.js - null null
+2024-12-28 10:42:30.087 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 10:42:30.087 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 10:42:30.103 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 10:42:30.118 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 30.9449ms
+2024-12-28 10:42:30.122 +07:00 [INF] Sending file with download name ''.
+2024-12-28 10:42:30.183 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 10:42:30.188 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/scalar.js - 200 2668770 text/javascript 100.6227ms
+2024-12-28 10:42:30.192 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 104.915ms
+2024-12-28 10:42:30.302 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 10:42:30.309 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 10:42:30.518 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 10:42:30.519 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 10:42:30.525 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 10:42:30.527 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 224.5503ms
+2024-12-28 10:42:30.551 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 10:42:30.554 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 36.0409ms
+2024-12-28 10:42:31.005 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/favicon.ico - null null
+2024-12-28 10:42:31.014 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/favicon.ico - 404 0 null 9.2506ms
+2024-12-28 10:42:31.023 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7158/favicon.ico, Response status code: 404
+2024-12-28 10:42:47.159 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/Authentication/Login - application/json 52
+2024-12-28 10:42:47.167 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 10:42:47.313 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 10:42:48.193 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 10:42:50.267 +07:00 [INF] Executed DbCommand (155ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 10:42:50.310 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-28 10:42:50.357 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 3034.1717ms
+2024-12-28 10:42:50.361 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 10:42:50.370 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7158/api/Authentication/Login - 404 63 application/json; charset=utf-8 3210.3823ms
+2024-12-28 11:17:03.547 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 11:17:03.802 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 11:17:03.807 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 11:17:03.864 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 11:17:03.866 +07:00 [INF] Hosting environment: Development
+2024-12-28 11:17:03.870 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 11:17:06.077 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 11:17:06.362 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 11:17:06.375 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 11:17:06.385 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 11:17:06.394 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 320.2157ms
+2024-12-28 11:17:06.526 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 11:17:06.526 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 11:17:06.554 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 27.3405ms
+2024-12-28 11:17:06.573 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.2699ms
+2024-12-28 11:17:06.724 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 11:17:06.731 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:17:06.882 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 11:17:06.883 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:17:06.895 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 171.3886ms
+2024-12-28 11:17:06.896 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:17:06.918 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:17:06.924 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 41.4464ms
+2024-12-28 11:17:15.229 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 11:17:15.239 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 11:17:15.243 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 11:17:15.245 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 11:17:15.248 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 19.0216ms
+2024-12-28 11:17:15.425 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 11:17:15.425 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 11:17:15.425 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 11:17:15.441 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 16.3092ms
+2024-12-28 11:17:15.452 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:17:15.472 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.3878ms
+2024-12-28 11:17:15.498 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:17:15.499 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 11:17:15.505 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 80.0134ms
+2024-12-28 11:17:15.509 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:17:15.542 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:17:15.545 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 45.7381ms
+2024-12-28 11:17:34.199 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/Authentication/Login - application/json 54
+2024-12-28 11:17:34.205 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 11:17:34.236 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 11:17:34.688 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 11:17:37.506 +07:00 [INF] Executed DbCommand (69ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 11:21:18.509 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 11:21:18.788 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 11:21:18.790 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 11:21:18.836 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 11:21:18.839 +07:00 [INF] Hosting environment: Development
+2024-12-28 11:21:18.842 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 11:21:23.131 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 11:21:24.375 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 11:21:24.389 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 11:21:24.399 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 11:21:24.407 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 1280.1237ms
+2024-12-28 11:21:24.561 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 11:21:24.561 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 11:21:24.561 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 11:21:24.610 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:21:24.668 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 107.1942ms
+2024-12-28 11:21:24.693 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.3253ms
+2024-12-28 11:21:24.844 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 11:21:24.845 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:21:24.854 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:21:24.855 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 293.7169ms
+2024-12-28 11:21:24.874 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:21:24.877 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 32.9749ms
+2024-12-28 11:23:50.417 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/Authentication/Login - application/json 54
+2024-12-28 11:23:50.429 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 11:23:50.463 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 11:23:51.534 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 11:24:00.803 +07:00 [INF] Executed DbCommand (148ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 11:37:20.439 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 11:37:20.726 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 11:37:20.729 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 11:37:20.770 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 11:37:20.773 +07:00 [INF] Hosting environment: Development
+2024-12-28 11:37:20.776 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 11:37:31.002 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 11:37:31.184 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 11:37:31.195 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 11:37:31.204 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 11:37:31.212 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 212.9649ms
+2024-12-28 11:37:31.365 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 11:37:31.365 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 11:37:31.365 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 11:37:31.385 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:37:31.426 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 60.6867ms
+2024-12-28 11:37:31.475 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 109.469ms
+2024-12-28 11:37:31.622 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 11:37:31.624 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:37:31.633 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:37:31.633 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 267.982ms
+2024-12-28 11:37:31.655 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 11:37:31.658 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 36.6521ms
+2024-12-28 11:37:38.232 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/Authentication/Login - application/json 54
+2024-12-28 11:37:38.239 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 11:37:38.270 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 11:37:38.538 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 11:37:40.956 +07:00 [INF] Executed DbCommand (69ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 14:45:59.697 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 14:46:00.290 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 14:46:00.295 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 14:46:00.418 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 14:46:00.423 +07:00 [INF] Hosting environment: Development
+2024-12-28 14:46:00.433 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 14:46:00.498 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 14:46:00.921 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 14:46:00.942 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 14:46:00.956 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 14:46:00.966 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 478.3528ms
+2024-12-28 14:46:01.181 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 14:46:01.181 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 14:46:01.258 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 76.7352ms
+2024-12-28 14:46:01.415 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 234.1768ms
+2024-12-28 14:46:01.549 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 14:46:01.564 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:46:01.921 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 14:46:01.922 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:46:01.942 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 393.5479ms
+2024-12-28 14:46:01.954 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:46:02.016 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:46:02.022 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 100.9617ms
+2024-12-28 14:46:02.801 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/favicon.ico - null null
+2024-12-28 14:46:02.817 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/favicon.ico - 404 0 null 16.1688ms
+2024-12-28 14:46:02.832 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7158/favicon.ico, Response status code: 404
+2024-12-28 14:46:44.549 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/Authentication/Login - application/json 54
+2024-12-28 14:46:44.594 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 14:46:44.648 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 14:46:45.199 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 14:46:50.286 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 14:46:50.310 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 14:46:50.315 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 14:46:50.318 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 14:46:50.329 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 43.0223ms
+2024-12-28 14:46:50.367 +07:00 [INF] Executed DbCommand (229ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 14:47:01.996 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 14:47:01.996 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 14:47:01.996 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 14:47:05.963 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 3967.1757ms
+2024-12-28 14:47:05.972 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:47:05.972 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3976.539ms
+2024-12-28 14:47:06.026 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:47:06.027 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 14:47:06.034 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 4038.4765ms
+2024-12-28 14:49:16.151 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 14:49:16.430 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 14:49:16.433 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 14:49:16.493 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 14:49:16.496 +07:00 [INF] Hosting environment: Development
+2024-12-28 14:49:16.498 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 14:49:28.786 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 14:49:28.998 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 14:49:29.010 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 14:49:29.019 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 14:49:29.027 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 244.9821ms
+2024-12-28 14:49:29.169 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 14:49:29.175 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 14:49:29.212 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 36.8467ms
+2024-12-28 14:49:29.230 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.9679ms
+2024-12-28 14:49:29.282 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 14:49:29.291 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:49:29.482 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 14:49:29.482 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:49:29.494 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 211.2401ms
+2024-12-28 14:49:29.497 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:49:29.528 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:49:29.531 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 49.6009ms
+2024-12-28 14:49:58.515 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/Authentication/Login - application/json 54
+2024-12-28 14:49:58.552 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 14:49:58.580 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 14:49:58.881 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 14:50:01.599 +07:00 [INF] Executed DbCommand (48ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 14:51:27.073 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 14:51:27.354 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 14:51:27.357 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 14:51:27.390 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 14:51:27.393 +07:00 [INF] Hosting environment: Development
+2024-12-28 14:51:27.395 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 14:51:34.275 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/Authentication/Login - application/json 54
+2024-12-28 14:51:34.402 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 14:51:34.430 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 14:51:34.787 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 14:51:37.530 +07:00 [INF] Executed DbCommand (125ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 14:51:43.081 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 8642.583ms
+2024-12-28 14:51:43.089 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 14:51:43.095 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'http://www.w3.org/2001/04/xmldsig-more#hmac-sha512', the key size must be greater than: '512' bits, key has '256' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, IList`1 audiences, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at BlogWebApi.Presentation.Controllers.AuthenticationController.GenerateToken(UserEntity user) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation\Controllers\AuthenticationController.cs:line 86
+   at BlogWebApi.Presentation.Controllers.AuthenticationController.Login(LoginDto model) in D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation\Controllers\AuthenticationController.cs:line 54
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-12-28 14:53:26.836 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 14:53:27.149 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 14:53:27.153 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 14:53:27.212 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 14:53:27.215 +07:00 [INF] Hosting environment: Development
+2024-12-28 14:53:27.219 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 14:54:01.293 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 14:54:01.539 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 14:54:01.553 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 14:54:01.575 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 14:54:01.582 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 292.2144ms
+2024-12-28 14:54:01.734 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 14:54:01.734 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 14:54:01.826 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 14:54:01.827 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 93.2646ms
+2024-12-28 14:54:01.853 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:54:01.869 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 135.4088ms
+2024-12-28 14:54:02.080 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 14:54:02.080 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:54:02.098 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:54:02.099 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 273.6517ms
+2024-12-28 14:54:02.122 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 14:54:02.126 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 46.0624ms
+2024-12-28 14:54:21.172 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/Authentication/Login - application/json 54
+2024-12-28 14:54:21.179 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 14:54:21.209 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 14:54:21.487 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 14:54:24.009 +07:00 [INF] Executed DbCommand (58ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 14:54:27.546 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-28 14:54:27.628 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 6410.3463ms
+2024-12-28 14:54:27.633 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 14:54:27.640 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7158/api/Authentication/Login - 200 434 application/json; charset=utf-8 6468.6797ms
+2024-12-28 15:01:05.927 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 15:01:06.171 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 15:01:06.174 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 15:01:06.209 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 15:01:06.212 +07:00 [INF] Hosting environment: Development
+2024-12-28 15:01:06.215 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 15:01:40.383 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 15:01:41.780 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 15:01:41.795 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 15:01:41.809 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 15:01:41.817 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 1437.1959ms
+2024-12-28 15:01:42.014 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 15:01:42.014 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 15:01:42.060 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 46.3395ms
+2024-12-28 15:01:42.106 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 92.8746ms
+2024-12-28 15:01:42.143 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 15:01:42.153 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:01:42.436 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 15:01:42.439 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:01:42.453 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:01:42.456 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 312.5616ms
+2024-12-28 15:01:42.480 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:01:42.486 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 49.9179ms
+2024-12-28 15:03:16.425 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/Authentication/Login - application/json 54
+2024-12-28 15:03:16.441 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:03:16.483 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 15:03:17.662 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 15:03:24.118 +07:00 [INF] Executed DbCommand (176ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 15:04:52.082 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 15:04:52.833 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 15:04:52.836 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 15:04:52.882 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 15:04:52.885 +07:00 [INF] Hosting environment: Development
+2024-12-28 15:04:52.888 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 15:05:19.208 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 15:05:20.866 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 15:05:20.878 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 15:05:20.891 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 15:05:20.902 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 1696.0209ms
+2024-12-28 15:05:21.072 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 15:05:21.073 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 15:05:21.119 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 46.5424ms
+2024-12-28 15:05:21.141 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.8487ms
+2024-12-28 15:05:21.174 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 15:05:21.181 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:05:21.457 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 15:05:21.458 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:05:21.469 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:05:21.475 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 301.2564ms
+2024-12-28 15:05:21.505 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:05:21.510 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 53.5196ms
+2024-12-28 15:05:40.477 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/Authentication/Login - application/json 54
+2024-12-28 15:05:40.487 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:05:40.520 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 15:05:41.545 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 15:05:45.700 +07:00 [INF] Executed DbCommand (182ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 15:05:51.419 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-28 15:05:51.511 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 10978.0447ms
+2024-12-28 15:05:51.519 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:05:51.533 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7158/api/Authentication/Login - 200 434 application/json; charset=utf-8 11055.6464ms
+2024-12-28 15:12:58.935 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 15:12:59.662 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 15:12:59.665 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 15:12:59.705 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 15:12:59.709 +07:00 [INF] Hosting environment: Development
+2024-12-28 15:12:59.717 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 15:13:10.448 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 15:13:10.627 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 15:13:10.638 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 15:13:10.647 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 15:13:10.654 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 210.3663ms
+2024-12-28 15:13:10.796 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 15:13:10.796 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 15:13:10.843 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 47.3241ms
+2024-12-28 15:13:10.867 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.863ms
+2024-12-28 15:13:10.909 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 15:13:10.917 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:13:11.127 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 15:13:11.129 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:13:11.141 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 231.8814ms
+2024-12-28 15:13:11.141 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:13:11.171 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:13:11.174 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 47.1886ms
+2024-12-28 15:13:22.978 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 35
+2024-12-28 15:13:22.990 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:13:22.997 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:13:23.001 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 22.7402ms
+2024-12-28 15:13:25.089 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 35
+2024-12-28 15:13:25.096 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:13:25.099 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:13:25.101 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 11.7942ms
+2024-12-28 15:16:00.657 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7158/api/User/getAllUsers - null null
+2024-12-28 15:16:00.664 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.UserController.GetAllUsers (BlogWebApi.Presentation)'
+2024-12-28 15:16:00.699 +07:00 [INF] Route matched with {action = "GetAllUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsers() on controller BlogWebApi.Presentation.Controllers.UserController (BlogWebApi.Presentation).
+2024-12-28 15:16:00.953 +07:00 [INF] Begin GetAllUsers function in UserController
+2024-12-28 15:16:02.236 +07:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+2024-12-28 15:16:02.343 +07:00 [INF] Loading list data of GetAllUsers function in UserController
+2024-12-28 15:16:02.353 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BlogWebApi.Model.Entities.UserEntity, BlogWebApi.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-28 15:16:02.505 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.UserController.GetAllUsers (BlogWebApi.Presentation) in 1797.874ms
+2024-12-28 15:16:02.511 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.UserController.GetAllUsers (BlogWebApi.Presentation)'
+2024-12-28 15:16:02.515 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7158/api/User/getAllUsers - 200 2546 application/json; charset=utf-8 1858.3944ms
+2024-12-28 15:17:28.951 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7158/api/Authentication/Login - application/json 57
+2024-12-28 15:17:28.961 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-12-28 15:17:28.966 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-12-28 15:17:28.969 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7158/api/Authentication/Login - 405 0 null 17.5865ms
+2024-12-28 15:17:36.855 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - application/json 57
+2024-12-28 15:17:36.861 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:17:36.871 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 15:17:36.917 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 15:17:38.563 +07:00 [INF] Executed DbCommand (33ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 15:17:40.663 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-28 15:17:40.676 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 3799.6788ms
+2024-12-28 15:17:40.680 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:17:40.684 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - 200 434 application/json; charset=utf-8 3828.9227ms
+2024-12-28 15:18:18.161 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:18:18.461 +07:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2024-12-28 15:18:18.476 +07:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2024-12-28 15:18:18.480 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:18:18.484 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:18:18.486 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 325.2521ms
+2024-12-28 15:18:23.978 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - application/json 57
+2024-12-28 15:18:23.985 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:18:23.989 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 15:18:23.997 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 15:18:32.442 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 15:18:32.448 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-28 15:18:32.452 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 8458.3193ms
+2024-12-28 15:18:32.456 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:18:32.459 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - 200 434 application/json; charset=utf-8 8480.7635ms
+2024-12-28 15:18:55.490 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:18:55.500 +07:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2024-12-28 15:18:55.510 +07:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2024-12-28 15:18:55.514 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:18:55.518 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:18:55.520 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 62.1907ms
+2024-12-28 15:18:59.936 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:19:00.019 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-12-28 15:19:00.030 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2024-12-28 15:19:00.034 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:19:00.036 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:19:00.038 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 102.8411ms
+2024-12-28 15:19:29.850 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - application/json 57
+2024-12-28 15:19:29.856 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:19:29.859 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 15:19:29.864 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 15:19:29.869 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 15:19:29.878 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-28 15:19:29.882 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 17.9952ms
+2024-12-28 15:19:29.886 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:19:29.889 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - 200 434 application/json; charset=utf-8 39.5417ms
+2024-12-28 15:19:42.041 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:19:42.048 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-12-28 15:19:42.055 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2024-12-28 15:19:42.057 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:19:42.059 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:19:42.061 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 20.2836ms
+2024-12-28 15:19:56.842 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:19:56.848 +07:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2024-12-28 15:19:56.860 +07:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2024-12-28 15:19:56.862 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:19:56.864 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:19:56.867 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 25.4181ms
+2024-12-28 15:20:29.937 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 15:20:30.211 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 15:20:30.214 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 15:20:30.250 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 15:20:30.253 +07:00 [INF] Hosting environment: Development
+2024-12-28 15:20:30.256 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 15:20:36.543 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:20:36.722 +07:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2024-12-28 15:20:36.738 +07:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2024-12-28 15:20:36.748 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:20:36.757 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:20:36.768 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 233.342ms
+2024-12-28 15:20:39.768 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - application/json 57
+2024-12-28 15:20:39.785 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:20:39.816 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 15:20:40.150 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 15:20:41.466 +07:00 [INF] Executed DbCommand (51ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 15:20:41.577 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-28 15:20:41.608 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 1783.2322ms
+2024-12-28 15:20:41.614 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:20:41.624 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - 200 434 application/json; charset=utf-8 1856.5901ms
+2024-12-28 15:20:53.333 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:20:53.366 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-12-28 15:20:53.374 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2024-12-28 15:20:53.378 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:20:53.381 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:20:53.383 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 49.6333ms
+2024-12-28 15:21:34.955 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:21:34.962 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:21:34.965 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:21:34.967 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 11.9665ms
+2024-12-28 15:21:43.026 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:21:43.036 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-12-28 15:21:43.042 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2024-12-28 15:21:43.046 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:21:43.049 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:21:43.053 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 26.5341ms
+2024-12-28 15:22:50.997 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 15:22:51.324 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 15:22:51.326 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 15:22:51.365 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 15:22:51.367 +07:00 [INF] Hosting environment: Development
+2024-12-28 15:22:51.370 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 15:22:53.390 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:22:53.573 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-12-28 15:22:53.580 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2024-12-28 15:22:53.590 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:22:53.596 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:22:53.607 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 222.8995ms
+2024-12-28 15:23:09.336 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:23:09.348 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-12-28 15:23:09.355 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2024-12-28 15:23:09.358 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:23:09.361 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:23:09.365 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 29.3375ms
+2024-12-28 15:23:26.707 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:23:26.714 +07:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2024-12-28 15:23:26.727 +07:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2024-12-28 15:23:26.730 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:23:26.733 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:23:26.736 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 29.4337ms
+2024-12-28 15:27:45.376 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 15:27:45.673 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 15:27:45.676 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 15:27:45.714 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 15:27:45.717 +07:00 [INF] Hosting environment: Development
+2024-12-28 15:27:45.720 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 15:28:08.803 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 15:28:09.086 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 15:28:09.089 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 15:28:09.144 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 15:28:09.147 +07:00 [INF] Hosting environment: Development
+2024-12-28 15:28:09.150 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 15:28:14.752 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - application/json 57
+2024-12-28 15:28:16.064 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:28:16.097 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 15:28:17.011 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 15:28:19.171 +07:00 [INF] Executed DbCommand (105ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 15:28:19.349 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-28 15:28:19.397 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 3291.6797ms
+2024-12-28 15:28:19.407 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:28:19.422 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - 200 487 application/json; charset=utf-8 4679.7789ms
+2024-12-28 15:28:38.675 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:28:38.983 +07:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2024-12-28 15:28:38.995 +07:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2024-12-28 15:28:39.003 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-12-28 15:28:39.011 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-12-28 15:28:39.015 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 401 0 null 339.9649ms
+2024-12-28 15:28:53.928 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:28:54.018 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.BlogCategoryController.AddNewBlogCate (BlogWebApi.Presentation)'
+2024-12-28 15:28:54.026 +07:00 [INF] Route matched with {action = "AddNewBlogCate", controller = "BlogCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddNewBlogCate(BlogWebApi.Domain.Dtos.BlogCategoríes.CreateBlogCategoryDto) on controller BlogWebApi.Presentation.Controllers.BlogCategoryController (BlogWebApi.Presentation).
+2024-12-28 15:28:54.041 +07:00 [INF] Begin AddNewBlogCate function in BlogCategoryController
+2024-12-28 15:28:54.201 +07:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [blog_cates_tbl] ([Id], [BlogCategoryTitle], [DateOfCreated], [DateOfModified])
+VALUES (@p0, @p1, @p2, @p3);
+2024-12-28 15:28:54.236 +07:00 [INF] Adding data of AddNewBlogCate function in BlogCategoryController
+2024-12-28 15:28:54.239 +07:00 [INF] Executing ObjectResult, writing value of type 'BlogWebApi.Model.Entities.BlogCategoryEntity'.
+2024-12-28 15:28:54.249 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.BlogCategoryController.AddNewBlogCate (BlogWebApi.Presentation) in 216.5794ms
+2024-12-28 15:28:54.253 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.BlogCategoryController.AddNewBlogCate (BlogWebApi.Presentation)'
+2024-12-28 15:28:54.256 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 200 189 application/json; charset=utf-8 327.7545ms
+2024-12-28 15:48:46.301 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 15:48:46.692 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 15:48:46.694 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 15:48:46.731 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 15:48:46.734 +07:00 [INF] Hosting environment: Development
+2024-12-28 15:48:46.737 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 15:49:48.803 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:49:49.362 +07:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+2024-12-28 15:49:49.367 +07:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2024-12-28 15:49:49.380 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 403 0 null 584.5107ms
+2024-12-28 15:50:00.295 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - application/json 57
+2024-12-28 15:50:00.309 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:50:00.370 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 15:50:01.228 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 15:50:02.767 +07:00 [INF] Executed DbCommand (59ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 15:50:02.860 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_RoleId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[DateOfCreated], [r].[DateOfModified], [r].[RoleTitle]
+FROM [roles_tbl] AS [r]
+WHERE [r].[Id] = @__user_RoleId_0
+2024-12-28 15:50:02.955 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-28 15:50:02.996 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 2615.8152ms
+2024-12-28 15:50:03.001 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 15:50:03.011 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - 200 506 application/json; charset=utf-8 2715.348ms
+2024-12-28 15:50:11.279 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 15:50:11.287 +07:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+2024-12-28 15:50:11.290 +07:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2024-12-28 15:50:11.293 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 403 0 null 14.1706ms
+2024-12-28 15:50:50.772 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7158/openapi/v1.json - null null
+2024-12-28 15:50:50.781 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-12-28 15:50:50.784 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-12-28 15:50:50.788 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7158/openapi/v1.json - 405 0 null 16.2375ms
+2024-12-28 15:50:50.814 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 15:50:50.822 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:50:51.305 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:50:51.309 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 494.5007ms
+2024-12-28 15:50:57.109 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 15:50:57.241 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:50:57.267 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:50:57.271 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 162.053ms
+2024-12-28 15:55:31.229 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 15:55:31.625 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 15:55:31.628 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 15:55:31.698 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 15:55:31.701 +07:00 [INF] Hosting environment: Development
+2024-12-28 15:55:31.704 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 15:56:21.419 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 15:56:21.744 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 15:56:21.767 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 15:56:21.782 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 15:56:21.789 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 379.8619ms
+2024-12-28 15:56:21.991 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 15:56:21.991 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 15:56:22.038 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 47.4176ms
+2024-12-28 15:56:22.065 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.4742ms
+2024-12-28 15:56:22.101 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 15:56:22.108 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:56:22.288 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 15:56:22.289 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:56:22.300 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:56:22.301 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 200.1617ms
+2024-12-28 15:56:22.320 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 15:56:22.325 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 36.6045ms
+2024-12-28 16:10:41.335 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 16:10:41.732 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 16:10:41.734 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 16:10:41.778 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 16:10:41.781 +07:00 [INF] Hosting environment: Development
+2024-12-28 16:10:41.784 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 16:11:17.805 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 16:11:19.905 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 16:11:19.922 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 16:11:19.934 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 16:11:19.943 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 2147.2761ms
+2024-12-28 16:11:20.124 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 16:11:20.125 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 16:11:20.130 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 16:11:20.159 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:11:20.180 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 57.4969ms
+2024-12-28 16:11:20.272 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 142.2179ms
+2024-12-28 16:11:20.572 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 16:11:20.577 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:11:20.592 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:11:20.596 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 471.3966ms
+2024-12-28 16:11:20.623 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:11:20.637 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 65.4465ms
+2024-12-28 16:53:44.496 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 16:53:44.877 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 16:53:44.880 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 16:53:44.920 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 16:53:44.923 +07:00 [INF] Hosting environment: Development
+2024-12-28 16:53:44.926 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 16:53:58.256 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - application/json 57
+2024-12-28 16:53:59.650 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 16:53:59.695 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 16:54:00.681 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 16:54:03.358 +07:00 [INF] Executed DbCommand (130ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 16:54:03.484 +07:00 [INF] Executed DbCommand (8ms) [Parameters=[@__user_RoleId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[DateOfCreated], [r].[DateOfModified], [r].[RoleTitle]
+FROM [roles_tbl] AS [r]
+WHERE [r].[Id] = @__user_RoleId_0
+2024-12-28 16:54:03.597 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-28 16:54:03.637 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 3926.771ms
+2024-12-28 16:54:03.646 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 16:54:03.665 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - 200 504 application/json; charset=utf-8 5415.7322ms
+2024-12-28 16:54:25.585 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 16:54:25.983 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.BlogCategoryController.AddNewBlogCate (BlogWebApi.Presentation)'
+2024-12-28 16:54:25.990 +07:00 [INF] Route matched with {action = "AddNewBlogCate", controller = "BlogCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddNewBlogCate(BlogWebApi.Domain.Dtos.BlogCategoríes.CreateBlogCategoryDto) on controller BlogWebApi.Presentation.Controllers.BlogCategoryController (BlogWebApi.Presentation).
+2024-12-28 16:54:26.009 +07:00 [INF] Begin AddNewBlogCate function in BlogCategoryController
+2024-12-28 16:54:26.224 +07:00 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [blog_cates_tbl] ([Id], [BlogCategoryTitle], [DateOfCreated], [DateOfModified])
+VALUES (@p0, @p1, @p2, @p3);
+2024-12-28 16:54:26.260 +07:00 [INF] Adding data of AddNewBlogCate function in BlogCategoryController
+2024-12-28 16:54:26.263 +07:00 [INF] Executing ObjectResult, writing value of type 'BlogWebApi.Model.Entities.BlogCategoryEntity'.
+2024-12-28 16:54:26.281 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.BlogCategoryController.AddNewBlogCate (BlogWebApi.Presentation) in 283.9745ms
+2024-12-28 16:54:26.285 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.BlogCategoryController.AddNewBlogCate (BlogWebApi.Presentation)'
+2024-12-28 16:54:26.289 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 200 189 application/json; charset=utf-8 704.2856ms
+2024-12-28 16:54:53.015 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 16:54:53.166 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 16:54:53.186 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 16:54:53.207 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 16:54:53.211 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 196.7469ms
+2024-12-28 16:54:53.434 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 16:54:53.434 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 16:54:53.493 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 59.0862ms
+2024-12-28 16:54:53.644 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 209.6777ms
+2024-12-28 16:54:53.679 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 16:54:53.687 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:54:53.841 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 16:54:53.842 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:54:53.849 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:54:53.850 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 170.7799ms
+2024-12-28 16:54:53.874 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:54:53.878 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 36.4749ms
+2024-12-28 16:55:29.519 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7158/openapi/v1.json - null null
+2024-12-28 16:55:29.526 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-12-28 16:55:29.528 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-12-28 16:55:29.531 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7158/openapi/v1.json - 405 0 null 11.8917ms
+2024-12-28 16:55:29.534 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 16:55:29.546 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:55:29.565 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:55:29.570 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 36.8158ms
+2024-12-28 16:55:33.829 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 16:55:33.845 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:55:33.878 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 16:55:33.882 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 52.6593ms
+2024-12-28 16:59:56.500 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 16:59:56.806 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 16:59:56.808 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 16:59:56.859 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 16:59:56.861 +07:00 [INF] Hosting environment: Development
+2024-12-28 16:59:56.863 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 17:00:05.192 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - application/json 37
+2024-12-28 17:00:05.438 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.BlogCategoryController.AddNewBlogCate (BlogWebApi.Presentation)'
+2024-12-28 17:00:05.468 +07:00 [INF] Route matched with {action = "AddNewBlogCate", controller = "BlogCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddNewBlogCate(BlogWebApi.Domain.Dtos.BlogCategoríes.CreateBlogCategoryDto) on controller BlogWebApi.Presentation.Controllers.BlogCategoryController (BlogWebApi.Presentation).
+2024-12-28 17:00:05.892 +07:00 [INF] Begin AddNewBlogCate function in BlogCategoryController
+2024-12-28 17:00:07.112 +07:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [blog_cates_tbl] ([Id], [BlogCategoryTitle], [DateOfCreated], [DateOfModified])
+VALUES (@p0, @p1, @p2, @p3);
+2024-12-28 17:00:07.162 +07:00 [INF] Adding data of AddNewBlogCate function in BlogCategoryController
+2024-12-28 17:00:07.176 +07:00 [INF] Executing ObjectResult, writing value of type 'BlogWebApi.Model.Entities.BlogCategoryEntity'.
+2024-12-28 17:00:07.216 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.BlogCategoryController.AddNewBlogCate (BlogWebApi.Presentation) in 1740.2858ms
+2024-12-28 17:00:07.225 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.BlogCategoryController.AddNewBlogCate (BlogWebApi.Presentation)'
+2024-12-28 17:00:07.230 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/BlogCategory/addNewBlogCate - 200 189 application/json; charset=utf-8 2043.6264ms
+2024-12-28 17:01:10.799 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/scalar/v1 - null null
+2024-12-28 17:01:10.957 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 17:01:10.974 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2024-12-28 17:01:10.986 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName}'
+2024-12-28 17:01:10.991 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/scalar/v1 - 200 null text/html 193.1206ms
+2024-12-28 17:01:11.200 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-28 17:01:11.200 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/_vs/browserLink - null null
+2024-12-28 17:01:11.253 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 52.7889ms
+2024-12-28 17:01:11.272 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.4454ms
+2024-12-28 17:01:11.308 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 17:01:11.319 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 17:01:11.504 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7158/openapi/v1.json - null null
+2024-12-28 17:01:11.506 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 17:01:11.513 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 17:01:11.517 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 208.8318ms
+2024-12-28 17:01:11.542 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2024-12-28 17:01:11.544 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 39.9632ms

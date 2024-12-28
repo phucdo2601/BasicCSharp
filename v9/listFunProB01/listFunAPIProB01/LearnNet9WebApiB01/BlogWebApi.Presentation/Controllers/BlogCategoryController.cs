@@ -4,6 +4,7 @@ using BlogWebApi.Application.UnitOfWork;
 using BlogWebApi.Domain.Dtos.BlogCategoríes;
 using BlogWebApi.Domain.Services.BlogCategories;
 using BlogWebApi.Model.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -73,6 +74,7 @@ namespace BlogWebApi.Presentation.Controllers
         }
 
         [HttpPost("addNewBlogCate")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> AddNewBlogCate([FromBody] CreateBlogCategoryDto model)
         {
             _logger.LogInformation($"Begin {nameof(AddNewBlogCate)} function in {this.GetType().Name}");
