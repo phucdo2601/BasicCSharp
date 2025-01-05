@@ -3,6 +3,7 @@ using BlogWebApi.Application.Repositories.UserEntityRepository;
 using BlogWebApi.Application.UnitOfWork;
 using BlogWebApi.Domain.Dtos;
 using BlogWebApi.Domain.Dtos.Authentications;
+using BlogWebApi.Domain.Services.Auth;
 using BlogWebApi.Domain.Services.Users;
 using BlogWebApi.Model.Entities;
 using Microsoft.AspNetCore.Http;
@@ -23,7 +24,7 @@ namespace BlogWebApi.Presentation.Controllers
         private readonly ApplicationDbContext _context;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IUserRepository _userRepository;
-        private readonly IUserService _userService;
+        private readonly IAuthenticationService _authService;
         private readonly ILogger<AuthenticationController> _logger;
         private readonly IMapper _mapper;
         private readonly AppSettings _appSettings;
@@ -33,7 +34,7 @@ namespace BlogWebApi.Presentation.Controllers
             _context = context;
             _unitOfWork = unitOfWork;
             _userRepository = new UserRepository(_context);
-            _userService = new UserService(_context, _unitOfWork, _userRepository);
+            _authService = new AuthenticationService(_context, _unitOfWork, _userRepository);
             _logger = logger;
             _mapper = mapper;
             _appSettings = optionsMonitor.CurrentValue;
@@ -44,7 +45,7 @@ namespace BlogWebApi.Presentation.Controllers
         {
             _logger.LogInformation($"Begin {nameof(Login)} function in {this.GetType().Name}");
 
-            var user = await _context.UserEntities.SingleOrDefaultAsync(p => p.Username == model.Username && p.Password == model.Password);
+            var user =  _authService.Login(model);
             if (user == null)
             {
                return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = "Username or Password is invalid!" }));
@@ -57,6 +58,7 @@ namespace BlogWebApi.Presentation.Controllers
             return await Task.FromResult(StatusCode(StatusCodes.Status200OK, new
             {
                 Message = "Login Successfully",
+                Data = user,
                 Token = dataToken
             }));
         }

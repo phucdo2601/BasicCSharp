@@ -888,3 +888,39 @@ VALUES (@p0, @p1, @p2, @p3);
 2024-12-28 17:01:11.517 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 208.8318ms
 2024-12-28 17:01:11.542 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
 2024-12-28 17:01:11.544 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7158/openapi/v1.json - 200 null application/json;charset=utf-8 39.9632ms
+2024-12-28 22:47:06.113 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 22:47:06.584 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 22:47:06.587 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 22:47:06.647 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 22:47:06.650 +07:00 [INF] Hosting environment: Development
+2024-12-28 22:47:06.652 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 22:47:14.964 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - application/json 57
+2024-12-28 22:47:16.218 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 22:47:16.386 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 22:47:17.259 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 22:47:19.290 +07:00 [INF] Executed DbCommand (116ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 22:49:31.114 +07:00 [INF] User profile is available. Using 'C:\Users\phucd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-28 22:49:31.420 +07:00 [INF] Now listening on: https://localhost:7158
+2024-12-28 22:49:31.423 +07:00 [INF] Now listening on: http://localhost:5163
+2024-12-28 22:49:31.459 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-28 22:49:31.462 +07:00 [INF] Hosting environment: Development
+2024-12-28 22:49:31.464 +07:00 [INF] Content root path: D:\TuHocLapTrinh\csharp\DotNet\Core\listFunNetCoreProB01\v9\listFunProB01\listFunAPIProB01\LearnNet9WebApiB01\BlogWebApi.Presentation
+2024-12-28 22:49:36.095 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - application/json 57
+2024-12-28 22:49:37.141 +07:00 [INF] Executing endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 22:49:37.169 +07:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BlogWebApi.Domain.Dtos.Authentications.LoginDto) on controller BlogWebApi.Presentation.Controllers.AuthenticationController (BlogWebApi.Presentation).
+2024-12-28 22:49:37.806 +07:00 [INF] Begin Login function in AuthenticationController
+2024-12-28 22:49:39.402 +07:00 [INF] Executed DbCommand (79ms) [Parameters=[@__model_Username_0='?' (Size = 4000), @__model_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Bio], [u].[DateOfBirth], [u].[DateOfCreated], [u].[DateOfModified], [u].[Email], [u].[Fullname], [u].[Password], [u].[ProfilePicture], [u].[RoleId], [u].[Username]
+FROM [users_tbl] AS [u]
+WHERE [u].[Username] = @__model_Username_0 AND [u].[Password] = @__model_Password_1
+2024-12-28 22:49:39.480 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[@__user_RoleId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[DateOfCreated], [r].[DateOfModified], [r].[RoleTitle]
+FROM [roles_tbl] AS [r]
+WHERE [r].[Id] = @__user_RoleId_0
+2024-12-28 22:49:39.568 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BlogWebApi.Model.Entities.UserEntity, BlogWebApi.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-28 22:49:39.623 +07:00 [INF] Executed action BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation) in 2446.3066ms
+2024-12-28 22:49:39.630 +07:00 [INF] Executed endpoint 'BlogWebApi.Presentation.Controllers.AuthenticationController.Login (BlogWebApi.Presentation)'
+2024-12-28 22:49:39.641 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7158/api/Authentication/Login - 200 1182 application/json; charset=utf-8 3551.4337ms
