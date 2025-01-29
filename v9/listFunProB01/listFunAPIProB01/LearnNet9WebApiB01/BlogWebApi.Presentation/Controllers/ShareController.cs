@@ -108,7 +108,7 @@ namespace BlogWebApi.Presentation.Controllers
                 if (blog == null)
                 {
                     _logger.LogError($"Not Load data of {nameof(FindListShareByBlogId)} function in {this.GetType().Name}");
-                    return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found Like with blog id {id}" }));
+                    return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found Share with blog id {id}" }));
                 }
                 else
                 {
