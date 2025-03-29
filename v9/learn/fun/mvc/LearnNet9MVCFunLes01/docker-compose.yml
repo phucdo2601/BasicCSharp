@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    ports:
+      - "1555:1433" # Expose SQL Server on port 1433
+    environment:
+      ACCEPT_EULA: "Y"                 # Accept the license agreement
+      MSSQL_SA_PASSWORD: "12345678@Abc" # Ensure the password meets complexity requirements
+    security_opt:
+      - seccomp:unconfined            # Disable security restrictions for debugging purposes
+    volumes:
+      - sql_data:/var/opt/mssql       # Persistent data storage
+    restart: unless-stopped           # Automatically restart the container unless stopped manually
+
+volumes:
+  sql_data:

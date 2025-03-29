@@ -1,7 +1,16 @@
+using LearnNet9MVCFunLes01Web.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add Db connection Entity framework
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection"));
+});
 
 var app = builder.Build();
 
