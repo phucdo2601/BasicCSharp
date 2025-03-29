@@ -18,5 +18,26 @@ namespace LearnNet9MVCFunLes01Web.Controllers
             List<Category> listCategories = _context.Categories.ToList();
             return View(listCategories);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Category category)
+        {
+            if (category.Name == category.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError("name", "The display order cannot excatly match the name.");
+            }
+            if (ModelState.IsValid)
+            {
+                _context.Categories.Add(category);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
     }
 }
