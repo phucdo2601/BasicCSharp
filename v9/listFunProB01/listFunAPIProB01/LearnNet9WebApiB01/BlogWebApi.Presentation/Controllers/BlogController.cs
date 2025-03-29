@@ -160,7 +160,7 @@ namespace BlogWebApi.Presentation.Controllers
             {
                 var blogCateId = Guid.Parse(id);
                 BlogEntity existedBlog = _blogRepo.FindById(blogCateId);
-                if (string.Equals(id, model.Id.ToString()))
+                if (!string.Equals(id, model.Id.ToString()))
                 {
                     _logger.LogError($"The id {id} in params is not matched with id {model.Id.ToString()} in the updating model of {nameof(UpdateBlog)} function in {this.GetType().Name}");
                     return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"The id {id} in params is not matched with id {model.Id.ToString()} in the updating model" }));

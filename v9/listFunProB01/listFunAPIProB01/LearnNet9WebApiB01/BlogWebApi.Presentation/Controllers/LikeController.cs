@@ -220,31 +220,31 @@ namespace BlogWebApi.Presentation.Controllers
 
         }
 
-        [HttpDelete("deleteLike/{likeId}")]
-        public async Task<IActionResult> DeleteLike([FromRoute(Name = "likeId")] string id)
+        [HttpDelete("deleteLikeById/{likeId}")]
+        public async Task<IActionResult> DeleteLikeById([FromRoute(Name = "likeId")] string id)
         {
-            _logger.LogInformation($"Begin {nameof(DeleteLike)} function in {this.GetType().Name}");
+            _logger.LogInformation($"Begin {nameof(DeleteLikeById)} function in {this.GetType().Name}");
             try
             {
                 var getLikeById = _likeRepository.FindById(Guid.Parse(id));
                 if (getLikeById != null)
                 {
-                    _logger.LogInformation($"Loading data of {nameof(DeleteLike)} function in {this.GetType().Name}");
+                    _logger.LogInformation($"Loading data of {nameof(DeleteLikeById)} function in {this.GetType().Name}");
                     bool isDeleted = _likeService.Delete(getLikeById);
                     if (isDeleted)
                     {
-                        _logger.LogInformation($"Deleting data of {nameof(DeleteLike)} function in {this.GetType().Name}");
+                        _logger.LogInformation($"Deleting data of {nameof(DeleteLikeById)} function in {this.GetType().Name}");
                         return await Task.FromResult(StatusCode(StatusCodes.Status200OK, new { StatusCode = StatusCodes.Status200OK, Message = $"Delete Like is successfully!" }));
                     }
-                    _logger.LogError($"Not Deleting data of {nameof(DeleteLike)} function in {this.GetType().Name}");
+                    _logger.LogError($"Not Deleting data of {nameof(DeleteLikeById)} function in {this.GetType().Name}");
                     return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Delete Like is failed!" }));
                 }
-                _logger.LogError($"Not Load data of {nameof(DeleteLike)} function in {this.GetType().Name}");
+                _logger.LogError($"Not Load data of {nameof(DeleteLikeById)} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status404NotFound, new { StatusCode = StatusCodes.Status404NotFound, Message = $"Not Found Like with id {id}" }));
             }
             catch (Exception)
             {
-                _logger.LogError($"ID {id} is not valid! of {nameof(DeleteLike)} function in {this.GetType().Name}");
+                _logger.LogError($"ID {id} is not valid! of {nameof(DeleteLikeById)} function in {this.GetType().Name}");
                 return await Task.FromResult(StatusCode(StatusCodes.Status400BadRequest, new { StatusCode = StatusCodes.Status400BadRequest, Message = $"ID {id} is not valid!" }));
             }
         }
