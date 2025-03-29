@@ -6,7 +6,7 @@
             <h2 class="text-primary">Create category page</h2>
             <hr/>
         </div>
-        <div asp-validation-summary="All"></div>
+        <div asp-validation-summary="ModelOnly"></div>
         <div class="mb-3 row p-1">
             <label for="categoryName" asp-for="Name" class="p-0"></label>
             <input type="text" class="form-control" id="categoryName" asp-for="Name"/>
@@ -31,3 +31,9 @@
     </div>
 
 </form>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
