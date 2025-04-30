@@ -17,6 +17,9 @@ builder.Services.AddDbContext<AppDbContext>(option => {
 // Add service transitent
 builder.Services.AddTransient<IPlatformRepo, PlatformRepo>();
 
+// Add Auto Mapper Configuration setup
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
