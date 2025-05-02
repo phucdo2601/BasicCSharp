@@ -12,7 +12,11 @@ namespace eCommerce.SharedLibrary.DependencyInjection
         public static IServiceCollection AddSharedServices<TContext>(this IServiceCollection services, IConfiguration config, string fileName) where TContext: DbContext
         {
             // Add generic database context
-            services.AddDbContext<TContext>(options => options.UseSqlServer(config.GetConnectionString("eCommerceConnection"), sqlServerOptions => sqlServerOptions.EnableRetryOnFailure()));
+            services.AddDbContext<TContext>(options => options.UseSqlServer(config.GetConnectionString("eCommerceConnection"), sqlServerOptions =>
+            {
+                sqlServerOptions.EnableRetryOnFailure();
+                sqlServerOptions.MigrationsAssembly("ProductApi.Infras");
+            }));
 
             // configure serilog logging
             Log.Logger = new LoggerConfiguration()

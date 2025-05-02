@@ -18,7 +18,7 @@ namespace eCommerce.SharedLibrary.DependencyInjection
                     string issuer = config.GetSection("Authentication:Issuer").Value!;
                     string audience = config.GetSection("Authentication:Audience").Value!;
 
-                    options.RequireHttpsMetadata = false;
+                    options.RequireHttpsMetadata = true;
                     options.SaveToken = true;
                     options.TokenValidationParameters = new TokenValidationParameters
                     {

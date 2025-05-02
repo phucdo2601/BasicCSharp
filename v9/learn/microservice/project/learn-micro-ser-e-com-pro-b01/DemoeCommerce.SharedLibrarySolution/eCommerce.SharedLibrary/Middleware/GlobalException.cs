@@ -66,7 +66,7 @@ namespace eCommerce.SharedLibrary.Middleware
                 }
 
                 // If none of the exceptions || Exceptions caught then to do the default
-                await ModifyHeader(context, title, message, statusCode);
+                await ModifyHeader(context, title, ex.Message, statusCode);
             }
         }
 
