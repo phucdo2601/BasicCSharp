@@ -15,7 +15,6 @@ namespace eCommerce.SharedLibrary.DependencyInjection
             services.AddDbContext<TContext>(options => options.UseSqlServer(config.GetConnectionString("eCommerceConnection"), sqlServerOptions =>
             {
                 sqlServerOptions.EnableRetryOnFailure();
-                sqlServerOptions.MigrationsAssembly("ProductApi.Infras");
             }));
 
             // configure serilog logging

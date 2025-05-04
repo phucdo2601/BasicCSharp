@@ -16,19 +16,19 @@ namespace eCommerce.SharedLibrary.Logs
             LogToDebug(ex.Message);
         }
 
-        private static void LogToDebug(string ex)
+        public static void LogToDebug(string ex)
         {
             Log.Debug(ex);
 
         }
 
-        private static void LogToConsole(string ex)
+        public static void LogToConsole(string ex)
         {
             Log.Warning(ex);
 
         }
 
-        private static void LogToFile(string ex)
+        public static void LogToFile(string ex)
         {
             Log.Information(ex);
         }
